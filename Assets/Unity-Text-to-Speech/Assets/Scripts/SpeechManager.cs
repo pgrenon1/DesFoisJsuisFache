@@ -196,28 +196,35 @@ public class SpeechManager : MonoBehaviour
 
         buffer = ReadToEnd(resultStream);
 
+        //AudioClip clip = OpenWavParser.ByteArrayToAudioClip(buffer, title.RemoveDiacritics());
 
+        //byte[] wavFile = OpenWavParser.AudioClipToByteArray(clip);
+        File.WriteAllBytes("Assets/Resources/Clips/" + title + ".wav", buffer);
+        AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
+        //AssetDatabase.SaveAssets();
+        AudioClip clip = (AudioClip)Resources.Load("Clips/" + title, typeof(AudioClip));
         //WriteFile(resultStream, title);
 
-        WWUtils.Audio.WAV wav = new WWUtils.Audio.WAV(buffer);
-        AudioClip clip = AudioClip.Create(title, wav.SampleCount, 1, wav.Frequency, false);
-        clip.SetData(wav.LeftChannel, 0);
+        //WWUtils.Audio.WAV wav = new WWUtils.Audio.WAV(buffer);
+        //AudioClip clip = AudioClip.Create(title, wav.SampleCount, 1, wav.Frequency, false);
+        //clip.SetData(wav.LeftChannel, 0);
 
         //AudioClip clip = CreateClip(resultStream, title);
 
-        Extensions.Play(clip); // THIS PLAYS THE CLIP IN PLAY MODE. IT WORKS FINE
+        Extensions.Play(clip);
 
-        AssetDatabase.CreateAsset(clip, "Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
-        //SavWav.Save(title.RemoveDiacritics(), clip);
-        EditorUtility.SetDirty(clip);
-        AssetDatabase.Refresh();
+        //AssetDatabase.CreateAsset(clip, "Assets/Resources/Clips/" + clip.name + ".wav");
+        //EditorUtility.SetDirty(clip);
+        //AssetDatabase.Refresh();
 
         var writer = FindObjectOfType<TTSWriter>();
         var clipCollectionAsset = writer.clipCollection;
         clipCollectionAsset.allClips.Add(title, clip);
         EditorUtility.SetDirty(clipCollectionAsset);
 
+
         //AssetDatabase.SaveAssets();
+        //SavWav.Save(title.RemoveDiacritics(), clip);
 
         //var audioClip = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
         //var audioClip = Resources.Load<AudioClip>("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
@@ -230,9 +237,6 @@ public class SpeechManager : MonoBehaviour
         //}
         //WWW audioLoader = new WWW("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
         //var audioClip = audioLoader.GetAudioClip();
-
-
-        //Extensions.Play(clip);
 
         //WriteFile(resultStream, title);
     }
