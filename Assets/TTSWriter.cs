@@ -28,6 +28,7 @@ public class TTSWriter : OdinSerializedBaseBehaviour
 {
     public string fileName;
     public ClipCollection clipCollection;
+
     private SpeechManager _speechManager;
 
     private void Start()
@@ -37,11 +38,20 @@ public class TTSWriter : OdinSerializedBaseBehaviour
         Debug.Log(jsonString.text);
         var data = JsonUtility.FromJson<PoemDataCollection>(jsonString.text);
 
-        StartCoroutine(CreateAssets(data));
-    }
+        //Debug.Log(clipCollection.allClips["comme"].length);
 
-    private IEnumerator CreateAssets(PoemDataCollection data)
-    {
+        //Extensions.Play(clipCollection.allClips["comme"]);
+
+        //StartCoroutine(CreateAssets(data));
+
+        AudioClip[] clips = Resources.LoadAll<AudioClip>("Clips");
+        foreach (var clip in clips)
+        {
+            clipCollection.allClips.Add(clip.name, clip);
+        }
+        EditorUtility.SetDirty(clipCollection);
+
+
         foreach (var poemData in data.collection)
         {
             var asset = new Poem();
@@ -56,28 +66,54 @@ public class TTSWriter : OdinSerializedBaseBehaviour
 
             foreach (var word in noEmpty)
             {
-                // if not in collection, request clip and add it to the global collection
-                if (!clipCollection.allClips.ContainsKey(word.ToLower()))
-                {
-                    Debug.Log(word + " was not found in the collection, trying to process it.");
-                    yield return StartCoroutine(RequestAndAddClip(word.ToLower()));
-                }
 
-                //// add word and clip to the scriptable object's word dictionary
-                //AudioClip clip;
-                //if (clipCollection.allClips.TryGetValue(word.ToLower(), out clip))
-                //{
-                //    asset.words.Add(new KeyValuePair<string, AudioClip>(word, clip));
-                //}
-
-                AssetDatabase.SaveAssets();
             }
 
-            AssetDatabase.CreateAsset(asset, "Assets/Resources/Poems/" + poemData.title.Replace(" ", "") + ".asset");
             break;
         }
+    }
 
-        AssetDatabase.SaveAssets();
+    private IEnumerator CreateAssets(PoemDataCollection data)
+    {
+        yield return new WaitForSeconds(3f);
+
+        foreach (var poemData in data.collection)
+        {
+            var asset = new Poem();
+            asset.author = poemData.author;
+            asset.title = poemData.title;
+            asset.poem = poemData.poem;
+
+            var noPunc = new string(asset.poem.Where(c => !char.IsPunctuation(c)).ToArray());
+            var noReturn = noPunc.Replace("\n", " ");
+            var words = noReturn.Split(' ');
+            var noEmpty = words.ToList().Where(w => w != string.Empty && w != "" && w != " ");
+
+            foreach (var word in noEmpty)
+            {
+                var lowerWord = word.ToLower();
+                // if not in collection, request clip and add it to the global collection
+                if (!clipCollection.allClips.ContainsKey(lowerWord))
+                {
+                    Debug.Log(word + " was not found in the collection, trying to process it.");
+                    
+                    yield return StartCoroutine(RequestAndAddClip(word.ToLower()));
+                }
+                else
+                {
+                    Debug.Log(word + " was already in the collection.");
+
+                    // get the clip from the collection and add it to the poem
+                    var clip = clipCollection.allClips[lowerWord];
+                    asset.words.Add(new KeyValuePair<string, AudioClip>(lowerWord, clip));
+                }
+
+                //AssetDatabase.SaveAssets();
+            }
+
+            AssetDatabase.CreateAsset(asset, "Assets/Resources/Poems/" + poemData.title.Replace(" ", "_") + ".asset");
+            break;
+        }
     }
 
     private IEnumerator RequestAndAddClip(string word)
