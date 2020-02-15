@@ -6,4 +6,5 @@ using UnityEngine;
 public class ClipCollection : OdinSerializedScriptableObject
 {
     public Dictionary<string, AudioClip> allClips = new Dictionary<string, AudioClip>();
+    public List<Poem> poems = new List<Poem>();
 }

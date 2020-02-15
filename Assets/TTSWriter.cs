@@ -35,42 +35,24 @@ public class TTSWriter : OdinSerializedBaseBehaviour
     {
         _speechManager = GetComponent<SpeechManager>();
         var jsonString = Resources.Load<TextAsset>(fileName);
-        Debug.Log(jsonString.text);
         var data = JsonUtility.FromJson<PoemDataCollection>(jsonString.text);
 
-        //Debug.Log(clipCollection.allClips["comme"].length);
+        StartCoroutine(CreateAssets(data));
+        return;
 
-        //Extensions.Play(clipCollection.allClips["comme"]);
-
-        //StartCoroutine(CreateAssets(data));
-
-        AudioClip[] clips = Resources.LoadAll<AudioClip>("Clips");
-        foreach (var clip in clips)
-        {
-            clipCollection.allClips.Add(clip.name, clip);
-        }
-        EditorUtility.SetDirty(clipCollection);
-
-
-        foreach (var poemData in data.collection)
-        {
-            var asset = new Poem();
-            asset.author = poemData.author;
-            asset.title = poemData.title;
-            asset.poem = poemData.poem;
-
-            var noPunc = new string(asset.poem.Where(c => !char.IsPunctuation(c)).ToArray());
-            var noReturn = noPunc.Replace("\n", " ");
-            var words = noReturn.Split(' ');
-            var noEmpty = words.ToList().Where(w => w != string.Empty && w != "" && w != " ");
-
-            foreach (var word in noEmpty)
-            {
-
-            }
-
-            break;
-        }
+        //AudioClip[] clips = Resources.LoadAll<AudioClip>("Clips");
+        //foreach (var clip in clips)
+        //{
+        //    if (clipCollection.allClips.ContainsKey(clip.name))
+        //    {
+        //        clipCollection.allClips[clip.name] = clip;
+        //    }
+        //    else
+        //    {
+        //        clipCollection.allClips.Add(clip.name, clip);
+        //    }
+        //}
+        //EditorUtility.SetDirty(clipCollection);
     }
 
     private IEnumerator CreateAssets(PoemDataCollection data)
@@ -79,60 +61,69 @@ public class TTSWriter : OdinSerializedBaseBehaviour
 
         foreach (var poemData in data.collection)
         {
+            if (clipCollection.poems.Any(p => p.title == poemData.title))
+                continue;
+
+            Debug.Log("Starting to process poem: " + poemData.title);
+
             var asset = new Poem();
             asset.author = poemData.author;
             asset.title = poemData.title;
             asset.poem = poemData.poem;
 
-            var noPunc = new string(asset.poem.Where(c => !char.IsPunctuation(c)).ToArray());
+            var noPunc = new string(asset.poem.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
             var noReturn = noPunc.Replace("\n", " ");
-            var words = noReturn.Split(' ');
-            var noEmpty = words.ToList().Where(w => w != string.Empty && w != "" && w != " ");
+            var split = noReturn.Split(' ');
+            var words = split.ToList().Where(w => w != string.Empty && w != "" && w != " ");
 
-            foreach (var word in noEmpty)
+            foreach (var word in words)
             {
                 var lowerWord = word.ToLower();
-                // if not in collection, request clip and add it to the global collection
+
+                // if not in collection, request clip and add it to the global collection AND the poem asset
                 if (!clipCollection.allClips.ContainsKey(lowerWord))
                 {
                     Debug.Log(word + " was not found in the collection, trying to process it.");
-                    
-                    yield return StartCoroutine(RequestAndAddClip(word.ToLower()));
+
+                    yield return StartCoroutine(RequestAndAddClip(lowerWord));
+                }
+
+                AudioClip clip;
+                if (clipCollection.allClips.TryGetValue(lowerWord, out clip))
+                {
+                    asset.words.Add(new KeyValuePair<string, AudioClip>(word, clip));
                 }
                 else
                 {
-                    Debug.Log(word + " was already in the collection.");
-
-                    // get the clip from the collection and add it to the poem
-                    var clip = clipCollection.allClips[lowerWord];
-                    asset.words.Add(new KeyValuePair<string, AudioClip>(lowerWord, clip));
+                    Debug.Log("Did not manage to get requested clip for word : " + word);
+                    asset.words.Add(new KeyValuePair<string, AudioClip>(word, null));
                 }
-
-                //AssetDatabase.SaveAssets();
             }
 
-            AssetDatabase.CreateAsset(asset, "Assets/Resources/Poems/" + poemData.title.Replace(" ", "_") + ".asset");
-            break;
+            Debug.Log("Finished processing : " + asset.title);
+
+            clipCollection.poems.Add(asset);
+            EditorUtility.SetDirty(clipCollection);
+
+            AssetDatabase.CreateAsset(asset, "Assets/Resources/Poems/" + asset.title + ".asset");
+            EditorUtility.SetDirty(asset);
+
+            AssetDatabase.SaveAssets();
+            EditorUtility.FocusProjectWindow();
+            Selection.activeObject = asset;
+
+            SpeechManager.voiceName = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.VoiceName.frCACaroline : CognitiveServicesTTS.VoiceName.frCHGuillaume;
+            SpeechManager.gender = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.Gender.Male : CognitiveServicesTTS.Gender.Female;
         }
     }
 
     private IEnumerator RequestAndAddClip(string word)
     {
-        _speechManager.Speak(word);
-
         Debug.Log("Processing word: " + word);
 
+        _speechManager.GetSpeech(word);
+
         yield return new WaitForSeconds(5);
-
-        //var clip = Resources.Load<AudioClip>("Assets/Resources/Clips/" + word.RemoveDiacritics() + ".wav");
-
-        //Extensions.Play(clip);
-
-        //if (clip)
-        //{
-        //    Debug.Log(clip + " was generated.");
-        //    clipCollection.allClips.Add(word, clip);
-        //}
     }
 }
 

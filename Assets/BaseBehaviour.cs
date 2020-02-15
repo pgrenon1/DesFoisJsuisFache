@@ -5,6 +5,18 @@ using UnityEngine.UI;
 
 public class BaseBehaviour : MonoBehaviour
 {
+    private AudioSource _audioSource;
+    public AudioSource AudioSource
+    {
+        get
+        {
+            if (!_audioSource)
+                _audioSource = GetComponent<AudioSource>();
+
+            return _audioSource;
+        }
+    }
+
     private CanvasGroup _canvasGroup;
     public CanvasGroup CanvasGroup
     {
