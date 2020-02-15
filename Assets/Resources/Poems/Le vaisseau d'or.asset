@@ -1,0 +1,1513 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 7a0720898d2b54b45bdeb30a567d19a7, type: 3}
+  m_Name: Le vaisseau d'or
+  m_EditorClassIdentifier: 
+  serializationData:
+    SerializedFormat: 2
+    SerializedBytes: 
+    ReferencedUnityObjects:
+    - {fileID: 8300000, guid: cd8c9c0c7e2f3ca4795c9da39c0a0b75, type: 3}
+    - {fileID: 8300000, guid: a554fe6f0002f0b4b98c713be2f67158, type: 3}
+    - {fileID: 8300000, guid: 20fa39dc80e1a364c87d84ee49625884, type: 3}
+    - {fileID: 8300000, guid: c60cd781360ad3247867c5ac0f3ea447, type: 3}
+    - {fileID: 8300000, guid: 466423993e1f3194db044dfb1433b994, type: 3}
+    - {fileID: 8300000, guid: 99a0d47a72d4037488f7bbef28f9ff96, type: 3}
+    - {fileID: 8300000, guid: 0e7a52c98e659af44a3c325eb34fa026, type: 3}
+    - {fileID: 8300000, guid: 2aa81db5e2961a048a0c814051436c47, type: 3}
+    - {fileID: 8300000, guid: f75ae726613e0224880b4703e5926a4e, type: 3}
+    - {fileID: 8300000, guid: 53a77d4d058367d4db163f730945102b, type: 3}
+    - {fileID: 8300000, guid: a46211e593c1f1340aed959352a53293, type: 3}
+    - {fileID: 8300000, guid: 079bc08a8ddce834dbe367e96e8e9e4b, type: 3}
+    - {fileID: 8300000, guid: 8734b64b6e9af0047aca4e7c55b0696c, type: 3}
+    - {fileID: 8300000, guid: 8ef200cfd26129d48a475dfa6d636326, type: 3}
+    - {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
+    - {fileID: 8300000, guid: 9c1246b607e11f940b677ff747775b4c, type: 3}
+    - {fileID: 8300000, guid: d842e8f005c5ab945a363942701cba3b, type: 3}
+    - {fileID: 8300000, guid: 1fcc7b7991a72504fa814a4cede84b3c, type: 3}
+    - {fileID: 8300000, guid: bb3eb573ad124a24aa189884bc59506c, type: 3}
+    - {fileID: 8300000, guid: aee2b61d2eaa4b04797e77587ea80fed, type: 3}
+    - {fileID: 8300000, guid: 7deb84bb705afb943a7f64ecdb4c420d, type: 3}
+    - {fileID: 8300000, guid: e77003be6ddb11f479b03b0f65a19a36, type: 3}
+    - {fileID: 8300000, guid: 69ffcb0c00879694eaa6f4d22b376d4c, type: 3}
+    - {fileID: 8300000, guid: 6f1910adc07baa2418b92de9495d877f, type: 3}
+    - {fileID: 8300000, guid: 5555e93b8a10104489b0582e76543eec, type: 3}
+    - {fileID: 8300000, guid: 6e2df7ebfc7f24a49a371e3f66c3486a, type: 3}
+    - {fileID: 8300000, guid: 19abd35a8aba3be43b694140e27d431b, type: 3}
+    - {fileID: 8300000, guid: 55997a441291bb540a7e98e24c81a0d6, type: 3}
+    - {fileID: 8300000, guid: ecbcd713ed40619438d1a55df765765d, type: 3}
+    - {fileID: 8300000, guid: 851ff4c1d13b0e149bf6fd399ab695c6, type: 3}
+    - {fileID: 8300000, guid: e5022a4bbfbb164438f0d5bb2990f375, type: 3}
+    - {fileID: 8300000, guid: cd6f3dabb08b6ab49b2e11846b41e82e, type: 3}
+    - {fileID: 8300000, guid: da3ce72d045ef0345918449b3f88b87d, type: 3}
+    - {fileID: 8300000, guid: 0da771279fd3201469ec6d0954eb44d9, type: 3}
+    - {fileID: 8300000, guid: dcb21741d73e0b94fa3b4847b8a3aa46, type: 3}
+    - {fileID: 8300000, guid: 5700915ac33bf3443814a01a8358a0ff, type: 3}
+    - {fileID: 8300000, guid: 3124980331799f54f9517d35784aa606, type: 3}
+    - {fileID: 8300000, guid: 0c81b21110bd0af4681c6a530336041d, type: 3}
+    - {fileID: 8300000, guid: 324924c6e7c6ae24580e6adb65828dac, type: 3}
+    - {fileID: 8300000, guid: deccc28a15490014c85ac298530d1a40, type: 3}
+    - {fileID: 8300000, guid: e9b1c57e7eb46a74b9d9c797f4ee5787, type: 3}
+    - {fileID: 8300000, guid: c89506f0c488b5442b39b087a2b9186a, type: 3}
+    - {fileID: 8300000, guid: 048b4f38233b0144ca9132dd8aa81be4, type: 3}
+    - {fileID: 8300000, guid: eaa7e46bfe074b54485230c48a57fb58, type: 3}
+    - {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
+    - {fileID: 8300000, guid: f9bb21532719dc64cb378a001266862e, type: 3}
+    - {fileID: 8300000, guid: ad3f7066267eb054f8b2ebb0d455b711, type: 3}
+    - {fileID: 8300000, guid: 9ac68d78a0840264699edec2721d5b5f, type: 3}
+    - {fileID: 8300000, guid: 8da90cf9f42f4f14a914e737c3fa074c, type: 3}
+    - {fileID: 8300000, guid: 1325986e2c3393e4ea4474b161066622, type: 3}
+    - {fileID: 8300000, guid: 25f4cd8c3ade2934f985d711159700f1, type: 3}
+    - {fileID: 8300000, guid: ea45c06695f5a0846886604ffbf88150, type: 3}
+    - {fileID: 8300000, guid: 04c51e5e3505c344b95be6a281972b62, type: 3}
+    - {fileID: 8300000, guid: ecc7d20df204c824da1ebeeec7c94722, type: 3}
+    - {fileID: 8300000, guid: 01848ccb008d53342bd81375eaecd5e1, type: 3}
+    - {fileID: 8300000, guid: 6ab4c6a30d7acfc4da144b19b4b85488, type: 3}
+    - {fileID: 8300000, guid: 9d0569c32830d8a46bd84b95a42912cb, type: 3}
+    - {fileID: 8300000, guid: 8f2cacf1c370f094cac12336f1bd37a6, type: 3}
+    - {fileID: 8300000, guid: 3a2ee9b351aaff8418b68a7d9540682e, type: 3}
+    - {fileID: 8300000, guid: c97078bc5854fac42a2f296e22139392, type: 3}
+    - {fileID: 8300000, guid: 5cff1d831c31dbb44abf98001e2f2990, type: 3}
+    - {fileID: 8300000, guid: 07917caae9a5dde4a907ba498718937b, type: 3}
+    - {fileID: 8300000, guid: df3745ae8afea9a41ac2b32d13c49d1e, type: 3}
+    - {fileID: 8300000, guid: 990f6f3d73363804fac920eea6db48f0, type: 3}
+    - {fileID: 8300000, guid: 82f54eced56612b4eab074acbe09f59c, type: 3}
+    - {fileID: 8300000, guid: 967e9ea3f7da3574da0806f274e3c587, type: 3}
+    - {fileID: 8300000, guid: 49154cda50e2e8941876902849ebd826, type: 3}
+    - {fileID: 8300000, guid: bb4b6412db373fe4096f7ee2dce9d958, type: 3}
+    - {fileID: 8300000, guid: d80daac890015054aac3e3c04d861873, type: 3}
+    - {fileID: 8300000, guid: becfee0c9b8d9a442bcc30054ad66c2f, type: 3}
+    - {fileID: 8300000, guid: 58a9563e00a832646b87ed4ddcc4a5d9, type: 3}
+    - {fileID: 8300000, guid: 0e8602c87f5a4374da9f9e231f715785, type: 3}
+    - {fileID: 8300000, guid: 24c0b777b602e6840ba9a84e3674c1f6, type: 3}
+    - {fileID: 8300000, guid: 6ba2634de62650f41becc7d2d559a71b, type: 3}
+    - {fileID: 8300000, guid: c7ef512e03513084493111121ed72040, type: 3}
+    - {fileID: 8300000, guid: 2c3b47c3327edbc49a989b5016289d38, type: 3}
+    - {fileID: 8300000, guid: b44e131bd12fff54fa1a1efd28636a79, type: 3}
+    - {fileID: 8300000, guid: efc89dbee7139404e9cb5083bb819837, type: 3}
+    - {fileID: 8300000, guid: 981900a8431d2c345b618d2125b65f76, type: 3}
+    - {fileID: 8300000, guid: ce278be7aeabb9940b37cde09facc855, type: 3}
+    - {fileID: 8300000, guid: e32c7eca5b7358048aa14b3b322a5a89, type: 3}
+    - {fileID: 8300000, guid: e715766d4ae796347b07d68445bbde33, type: 3}
+    - {fileID: 8300000, guid: 759638593f702464291254259a144d7c, type: 3}
+    - {fileID: 8300000, guid: d02dfddfc5342a2489931bbce435481a, type: 3}
+    - {fileID: 8300000, guid: 9e061cbba50013c439d3cfc5f5c53cc0, type: 3}
+    - {fileID: 8300000, guid: bf3e89ffa46043a46b78bfa4f8f645f2, type: 3}
+    - {fileID: 8300000, guid: a676bb3b4b5a59b4d9938d6c345a0265, type: 3}
+    SerializedBytesString: 
+    Prefab: {fileID: 0}
+    PrefabModificationsReferencedUnityObjects: []
+    PrefabModifications: []
+    SerializationNodes:
+    - Name: words
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[System.Collections.Generic.KeyValuePair`2[[System.String,
+        mscorlib],[UnityEngine.AudioClip, UnityEngine.AudioModule]], mscorlib]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 106
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Ce
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: fut
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: un
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: grand
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Vaisseau
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "taill\xE9"
+    - Name: 
+      Entry: 10
+      Data: 5
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: dans
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "l\u2019or"
+    - Name: 
+      Entry: 10
+      Data: 7
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: massif
+    - Name: 
+      Entry: 10
+      Data: 8
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Ses
+    - Name: 
+      Entry: 10
+      Data: 9
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "m\xE2ts"
+    - Name: 
+      Entry: 10
+      Data: 10
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: touchaient
+    - Name: 
+      Entry: 10
+      Data: 11
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "l\u2019azur"
+    - Name: 
+      Entry: 10
+      Data: 12
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: sur
+    - Name: 
+      Entry: 10
+      Data: 13
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: des
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: mers
+    - Name: 
+      Entry: 10
+      Data: 15
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: inconnues
+    - Name: 
+      Entry: 10
+      Data: 16
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: La
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Cyprine
+    - Name: 
+      Entry: 10
+      Data: 18
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "d\u2019amour"
+    - Name: 
+      Entry: 10
+      Data: 19
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: cheveux
+    - Name: 
+      Entry: 10
+      Data: 20
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\xE9pars"
+    - Name: 
+      Entry: 10
+      Data: 21
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: chairs
+    - Name: 
+      Entry: 10
+      Data: 22
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: nues
+    - Name: 
+      Entry: 10
+      Data: 23
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "S\u2019\xE9talait"
+    - Name: 
+      Entry: 10
+      Data: 24
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\xE0"
+    - Name: 
+      Entry: 10
+      Data: 25
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: sa
+    - Name: 
+      Entry: 10
+      Data: 26
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: proue
+    - Name: 
+      Entry: 10
+      Data: 27
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: au
+    - Name: 
+      Entry: 10
+      Data: 28
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: soleil
+    - Name: 
+      Entry: 10
+      Data: 29
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: excessif
+    - Name: 
+      Entry: 10
+      Data: 30
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Mais
+    - Name: 
+      Entry: 10
+      Data: 31
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: il
+    - Name: 
+      Entry: 10
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: vint
+    - Name: 
+      Entry: 10
+      Data: 33
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: une
+    - Name: 
+      Entry: 10
+      Data: 34
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: nuit
+    - Name: 
+      Entry: 10
+      Data: 35
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: frapper
+    - Name: 
+      Entry: 10
+      Data: 36
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: le
+    - Name: 
+      Entry: 10
+      Data: 37
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: grand
+    - Name: 
+      Entry: 10
+      Data: 3
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "\xE9cueil"
+    - Name: 
+      Entry: 10
+      Data: 38
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Dans
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "l\u2019Oc\xE9an"
+    - Name: 
+      Entry: 10
+      Data: 39
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: trompeur
+    - Name: 
+      Entry: 10
+      Data: 40
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "o\xF9"
+    - Name: 
+      Entry: 10
+      Data: 41
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: chantait
+    - Name: 
+      Entry: 10
+      Data: 42
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: la
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "Sir\xE8ne"
+    - Name: 
+      Entry: 10
+      Data: 43
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Et
+    - Name: 
+      Entry: 10
+      Data: 44
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: le
+    - Name: 
+      Entry: 10
+      Data: 37
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: naufrage
+    - Name: 
+      Entry: 10
+      Data: 45
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: horrible
+    - Name: 
+      Entry: 10
+      Data: 46
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: inclina
+    - Name: 
+      Entry: 10
+      Data: 47
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: sa
+    - Name: 
+      Entry: 10
+      Data: 26
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "car\xE8ne"
+    - Name: 
+      Entry: 10
+      Data: 48
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Aux
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: profondeurs
+    - Name: 
+      Entry: 10
+      Data: 49
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: du
+    - Name: 
+      Entry: 10
+      Data: 50
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Gouffre
+    - Name: 
+      Entry: 10
+      Data: 51
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: immuable
+    - Name: 
+      Entry: 10
+      Data: 52
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: cercueil
+    - Name: 
+      Entry: 10
+      Data: 53
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Ce
+    - Name: 
+      Entry: 10
+      Data: 0
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: fut
+    - Name: 
+      Entry: 10
+      Data: 1
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: un
+    - Name: 
+      Entry: 10
+      Data: 2
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Vaisseau
+    - Name: 
+      Entry: 10
+      Data: 4
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "d\u2019Or"
+    - Name: 
+      Entry: 10
+      Data: 54
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: dont
+    - Name: 
+      Entry: 10
+      Data: 55
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: les
+    - Name: 
+      Entry: 10
+      Data: 56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: flancs
+    - Name: 
+      Entry: 10
+      Data: 57
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: diaphanes
+    - Name: 
+      Entry: 10
+      Data: 58
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "R\xE9v\xE9laient"
+    - Name: 
+      Entry: 10
+      Data: 59
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: des
+    - Name: 
+      Entry: 10
+      Data: 14
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "tr\xE9sors"
+    - Name: 
+      Entry: 10
+      Data: 60
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: que
+    - Name: 
+      Entry: 10
+      Data: 61
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: les
+    - Name: 
+      Entry: 10
+      Data: 56
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: marins
+    - Name: 
+      Entry: 10
+      Data: 62
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: profanes
+    - Name: 
+      Entry: 10
+      Data: 63
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "D\xE9go\xFBt"
+    - Name: 
+      Entry: 10
+      Data: 64
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Haine
+    - Name: 
+      Entry: 10
+      Data: 65
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: et
+    - Name: 
+      Entry: 10
+      Data: 44
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "N\xE9vrose"
+    - Name: 
+      Entry: 10
+      Data: 66
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: entre
+    - Name: 
+      Entry: 10
+      Data: 67
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: eux
+    - Name: 
+      Entry: 10
+      Data: 68
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: ont
+    - Name: 
+      Entry: 10
+      Data: 69
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "disput\xE9s"
+    - Name: 
+      Entry: 10
+      Data: 70
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Que
+    - Name: 
+      Entry: 10
+      Data: 61
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: reste-t-il
+    - Name: 
+      Entry: 10
+      Data: 71
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: de
+    - Name: 
+      Entry: 10
+      Data: 72
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: lui
+    - Name: 
+      Entry: 10
+      Data: 73
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: dans
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: la
+    - Name: 
+      Entry: 10
+      Data: 17
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "temp\xEAte"
+    - Name: 
+      Entry: 10
+      Data: 74
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "br\xE8ve"
+    - Name: 
+      Entry: 10
+      Data: 75
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "Qu\u2019est"
+    - Name: 
+      Entry: 10
+      Data: 76
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: devenu
+    - Name: 
+      Entry: 10
+      Data: 77
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: mon
+    - Name: 
+      Entry: 10
+      Data: 78
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "c\u0153ur"
+    - Name: 
+      Entry: 10
+      Data: 79
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: navire
+    - Name: 
+      Entry: 10
+      Data: 80
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "d\xE9sert\xE9"
+    - Name: 
+      Entry: 10
+      Data: 81
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "H\xE9las"
+    - Name: 
+      Entry: 10
+      Data: 82
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: Il
+    - Name: 
+      Entry: 10
+      Data: 32
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: a
+    - Name: 
+      Entry: 10
+      Data: 83
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "sombr\xE9"
+    - Name: 
+      Entry: 10
+      Data: 84
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: dans
+    - Name: 
+      Entry: 10
+      Data: 6
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "l\u2019ab\xEEme"
+    - Name: 
+      Entry: 10
+      Data: 85
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: du
+    - Name: 
+      Entry: 10
+      Data: 50
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: System.Collections.Generic.KeyValuePair`2[[System.String, mscorlib],[UnityEngine.AudioClip,
+        UnityEngine.AudioModule]], mscorlib
+    - Name: 
+      Entry: 1
+      Data: "R\xEAve"
+    - Name: 
+      Entry: 10
+      Data: 86
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+  author: "\xC9mile Nelligan"
+  title: Le vaisseau d'or
+  poem: "Ce fut un grand Vaisseau taill\xE9 dans l\u2019or massif :\nSes m\xE2ts touchaient
+    l\u2019azur, sur des mers inconnues ;\nLa Cyprine d\u2019amour, cheveux \xE9pars,
+    chairs nues,\nS\u2019\xE9talait \xE0 sa proue, au soleil excessif.\nMais il vint
+    une nuit frapper le grand \xE9cueil\nDans l\u2019Oc\xE9an trompeur o\xF9 chantait
+    la Sir\xE8ne,\nEt le naufrage horrible inclina sa car\xE8ne\nAux profondeurs du
+    Gouffre, immuable cercueil.\nCe fut un Vaisseau d\u2019Or, dont les flancs diaphanes\nR\xE9v\xE9laient
+    des tr\xE9sors que les marins profanes,\nD\xE9go\xFBt, Haine et N\xE9vrose, entre
+    eux ont disput\xE9s.\nQue reste-t-il de lui dans la temp\xEAte br\xE8ve ?\nQu\u2019est
+    devenu mon c\u0153ur, navire d\xE9sert\xE9 ?\nH\xE9las ! Il a sombr\xE9 dans l\u2019ab\xEEme
+    du R\xEAve !"

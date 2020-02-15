@@ -20,7 +20,8 @@ public class SpeechManager : MonoBehaviour
     [Tooltip("The audio source where speech will be played.")]
     public AudioSource audioSource = null;
 
-    public VoiceName voiceName = VoiceName.enUSJessaRUS;
+    public static VoiceName voiceName = VoiceName.frCHGuillaume;
+    public static Gender gender = Gender.Male;
 
     // Access token used to make calls against the Cognitive Services Speech API
     string accessToken;
@@ -196,49 +197,18 @@ public class SpeechManager : MonoBehaviour
 
         buffer = ReadToEnd(resultStream);
 
-        //AudioClip clip = OpenWavParser.ByteArrayToAudioClip(buffer, title.RemoveDiacritics());
-
-        //byte[] wavFile = OpenWavParser.AudioClipToByteArray(clip);
         File.WriteAllBytes("Assets/Resources/Clips/" + title + ".wav", buffer);
+
         AssetDatabase.Refresh(ImportAssetOptions.ForceSynchronousImport);
-        //AssetDatabase.SaveAssets();
+
         AudioClip clip = (AudioClip)Resources.Load("Clips/" + title, typeof(AudioClip));
-        //WriteFile(resultStream, title);
-
-        //WWUtils.Audio.WAV wav = new WWUtils.Audio.WAV(buffer);
-        //AudioClip clip = AudioClip.Create(title, wav.SampleCount, 1, wav.Frequency, false);
-        //clip.SetData(wav.LeftChannel, 0);
-
-        //AudioClip clip = CreateClip(resultStream, title);
 
         Extensions.Play(clip);
-
-        //AssetDatabase.CreateAsset(clip, "Assets/Resources/Clips/" + clip.name + ".wav");
-        //EditorUtility.SetDirty(clip);
-        //AssetDatabase.Refresh();
 
         var writer = FindObjectOfType<TTSWriter>();
         var clipCollectionAsset = writer.clipCollection;
         clipCollectionAsset.allClips.Add(title, clip);
         EditorUtility.SetDirty(clipCollectionAsset);
-
-
-        //AssetDatabase.SaveAssets();
-        //SavWav.Save(title.RemoveDiacritics(), clip);
-
-        //var audioClip = AssetDatabase.LoadAssetAtPath<AudioClip>("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
-        //var audioClip = Resources.Load<AudioClip>("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
-
-        //using (var www = new WWW("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav"))
-        //{
-        //    yield return www;
-        //    var audioClip = www.GetAudioClip();
-
-        //}
-        //WWW audioLoader = new WWW("Assets/Resources/Clips/" + title.RemoveDiacritics() + ".wav");
-        //var audioClip = audioLoader.GetAudioClip();
-
-        //WriteFile(resultStream, title);
     }
 
     private void WriteFile(Stream audioStream, string title)
@@ -259,7 +229,7 @@ public class SpeechManager : MonoBehaviour
     /// starts audio playback using the assigned audio source.
     /// </summary>
     /// <param name="message"></param>
-    public void Speak(string message)
+    public void GetSpeech(string message)
     {
         try
         {
@@ -276,12 +246,12 @@ public class SpeechManager : MonoBehaviour
                 RequestUri = new Uri(requestUri),
                 // Text to be spoken.
                 Text = message,
-                VoiceType = Gender.Male,
                 // Refer to the documentation for complete list of supported locales.
                 Locale = cortana.GetVoiceLocale(voiceName),
                 // You can also customize the output voice. Refer to the documentation to view the different
                 // voices that the TTS service can output.
                 VoiceName = voiceName,
+                VoiceType = gender,
 
                 // Service can return audio in different output format.
                 OutputFormat = AudioOutputFormat.Riff24Khz16BitMonoPcm,
