@@ -1,4 +1,5 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using System.Globalization;
@@ -23,11 +24,10 @@ public class PoemDataCollection
     public PoemData[] collection;
 }
 
-[Serializable]
 public class TTSWriter : OdinSerializedBaseBehaviour
 {
     public string fileName;
-    public ClipCollection clipCollection;
+    public WordCollection clipCollection;
 
     private SpeechManager _speechManager;
 
@@ -37,22 +37,7 @@ public class TTSWriter : OdinSerializedBaseBehaviour
         var jsonString = Resources.Load<TextAsset>(fileName);
         var data = JsonUtility.FromJson<PoemDataCollection>(jsonString.text);
 
-        StartCoroutine(CreateAssets(data));
-        return;
-
-        //AudioClip[] clips = Resources.LoadAll<AudioClip>("Clips");
-        //foreach (var clip in clips)
-        //{
-        //    if (clipCollection.allClips.ContainsKey(clip.name))
-        //    {
-        //        clipCollection.allClips[clip.name] = clip;
-        //    }
-        //    else
-        //    {
-        //        clipCollection.allClips.Add(clip.name, clip);
-        //    }
-        //}
-        //EditorUtility.SetDirty(clipCollection);
+        //StartCoroutine(CreateAssets(data));
     }
 
     private IEnumerator CreateAssets(PoemDataCollection data)
@@ -66,12 +51,12 @@ public class TTSWriter : OdinSerializedBaseBehaviour
 
             Debug.Log("Starting to process poem: " + poemData.title);
 
-            var asset = new Poem();
-            asset.author = poemData.author;
-            asset.title = poemData.title;
-            asset.poem = poemData.poem;
+            var poemAsset = new Poem();
+            poemAsset.author = poemData.author;
+            poemAsset.title = poemData.title;
+            poemAsset.poem = poemData.poem;
 
-            var noPunc = new string(asset.poem.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
+            var noPunc = new string(poemAsset.poem.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
             var noReturn = noPunc.Replace("\n", " ");
             var split = noReturn.Split(' ');
             var words = split.ToList().Where(w => w != string.Empty && w != "" && w != " ");
@@ -81,36 +66,37 @@ public class TTSWriter : OdinSerializedBaseBehaviour
                 var lowerWord = word.ToLower();
 
                 // if not in collection, request clip and add it to the global collection AND the poem asset
-                if (!clipCollection.allClips.ContainsKey(lowerWord))
+                var wordInCollection = clipCollection.allWords.Find(x => x.word == lowerWord);
+                if (wordInCollection == null)
                 {
                     Debug.Log(word + " was not found in the collection, trying to process it.");
 
                     yield return StartCoroutine(RequestAndAddClip(lowerWord));
                 }
 
-                AudioClip clip;
-                if (clipCollection.allClips.TryGetValue(lowerWord, out clip))
+                AudioClip clip = clipCollection.allWords.Find(x => x.word == lowerWord).clip;
+                if (clip != null)
                 {
-                    asset.words.Add(new KeyValuePair<string, AudioClip>(word, clip));
+                    poemAsset.words.Add(new Word(word, clip));
                 }
                 else
                 {
                     Debug.Log("Did not manage to get requested clip for word : " + word);
-                    asset.words.Add(new KeyValuePair<string, AudioClip>(word, null));
+                    poemAsset.words.Add(new Word(word, null));
                 }
             }
 
-            Debug.Log("Finished processing : " + asset.title);
+            Debug.Log("Finished processing : " + poemAsset.title);
 
-            clipCollection.poems.Add(asset);
+            clipCollection.poems.Add(poemAsset);
             EditorUtility.SetDirty(clipCollection);
 
-            AssetDatabase.CreateAsset(asset, "Assets/Resources/Poems/" + asset.title + ".asset");
-            EditorUtility.SetDirty(asset);
+            AssetDatabase.CreateAsset(poemAsset, "Assets/Resources/Poems/" + poemAsset.title + ".asset");
+            EditorUtility.SetDirty(poemAsset);
 
             AssetDatabase.SaveAssets();
             EditorUtility.FocusProjectWindow();
-            Selection.activeObject = asset;
+            Selection.activeObject = poemAsset;
 
             SpeechManager.voiceName = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.VoiceName.frCACaroline : CognitiveServicesTTS.VoiceName.frCHGuillaume;
             SpeechManager.gender = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.Gender.Male : CognitiveServicesTTS.Gender.Female;
@@ -140,6 +126,12 @@ public static class Extensions
         return noApostrphe.Normalize(NormalizationForm.FormC);
     }
 
+    public static void AddUnique<T>(this List<T> list, T element)
+    {
+        if (!list.Contains(element))
+            list.Add(element);
+    }
+
     public static void Play(AudioClip clip)
     {
         if (clip == null)
@@ -154,3 +146,4 @@ public static class Extensions
         GameObject.Destroy(source.gameObject, clip.length);
     }
 }
+#endif

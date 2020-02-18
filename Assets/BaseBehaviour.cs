@@ -29,6 +29,18 @@ public class BaseBehaviour : MonoBehaviour
         }
     }
 
+    private Rigidbody _rigidbody;
+    public Rigidbody Rigidbody
+    {
+        get
+        {
+            if (!_rigidbody)
+                _rigidbody = GetComponent<Rigidbody>();
+
+            return _rigidbody;
+        }
+    }
+
     private Canvas _canvas;
     public Canvas Canvas
     {
@@ -38,6 +50,18 @@ public class BaseBehaviour : MonoBehaviour
                 _canvas = GetComponent<Canvas>();
 
             return _canvas;
+        }
+    }
+
+    private Collider _collider;
+    public Collider Collider
+    {
+        get
+        {
+            if (!_collider)
+                _collider = GetComponent<Collider>();
+
+            return _collider;
         }
     }
 
