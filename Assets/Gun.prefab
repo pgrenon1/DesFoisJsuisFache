@@ -233,6 +233,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0223f390f3384a84594017479e0f421d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  pickupCollider: {fileID: 3397438082404984126}
   poem: {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708, type: 2}
   clipEmptyClip: {fileID: 0}
   bulletPrefab: {fileID: 2765105672506084453, guid: 400fe3fabb509b64783e2c6df7b9ca2d,

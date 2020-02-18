@@ -1,16 +1,15 @@
-﻿using System;
+﻿#if UNITY_EDITOR
+using CognitiveServicesTTS;
+using System;
 using System.Collections;
 using System.Collections.Generic;
-using UnityEngine;
-using CognitiveServicesTTS;
 using System.IO;
-using System.Threading;
 using System.Net;
+using System.Security.Cryptography.X509Certificates;
+using System.Threading;
 using System.Threading.Tasks;
 using UnityEditor;
-#if UNITY_EDITOR || !UNITY_WSA
-using System.Security.Cryptography.X509Certificates;
-#endif
+using UnityEngine;
 
 // IMPORTANT: THIS CODE ONLY WORKS WITH THE .NET 4.6 SCRIPTING RUNTIME
 
@@ -46,6 +45,7 @@ public class SpeechManager : MonoBehaviour
         }
     }
 #endif
+
 
     private void Awake()
     {
@@ -207,7 +207,7 @@ public class SpeechManager : MonoBehaviour
 
         var writer = FindObjectOfType<TTSWriter>();
         var clipCollectionAsset = writer.clipCollection;
-        clipCollectionAsset.allClips.Add(title, clip);
+        clipCollectionAsset.allWords.Add(new Word(title, clip));
         EditorUtility.SetDirty(clipCollectionAsset);
     }
 
@@ -613,5 +613,5 @@ namespace WWUtils.Audio
             return string.Format("[WAV: LeftChannel={0}, RightChannel={1}, ChannelCount={2}, SampleCount={3}, Frequency={4}]", LeftChannel, RightChannel, ChannelCount, SampleCount, Frequency);
         }
     }
-
 }
+#endif
