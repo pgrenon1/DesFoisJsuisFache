@@ -65,8 +65,8 @@ public class WordCollection : OdinSerializedScriptableObject
     {
         foreach (var word in allWords)
         {
-            if (word.texture != null)
-                continue;
+            //if (word.texture != null)
+            //    continue;
 
             var uri = "http://api.img4me.com/?text=" + word.word + "&font=arial&fcolor=000000&size=34&bcolor=&type=png";
 
@@ -103,7 +103,7 @@ public class WordCollection : OdinSerializedScriptableObject
 
                     Texture textureLoaded = (Texture)Resources.Load("Textures/" + word.word, typeof(Texture));
 
-                    word.texture = textureLoaded;
+                    //word.texture = textureLoaded;
 
                     EditorUtility.SetDirty(this);
                 }

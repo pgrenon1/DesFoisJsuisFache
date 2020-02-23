@@ -21,8 +21,413 @@ MonoBehaviour:
     PrefabModificationsReferencedUnityObjects: []
     PrefabModifications: []
     SerializationNodes:
+    - Name: lines
+      Entry: 7
+      Data: 0|System.Collections.Generic.List`1[[Line, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 11
+    - Name: 
+      Entry: 7
+      Data: 1|Line, Assembly-CSharp
     - Name: words
+      Entry: 7
+      Data: 2|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 8
+    - Name: 
       Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 3|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 4|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 5|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 6|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 7|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 8|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 9|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 10|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 7
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 11|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 12|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 13|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 14|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 5
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 15|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 16|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 8
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 17|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 18|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 6
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 19|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 20|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 7
+      Data: 21|Line, Assembly-CSharp
+    - Name: words
+      Entry: 7
+      Data: 22|System.Collections.Generic.List`1[[Word, Assembly-CSharp]], mscorlib
+    - Name: 
+      Entry: 12
+      Data: 4
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 6
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 8
+      Data: 
+    - Name: 
+      Entry: 13
+      Data: 
+    - Name: 
+      Entry: 8
       Data: 
   author: Alain Grandbois
   title: "Pris et prot\xE9g\xE9"
@@ -32,136 +437,4 @@ MonoBehaviour:
     seul et sel\nJe flotte \xE0 la d\xE9rive sur la mer\nJ\u2019entends l\u2019aspiration
     g\xE9ante des dieux noy\xE9s\nJ\u2019\xE9coute les derniers silences\nAu-del\xE0
     des horizons morts"
-  wordsAsWords:
-  - word: Pris
-    clip: {fileID: 8300000, guid: f957b38ef2bd60140a4a632798945a74, type: 3}
-  - word: et
-    clip: {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
-  - word: "prot\xE9g\xE9"
-    clip: {fileID: 8300000, guid: 59debcbbe17c4f14ca1177638449062c, type: 3}
-  - word: et
-    clip: {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
-  - word: "condamn\xE9"
-    clip: {fileID: 8300000, guid: 82a8c93606300f542bb5a871a612ead6, type: 3}
-  - word: par
-    clip: {fileID: 8300000, guid: 3268bc5ab212a2d4ba2be6dfd67c6025, type: 3}
-  - word: la
-    clip: {fileID: 8300000, guid: 1fcc7b7991a72504fa814a4cede84b3c, type: 3}
-  - word: mer
-    clip: {fileID: 8300000, guid: c37ff3e04fc55eb4288fa1cac3ba5aaf, type: 3}
-  - word: Je
-    clip: {fileID: 8300000, guid: 5134809e9d0ad9a4ca7e224b3d87d4c2, type: 3}
-  - word: flotte
-    clip: {fileID: 8300000, guid: f921918cb47f3304d93f7cdf498e4435, type: 3}
-  - word: au
-    clip: {fileID: 8300000, guid: ecbcd713ed40619438d1a55df765765d, type: 3}
-  - word: creux
-    clip: {fileID: 8300000, guid: 29321ba4ae456124ea2bd2ec15e082c6, type: 3}
-  - word: des
-    clip: {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
-  - word: houles
-    clip: {fileID: 8300000, guid: 0bdc4613b12626d45b2a2520f9044414, type: 3}
-  - word: Les
-    clip: {fileID: 8300000, guid: 9d0569c32830d8a46bd84b95a42912cb, type: 3}
-  - word: colonnes
-    clip: {fileID: 8300000, guid: 5fe9fa69321cef5458aed3438982fd86, type: 3}
-  - word: du
-    clip: {fileID: 8300000, guid: 25f4cd8c3ade2934f985d711159700f1, type: 3}
-  - word: ciel
-    clip: {fileID: 8300000, guid: 836818bb573e61b4fb8b8d190bf52cab, type: 3}
-  - word: pressent
-    clip: {fileID: 8300000, guid: f8f298d4e7a1de34582a01f451635a09, type: 3}
-  - word: mes
-    clip: {fileID: 8300000, guid: 215b72e9bd400a349b45ff98ab5a770f, type: 3}
-  - word: "\xE9paules"
-    clip: {fileID: 8300000, guid: b8ffd4207dc5fa1478c25a8a3360da25, type: 3}
-  - word: Mes
-    clip: {fileID: 8300000, guid: 215b72e9bd400a349b45ff98ab5a770f, type: 3}
-  - word: yeux
-    clip: {fileID: 8300000, guid: 30c5094aa1659eb44b532c37cbcdeab7, type: 3}
-  - word: "ferm\xE9s"
-    clip: {fileID: 8300000, guid: c44d7b463de866a4ab9834f41dff9323, type: 3}
-  - word: refusent
-    clip: {fileID: 8300000, guid: e3f268bea2d3ff24ea5adfd6880004c9, type: 3}
-  - word: "l\u2019archange"
-    clip: {fileID: 8300000, guid: fbf10b6d8f1c0264bacf453628b105aa, type: 3}
-  - word: bleu
-    clip: {fileID: 8300000, guid: be13db9fdf348f34893318e702f87fb9, type: 3}
-  - word: Les
-    clip: {fileID: 8300000, guid: 9d0569c32830d8a46bd84b95a42912cb, type: 3}
-  - word: poids
-    clip: {fileID: 8300000, guid: 70eb4a16f9a80234cbefa6a5cc8f3feb, type: 3}
-  - word: des
-    clip: {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
-  - word: profondeurs
-    clip: {fileID: 8300000, guid: 1325986e2c3393e4ea4474b161066622, type: 3}
-  - word: frissonnent
-    clip: {fileID: 8300000, guid: 3e47644734e639342b20895426cc8fca, type: 3}
-  - word: sous
-    clip: {fileID: 8300000, guid: 0a521064357a5f64f9baa0795f9c416c, type: 3}
-  - word: moi
-    clip: {fileID: 8300000, guid: 9ce854c4a6469db44a4597b4d3f0263e, type: 3}
-  - word: Je
-    clip: {fileID: 8300000, guid: 5134809e9d0ad9a4ca7e224b3d87d4c2, type: 3}
-  - word: suis
-    clip: {fileID: 8300000, guid: 7ec9ab066d84cf740b70a0f92c2a609f, type: 3}
-  - word: seul
-    clip: {fileID: 8300000, guid: 0e109cb8cd45369429e6c36c801764f7, type: 3}
-  - word: et
-    clip: {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
-  - word: nu
-    clip: {fileID: 8300000, guid: 357664e4bbffeb140895b884132d236c, type: 3}
-  - word: Je
-    clip: {fileID: 8300000, guid: 5134809e9d0ad9a4ca7e224b3d87d4c2, type: 3}
-  - word: suis
-    clip: {fileID: 8300000, guid: 7ec9ab066d84cf740b70a0f92c2a609f, type: 3}
-  - word: seul
-    clip: {fileID: 8300000, guid: 0e109cb8cd45369429e6c36c801764f7, type: 3}
-  - word: et
-    clip: {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
-  - word: sel
-    clip: {fileID: 8300000, guid: 861aab2b72024524d8800498cf248c75, type: 3}
-  - word: Je
-    clip: {fileID: 8300000, guid: 5134809e9d0ad9a4ca7e224b3d87d4c2, type: 3}
-  - word: flotte
-    clip: {fileID: 8300000, guid: f921918cb47f3304d93f7cdf498e4435, type: 3}
-  - word: "\xE0"
-    clip: {fileID: 8300000, guid: 6e2df7ebfc7f24a49a371e3f66c3486a, type: 3}
-  - word: la
-    clip: {fileID: 8300000, guid: 1fcc7b7991a72504fa814a4cede84b3c, type: 3}
-  - word: "d\xE9rive"
-    clip: {fileID: 8300000, guid: 411f30b1e524da9468594009d6055e43, type: 3}
-  - word: sur
-    clip: {fileID: 8300000, guid: 8ef200cfd26129d48a475dfa6d636326, type: 3}
-  - word: la
-    clip: {fileID: 8300000, guid: 1fcc7b7991a72504fa814a4cede84b3c, type: 3}
-  - word: mer
-    clip: {fileID: 8300000, guid: c37ff3e04fc55eb4288fa1cac3ba5aaf, type: 3}
-  - word: "J\u2019entends"
-    clip: {fileID: 8300000, guid: dd074045821285e4bb6c65edf4b0dc72, type: 3}
-  - word: "l\u2019aspiration"
-    clip: {fileID: 8300000, guid: 5fb7814bf13ed16439c6be0a2c83b394, type: 3}
-  - word: "g\xE9ante"
-    clip: {fileID: 8300000, guid: fe25c681f03507e4daf75befcd8395f9, type: 3}
-  - word: des
-    clip: {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
-  - word: dieux
-    clip: {fileID: 8300000, guid: 3852c2d9581955d498cdc6db218a3de1, type: 3}
-  - word: "noy\xE9s"
-    clip: {fileID: 8300000, guid: 5f491174f57d9e54dbb5985214043bfe, type: 3}
-  - word: "J\u2019\xE9coute"
-    clip: {fileID: 8300000, guid: 9e570e67b2c4bf84aa98f5069065cbe5, type: 3}
-  - word: les
-    clip: {fileID: 8300000, guid: 9d0569c32830d8a46bd84b95a42912cb, type: 3}
-  - word: derniers
-    clip: {fileID: 8300000, guid: fa9c4d414ee35ee47aeb1ac0f7a31d92, type: 3}
-  - word: silences
-    clip: {fileID: 8300000, guid: 5302960e5312ef045a8c5106c2edc25b, type: 3}
-  - word: "Au-del\xE0"
-    clip: {fileID: 8300000, guid: d96e9b24f68217f49bc78d6179e2061f, type: 3}
-  - word: des
-    clip: {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
-  - word: horizons
-    clip: {fileID: 8300000, guid: b71515b40e548404dbfbe37458b922e1, type: 3}
-  - word: morts
-    clip: {fileID: 8300000, guid: e4856555aff1f6641a23c9a409b0f274, type: 3}
+  words: []

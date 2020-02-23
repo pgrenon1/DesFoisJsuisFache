@@ -145,5 +145,24 @@ public static class Extensions
 
         GameObject.Destroy(source.gameObject, clip.length);
     }
+
+    public static List<List<string>> GetTokenizedLines(string poem)
+    {
+        var tokenized = new List<List<string>>();
+
+        var lines = poem.Split('\n');
+
+        foreach (var line in lines)
+        {
+            var noPunc = new string(line.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
+            var noReturn = noPunc.Replace("\n", " ");
+            var split = noReturn.Split(' ');
+            var words = split.Where(w => w != string.Empty && w != "" && w != " ").ToList();
+
+            tokenized.Add(words);
+        }
+
+        return tokenized;
+    }
 }
 #endif
