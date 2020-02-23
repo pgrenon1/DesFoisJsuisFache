@@ -229,9 +229,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2791803057225824063}
-  m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0, y: -0, z: 0}
-  m_LocalScale: {x: 1.1276596, y: 10, z: 1}
+  m_LocalRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
+  m_LocalPosition: {x: 0, y: 0, z: -0}
+  m_LocalScale: {x: 1.0744681, y: 10, z: 1}
   m_Children:
   - {fileID: 2791803056579409054}
   - {fileID: 1205036770}
@@ -262,8 +262,8 @@ MonoBehaviour:
   inclusion: 0
   transformObserver:
     lastPosition: {x: 0, y: 0, z: 0}
-    lastScale: {x: 1.1276596, y: 10, z: 1}
-    lastRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
+    lastScale: {x: 1.0744681, y: 10, z: 1}
+    lastRotation: {x: -0.7071068, y: -0, z: -0, w: 0.7071068}
     transform: {fileID: 2791803057225919263}
   needsDynamicGeometry: 1
   Mask:
@@ -277,7 +277,7 @@ MonoBehaviour:
   skinningQuality: 0
   material: {fileID: 2100000, guid: 4913ab38b3ad123449d5f5e9cdefbcb0, type: 2}
   atlas: {fileID: 11400000, guid: 4ec7216095d3b2241a50358486a7ef6e, type: 2}
-  atlasRegionIndex: 5
+  atlasRegionIndex: 6
   maxDistance: 5
   projectionDistance: 1
   smoothNormals: 0
@@ -357,7 +357,7 @@ MonoBehaviour:
   surfaceRotation: 0
   quality: 0
   sharedMesh: {fileID: 0}
-  instanceID: 17864
+  instanceID: 23464
 --- !u!114 &905482154053956613
 MonoBehaviour:
   m_ObjectHideFlags: 0

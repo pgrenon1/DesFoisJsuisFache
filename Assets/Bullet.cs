@@ -16,15 +16,6 @@ public class Bullet : BaseBehaviour
 
     private bool _isMoving;
 
-    //private void Update()
-    //{
-    //    if (!_isMoving)
-    //        return;
-
-    //    var targetPosition = transform.position + _direction * speed;
-    //    transform.position = targetPosition;
-    //}
-
     private void OnTriggerEnter(Collider other)
     {
         if (!_isMoving)
@@ -42,6 +33,13 @@ public class Bullet : BaseBehaviour
         DecalManager.PersistentDecals.Add(persistentDecal);
 
         _isMoving = false;
+
+        Despawn();
+    }
+
+    private void Despawn()
+    {
+        Destroy(gameObject, 1f);
     }
 
     public void Move(Vector3 direction)
