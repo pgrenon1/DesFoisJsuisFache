@@ -1,0 +1,14 @@
+{
+  "name": "desfoisjsuisfacheserver",
+  "version": "1.0.0",
+  "description": "Server for DesFoisJsuisFache",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Phil",
+  "license": "ISC",
+  "dependencies": {
+    "npm": "^6.13.7"
+  }
+}
