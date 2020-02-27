@@ -24,6 +24,8 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
         }
     }
 
+    public float Alpha { get; set; }
+
     private TextMeshProUGUI _poemText;
     private RectTransform _rectTransform;
     private float _currentAlphaVelocity;
@@ -38,8 +40,9 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 
     private void Update()
     {
-        var alpha = Mathf.SmoothDamp(_canvasGroup.alpha, _poem != null ? 1f : 0f, ref _currentAlphaVelocity, fadeSpeed);
-        _canvasGroup.alpha = alpha;
+        Alpha = Mathf.Max(Alpha - Time.deltaTime * fadeSpeed, 0);
+
+        _canvasGroup.alpha = Alpha;
     }
 
     public void ColorWord(TMP_WordInfo wordInfo, Color color)
@@ -66,7 +69,7 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
         var lineCount = textInfo.lineCount;
         var lineSample = textInfo.lineInfo[0];
         var lineHeight = lineSample.lineHeight;
-        var targetY = lineHeight * selectedLineIndex;
+        var targetY = lineHeight * selectedLineIndex + transform.parent.GetComponent<RectTransform>().rect.height / 4;
 
         _rectTransform.DOLocalMove(new Vector2(0f, targetY), scrollSpeed);
     }
@@ -103,9 +106,12 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 
         ColorWord(currentWordInfo, Color.cyan);
 
+        Alpha = 1f;
+
         var lineIndex = GetLineIndex(currentIndex);
 
         Debug.Log("line: " + lineIndex + " wordIndex = " + currentIndex + " " + currentWordInfo.GetWord());
+
 
         ScrollToLine(lineIndex);
     }

@@ -158,11 +158,15 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
                     return;
                 }
             }
+        }
 
-            if (_gun)
-            {
+        if (!_gun)
+            return;
+
+        if (Input.GetMouseButton(0))
+        {
+            if (_gun.ShotIsReady)
                 Shoot();
-            }
         }
     }
 

@@ -26,8 +26,11 @@ public class WeaponHolder : SingletonMonoBehaviour<WeaponHolder>
 
     private void FixedUpdate()
     {
-        var rot = CrossPlatformInputManager.GetAxis("Mouse X");
+        var yRot = CrossPlatformInputManager.GetAxis("Mouse X");
+        var xRot = CrossPlatformInputManager.GetAxis("Mouse Y");
 
-        weaponPivot.localRotation = Quaternion.Lerp(weaponPivot.localRotation, Quaternion.AngleAxis(-rot * rotationScale, Vector3.up), Time.deltaTime * turnReturnRate);
+        weaponPivot.localRotation = Quaternion.Lerp(weaponPivot.localRotation,
+            Quaternion.AngleAxis(-yRot * rotationScale, Vector3.up) *
+            Quaternion.AngleAxis(-xRot * rotationScale, Vector3.right), Time.deltaTime * turnReturnRate);
     }
 }

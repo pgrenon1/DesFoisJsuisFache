@@ -13,12 +13,39 @@ public class Gun : BaseBehaviour
     public Bullet bulletPrefab;
     [Space]
     public float spreadPerShot = 0.5f;
+    public float rateOfFire = 2f;
+
+    private float _mainTimer = 0f;
+    private float _paddingTimer = 0f;
+
+    public bool ShotIsReady
+    {
+        get
+        {
+            return _mainTimer <= 0f;
+        }
+    }
 
     public void Equip()
     {
         PoemHUD.Instance.Poem = poem;
 
         FirstPersonController.Instance.StartCoroutine(FirstPersonController.Instance.RefreshAtEndOfFrame());
+
+        _mainTimer = 1f;
+    }
+
+    private void Update()
+    {
+        UpdateMainTimer();
+    }
+
+    private void UpdateMainTimer()
+    {
+        if (_mainTimer <= 0f)
+            return;
+
+        _mainTimer -= Time.deltaTime * rateOfFire;
     }
 
     public void Shoot(int index)
@@ -30,6 +57,9 @@ public class Gun : BaseBehaviour
         bullet.gameObject.SetActive(true);
         bullet.Move(Camera.main.transform.forward);
 
+        PoemHUD.Instance.Alpha += 0.2f;
+
         Crosshair.Instance.TargetSpreadValue += spreadPerShot;
+        _mainTimer = 1f;
     }
 }

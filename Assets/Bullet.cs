@@ -24,13 +24,14 @@ public class Bullet : BaseBehaviour
         var direction = Rigidbody.velocity.normalized;
         var contactPoint = Collider.ClosestPointOnBounds(other.transform.position);
         var decalPosition = contactPoint - direction * distance;
-        var rotation = Quaternion.LookRotation(direction);
+        var decalRotation = Quaternion.LookRotation(direction);
 
-        var persistentDecal = Instantiate(decalPrefab, decalPosition, rotation);
-        persistentDecal.Word = Word.word;
-        var index = persistentDecal.Decal.Atlas.Regions.FindIndex(x => x.Name == Word.word.ToLower());
-        persistentDecal.Decal.AtlasRegionIndex = index;
-        DecalManager.PersistentDecals.Add(persistentDecal);
+        var decal = Instantiate(decalPrefab, decalPosition, decalRotation, GameManager.Instance.decalParent);
+        decal.Word = Word.word;
+        var index = decal.Decal.Atlas.Regions.FindIndex(x => x.Name == Word.word.ToLower());
+        decal.Decal.AtlasRegionIndex = index;
+
+        DecalManager.Instance.RuntimeDecalData.Add(new DecalData(decalPosition, decalRotation, decal.Word));
 
         _isMoving = false;
 

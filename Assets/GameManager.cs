@@ -7,6 +7,7 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 {
     public WordCollection wordCollection;
     public FirstPersonController firstPersonControllerPrefab;
+    public Transform decalParent;
 
     private void Start()
     {
