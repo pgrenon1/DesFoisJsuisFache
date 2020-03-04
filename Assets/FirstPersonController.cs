@@ -102,7 +102,14 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
         UpdateClick();
 
+        UpdateRightClick();
+
         UpdateScroll();
+    }
+
+    private void UpdateRightClick()
+    {
+
     }
 
     private void UpdateScroll()
@@ -173,6 +180,12 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private void Shoot()
     {
         _gun.Shoot(_currentIndexInt);
+
+        if (_gun.bumpIndexOnShoot)
+        {
+            _currentIndexInt += _gun.bulletsPerShot;
+            ChangeSelection();
+        }
 
         _cameraShake.shakeDuration = .05f;
     }
@@ -336,8 +349,10 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private void GetInput(out float speed)
     {
         // Read input
-        float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
-        float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+        //float horizontal = CrossPlatformInputManager.GetAxis("Horizontal");
+        //float vertical = CrossPlatformInputManager.GetAxis("Vertical");
+        float horizontal = 0f;
+        float vertical = Input.GetMouseButton(1) ? 1 : 0;
 
         bool waswalking = m_IsWalking;
 

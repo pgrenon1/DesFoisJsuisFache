@@ -43,13 +43,13 @@ public class Bullet : BaseBehaviour
         Destroy(gameObject, 1f);
     }
 
-    public void Move(Vector3 direction)
+    public void Move()
     {
         AudioSource.Play();
 
-        transform.rotation.SetLookRotation(direction);
+        transform.rotation.SetLookRotation(transform.forward);
 
-        Rigidbody.AddForce(direction * speed);
+        Rigidbody.AddForce(transform.forward * speed);
 
         _isMoving = true;
     }

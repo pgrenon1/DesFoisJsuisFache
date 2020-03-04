@@ -11,12 +11,20 @@ public class Gun : BaseBehaviour
     public Poem poem;
     public AudioSource emptySound;
     public Bullet bulletPrefab;
+    public Transform bulletOrigin;
     [Space]
-    public float spreadPerShot = 0.5f;
+    public bool bumpIndexOnShoot = false;
+    public int bulletsPerShot = 1;
     public float rateOfFire = 2f;
+    public float spreadPerShot = 0.5f;
+    public float spreadReturnRate = 5f;
+    public AnimationCurve spreadReturnCurve;
+
+    public float TargetSpreadValue { get; set; } = 0f;
 
     private float _mainTimer = 0f;
     private float _paddingTimer = 0f;
+    private Animator _crosshairAnimator;
 
     public bool ShotIsReady
     {
@@ -33,11 +41,27 @@ public class Gun : BaseBehaviour
         FirstPersonController.Instance.StartCoroutine(FirstPersonController.Instance.RefreshAtEndOfFrame());
 
         _mainTimer = 1f;
+
+        _crosshairAnimator = Crosshair.Instance.GetComponent<Animator>();
     }
 
     private void Update()
     {
         UpdateMainTimer();
+
+        UpdateSpread();
+    }
+
+    private void UpdateSpread()
+    {
+        if (!_crosshairAnimator)
+            return;
+
+        TargetSpreadValue -= Time.deltaTime * spreadReturnRate * spreadReturnCurve.Evaluate(TargetSpreadValue);
+
+        TargetSpreadValue = Mathf.Clamp01(TargetSpreadValue);
+
+        _crosshairAnimator.SetFloat("Spread", TargetSpreadValue);
     }
 
     private void UpdateMainTimer()
@@ -50,16 +74,26 @@ public class Gun : BaseBehaviour
 
     public void Shoot(int index)
     {
-        var bullet = Instantiate(bulletPrefab, Camera.main.transform.position, Quaternion.identity, transform);
-        bullet.Word = poem.words[index];
-        bullet.AudioSource.clip = bullet.Word.clip;
-        bullet.transform.parent = null;
-        bullet.gameObject.SetActive(true);
-        bullet.Move(Camera.main.transform.forward);
+        for (int i = 0; i < bulletsPerShot; i++)
+        {
+            var rotation = Quaternion.LookRotation(Camera.main.transform.forward, Camera.main.transform.up);
 
-        PoemHUD.Instance.Alpha += 0.2f;
+            if (bulletsPerShot > 1)
+            {
+                rotation.x = rotation.x + UnityEngine.Random.Range(-1f, 1f) * 0.07f;
+                rotation.y = rotation.y + UnityEngine.Random.Range(-1f, 1f) * 0.07f;
+                rotation.z = rotation.z + UnityEngine.Random.Range(-1f, 1f) * 0.07f;
+            }
 
-        Crosshair.Instance.TargetSpreadValue += spreadPerShot;
+            var bullet = Instantiate(bulletPrefab, bulletOrigin.position, rotation, transform);
+            bullet.Word = poem.words[index];
+            bullet.AudioSource.clip = bullet.Word.clip;
+            bullet.transform.parent = null;
+            bullet.Move();
+        }
+
         _mainTimer = 1f;
+        TargetSpreadValue += spreadPerShot;
+        PoemHUD.Instance.Alpha += 0.2f;
     }
 }

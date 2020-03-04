@@ -31,6 +31,6 @@ public class WeaponHolder : SingletonMonoBehaviour<WeaponHolder>
 
         weaponPivot.localRotation = Quaternion.Lerp(weaponPivot.localRotation,
             Quaternion.AngleAxis(-yRot * rotationScale, Vector3.up) *
-            Quaternion.AngleAxis(-xRot * rotationScale, Vector3.right), Time.deltaTime * turnReturnRate);
+            Quaternion.AngleAxis(xRot * rotationScale, Vector3.right), Time.deltaTime * turnReturnRate);
     }
 }
