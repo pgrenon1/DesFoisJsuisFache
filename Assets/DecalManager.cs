@@ -35,9 +35,9 @@ public class DecalManager : SingletonMonoBehaviour<DecalManager>
     [Button("SaveToJSON", ButtonSizes.Gigantic)]
     public void SaveToJson()
     {
-        //var collection = new DecalCollection(RuntimeDecalData);
+        var collectionObject = new DecalCollection(RuntimeDecalData);
 
-        var jsonString = JsonHelper.ToJson(RuntimeDecalData.ToArray(), usePrettyPrint);
+        var jsonString = JsonHelper.ToJson(collectionObject.decalCollection.ToArray(), usePrettyPrint);
 
         Debug.Log(jsonString);
     }

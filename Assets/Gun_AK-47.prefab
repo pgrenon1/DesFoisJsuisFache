@@ -218,13 +218,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   pickupCollider: {fileID: 3871884415733124064}
-  poem: {fileID: 11400000, guid: ace8c08f56f8a3041896f6028f75ae23, type: 2}
+  poem: {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708, type: 2}
   emptySound: {fileID: 0}
   bulletPrefab: {fileID: 2765105672506084453, guid: 400fe3fabb509b64783e2c6df7b9ca2d,
     type: 3}
   bulletOrigin: {fileID: 7910966790980897505}
+  bumpIndexOnShoot: 1
   bulletsPerShot: 1
-  rateOfFire: 1
+  rateOfFire: 5
   spreadPerShot: 0.5
   spreadReturnRate: 5
   spreadReturnCurve:

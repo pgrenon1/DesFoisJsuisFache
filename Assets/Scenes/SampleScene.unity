@@ -1802,31 +1802,6 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 4890432921137926005, guid: 6dd71398da63c8b41916c2fae90ddc25,
-        type: 3}
-      propertyPath: text
-      value: 
-      objectReference: {fileID: 1277293134}
-    - target: {fileID: 4843696765933255182, guid: 6dd71398da63c8b41916c2fae90ddc25,
-        type: 3}
-      propertyPath: m_IsActive
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542351446830870733, guid: 6dd71398da63c8b41916c2fae90ddc25,
-        type: 3}
-      propertyPath: m_LocalScale.x
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542351446830870733, guid: 6dd71398da63c8b41916c2fae90ddc25,
-        type: 3}
-      propertyPath: m_LocalScale.y
-      value: 1
-      objectReference: {fileID: 0}
-    - target: {fileID: 1542351446830870733, guid: 6dd71398da63c8b41916c2fae90ddc25,
-        type: 3}
-      propertyPath: m_LocalScale.z
-      value: 1
-      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 6dd71398da63c8b41916c2fae90ddc25, type: 3}
 --- !u!1 &1730738623
@@ -2338,17 +2313,6 @@ PrefabInstance:
         type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 6432234728317493675, guid: 941ad46c67bad64409a6713e4892b5ae,
-        type: 3}
-      propertyPath: poem
-      value: 
-      objectReference: {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708,
-        type: 2}
-    - target: {fileID: 6432234728317493675, guid: 941ad46c67bad64409a6713e4892b5ae,
-        type: 3}
-      propertyPath: rateOfFire
-      value: 5
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 941ad46c67bad64409a6713e4892b5ae, type: 3}
