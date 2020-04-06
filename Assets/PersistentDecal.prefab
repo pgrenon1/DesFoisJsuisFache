@@ -214,7 +214,6 @@ GameObject:
   m_Component:
   - component: {fileID: 2791803057225919263}
   - component: {fileID: 2791803057219240669}
-  - component: {fileID: 905482154053956613}
   m_Layer: 0
   m_Name: Decal
   m_TagString: Untagged
@@ -285,7 +284,7 @@ MonoBehaviour:
   normalSmoothThreshold: 0
   resolution: 1
   multiMeshEnabled: 0
-  cullInvisible: 0
+  cullInvisible: 1
   cullUnreachable: 0
   showVertices: 0
   showDir: 1
@@ -357,19 +356,7 @@ MonoBehaviour:
   surfaceRotation: 0
   quality: 0
   sharedMesh: {fileID: 0}
-  instanceID: 23464
---- !u!114 &905482154053956613
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 2791803057225824063}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9f6acb14f5a839e4cb1fd87c71809ed1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
+  instanceID: 56324
 --- !u!1 &4253424561550662658
 GameObject:
   m_ObjectHideFlags: 0

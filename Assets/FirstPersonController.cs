@@ -29,6 +29,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
     [Space]
     public bool equipGunOnStart = false;
+    public float selectionTime = 0.2f;
 
     private WeaponHolder _weaponHolder;
     private Camera m_Camera;
@@ -50,8 +51,30 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private Gun _gun;
     private int _previousIndexInt;
     private int _currentIndexInt;
+    private int CurrentIndexInt
+    {
+        get
+        {
+            return _currentIndexInt;
+        }
+        set
+        {
+            if (_currentIndexInt != value)
+            {
+                _currentIndexInt = value;
+
+                if (_currentIndexInt < 0)
+                    _currentIndexInt = _gun.poem.words.Count - 1;
+                else if (_currentIndexInt > _gun.poem.words.Count - 1)
+                    _currentIndexInt = 0;
+
+                ChangeSelection();
+            }
+        }
+    }
     private float _selectionChangeThreshold = 0f;
     private CameraShake _cameraShake;
+    private float _selectionTimer;
 
     // Use this for initialization
     private void Start()
@@ -113,23 +136,18 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
         var scrollValue = Input.GetAxis("Mouse ScrollWheel");
         _selectionChangeThreshold += scrollValue;
 
-        if (_selectionChangeThreshold > 1f)
+        if ((_selectionChangeThreshold > 1f || Input.GetKey(KeyCode.E)) && _selectionTimer < 0f)
         {
-            _currentIndexInt++;
-
-            if (_currentIndexInt > _gun.poem.words.Count - 1)
-                _currentIndexInt = 0;
-
-            ChangeSelection();
+            CurrentIndexInt++;
         }
-        else if (_selectionChangeThreshold < -1f)
+        else if ((_selectionChangeThreshold < -1f || Input.GetKey(KeyCode.Q)) && _selectionTimer <= 0f)
         {
-            _currentIndexInt--;
+            CurrentIndexInt--;
+        }
 
-            if (_currentIndexInt < 0)
-                _currentIndexInt = _gun.poem.words.Count - 1;
-
-            ChangeSelection();
+        if (_selectionTimer > 0f)
+        {
+            _selectionTimer -= Time.deltaTime;
         }
     }
 
@@ -141,6 +159,8 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
         _previousIndexInt = _currentIndexInt;
 
         _selectionChangeThreshold = 0;
+
+        _selectionTimer = selectionTime;
     }
 
     private void UpdateClick()
@@ -177,16 +197,13 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     {
         if (_gun != null)
         {
-            _gun.transform.parent = null;
-            _gun.transform.position = gun.transform.position;
-            _gun.pickupCollider.gameObject.SetActive(true);
+            _gun.Unequip(gun.transform.position);
         }
 
         gun.transform.parent = _weaponHolder.transform;
         gun.transform.localPosition = Vector3.zero;
         gun.transform.parent = _weaponHolder.weaponPivot;
         gun.transform.localRotation = Quaternion.identity;
-        gun.pickupCollider.gameObject.SetActive(false);
         gun.Equip();
 
         _currentIndexInt = 0;

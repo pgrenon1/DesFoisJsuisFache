@@ -7,18 +7,31 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Gun : BaseBehaviour
 {
-    public Collider pickupCollider;
     public Poem poem;
     public AudioSource emptySound;
     public Bullet bulletPrefab;
     [Space]
     public float spreadPerShot = 0.5f;
+    public GameObject pickupVisuals;
+    public GameObject equipedVisuals;
 
     public void Equip()
     {
         PoemHUD.Instance.Poem = poem;
 
         FirstPersonController.Instance.StartCoroutine(FirstPersonController.Instance.RefreshAtEndOfFrame());
+
+        pickupVisuals.SetActive(false);
+        equipedVisuals.SetActive(true);
+    }
+
+    public void Unequip(Vector3 position)
+    {
+        transform.parent = null;
+        transform.position = position;
+
+        pickupVisuals.SetActive(true);
+        equipedVisuals.SetActive(false);
     }
 
     public void Shoot(int index)
