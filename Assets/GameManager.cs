@@ -10,6 +10,6 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
 
     private void Start()
     {
-        Instantiate(firstPersonControllerPrefab, Vector3.zero, Quaternion.identity, null);
+        Instantiate(firstPersonControllerPrefab, transform.position, Quaternion.identity, null);
     }
 }
