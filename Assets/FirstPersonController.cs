@@ -29,7 +29,8 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
     [Space]
     public bool equipGunOnStart = false;
-    public float selectionTime = 0.2f;
+    public float smallStepTime = 0.1f;
+    public float bigStepTime = 0.5f;
 
     private WeaponHolder _weaponHolder;
     private Camera m_Camera;
@@ -46,7 +47,9 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private bool m_Jumping;
     private AudioSource m_AudioSource;
 
-
+    private bool _isScrollKeyDown;
+    private float _lastStep;
+    private float _stepTime;
     private Camera _mainCamera;
     private int _previousIndexInt;
     private int _currentIndexInt;
@@ -136,21 +139,55 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
             return;
 
         var scrollValue = Input.GetAxis("Mouse ScrollWheel");
-        _selectionChangeThreshold += scrollValue;
 
-        if ((_selectionChangeThreshold > 1f || Input.GetKey(KeyCode.E)) && _selectionTimer < 0f)
+        var indexDelta = 0;
+
+        if (Input.GetKey(KeyCode.E))
+            indexDelta = 1;
+        else if (Input.GetKey(KeyCode.Q))
+            indexDelta = -1;
+        else if (Input.GetKeyUp(KeyCode.E) || Input.GetKeyUp(KeyCode.Q))
+            _stepTime = 0f;
+
+        if (scrollValue > 0f)
         {
-            CurrentIndexInt++;
+            indexDelta = 1;
+            _stepTime = smallStepTime;
         }
-        else if ((_selectionChangeThreshold < -1f || Input.GetKey(KeyCode.Q)) && _selectionTimer <= 0f)
+        else if (scrollValue < 0f)
         {
-            CurrentIndexInt--;
+            indexDelta = -1;
+            _stepTime = smallStepTime;
         }
 
-        if (_selectionTimer > 0f)
+        if (indexDelta != 0)
         {
-            _selectionTimer -= Time.deltaTime;
+            if (Time.time - _lastStep > _stepTime)
+            {
+                _lastStep = Time.time;
+                _stepTime = _isScrollKeyDown ? smallStepTime : bigStepTime;
+                _isScrollKeyDown = true;
+                CurrentIndexInt += indexDelta;
+            }
         }
+        else
+        {
+            _isScrollKeyDown = false;
+        }
+
+        //if ((_selectionChangeThreshold > 1f || Input.GetKey(KeyCode.E)) && _selectionTimer < 0f)
+        //{
+        //    CurrentIndexInt++;
+        //}
+        //else if ((_selectionChangeThreshold < -1f || Input.GetKey(KeyCode.Q)) && _selectionTimer <= 0f)
+        //{
+        //    CurrentIndexInt--;
+        //}
+
+        //if (_selectionTimer > 0f)
+        //{
+        //    _selectionTimer -= Time.deltaTime;
+        //}
     }
 
     private void ChangeSelection()
@@ -160,9 +197,9 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
         _previousIndexInt = CurrentIndexInt;
 
-        _selectionChangeThreshold = 0;
+        //_selectionChangeThreshold = 0;
 
-        _selectionTimer = selectionTime;
+        //_selectionTimer = selectionTime;
     }
 
     private void UpdateClick()

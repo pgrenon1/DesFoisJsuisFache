@@ -51,6 +51,9 @@ MonoBehaviour:
   decalDistance: 1
   decalPrefab: {fileID: 2897290126214123794, guid: 78759a49b58aee74ab7c055f0ec3c454,
     type: 3}
+  layerMask:
+    serializedVersion: 2
+    m_Bits: 1
 --- !u!135 &2765105672506084455
 SphereCollider:
   m_ObjectHideFlags: 0

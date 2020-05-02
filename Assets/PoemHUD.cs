@@ -7,6 +7,7 @@ using UnityEngine;
 
 public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 {
+    public TextMeshProUGUI poemText;
     public float scrollSpeed = 1f;
     public float fadeSpeed = 1f;
 
@@ -20,19 +21,17 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
         set
         {
             _poem = value;
-            _poemText.SetText(_poem.poem);
+            poemText.SetText(_poem.poem);
         }
     }
 
-    private TextMeshProUGUI _poemText;
     private RectTransform _rectTransform;
     private float _currentAlphaVelocity;
     private CanvasGroup _canvasGroup;
 
     private void Start()
     {
-        _poemText = GetComponent<TextMeshProUGUI>();
-        _rectTransform = transform as RectTransform;
+        _rectTransform = poemText.transform as RectTransform;
         _canvasGroup = GetComponent<CanvasGroup>();
     }
 
@@ -48,27 +47,27 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
         for (int i = 0; i < wordInfo.characterCount; ++i)
         {
             int charIndex = wordInfo.firstCharacterIndex + i;
-            int meshIndex = _poemText.textInfo.characterInfo[charIndex].materialReferenceIndex;
-            int vertexIndex = _poemText.textInfo.characterInfo[charIndex].vertexIndex;
+            int meshIndex = poemText.textInfo.characterInfo[charIndex].materialReferenceIndex;
+            int vertexIndex = poemText.textInfo.characterInfo[charIndex].vertexIndex;
 
-            Color32[] vertexColors = _poemText.textInfo.meshInfo[meshIndex].colors32;
+            Color32[] vertexColors = poemText.textInfo.meshInfo[meshIndex].colors32;
             vertexColors[vertexIndex + 0] = color;
             vertexColors[vertexIndex + 1] = color;
             vertexColors[vertexIndex + 2] = color;
             vertexColors[vertexIndex + 3] = color;
         }
-        _poemText.UpdateVertexData(TMP_VertexDataUpdateFlags.All);
+        poemText.UpdateVertexData(TMP_VertexDataUpdateFlags.All);
     }
 
     private void ScrollToLine(int selectedLineIndex)
     {
-        var textInfo = _poemText.textInfo;
+        var textInfo = poemText.textInfo;
         var lineCount = textInfo.lineCount;
         var lineSample = textInfo.lineInfo[0];
         var lineHeight = lineSample.lineHeight;
         var targetY = lineHeight * selectedLineIndex;
 
-        _rectTransform.DOLocalMove(new Vector2(0f, targetY), scrollSpeed);
+        _rectTransform.DOLocalMoveY(targetY, scrollSpeed);
     }
 
     private int GetLineIndex(int currentIndexInt)
@@ -90,7 +89,7 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 
     public void Deselect(int previousIndex)
     {
-        var textInfo = _poemText.textInfo;
+        var textInfo = poemText.textInfo;
         var previousWordInfo = textInfo.wordInfo[previousIndex];
 
         ColorWord(previousWordInfo, Color.white);
@@ -98,14 +97,14 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 
     public void Select(int currentIndex)
     {
-        var textInfo = _poemText.textInfo;
+        var textInfo = poemText.textInfo;
         var currentWordInfo = textInfo.wordInfo[currentIndex];
 
         ColorWord(currentWordInfo, Color.cyan);
 
         var lineIndex = GetLineIndex(currentIndex);
 
-        Debug.Log("line: " + lineIndex + " wordIndex = " + currentIndex + " " + currentWordInfo.GetWord());
+        //Debug.Log("line: " + lineIndex + " wordIndex = " + currentIndex + " " + currentWordInfo.GetWord());
 
         ScrollToLine(lineIndex);
     }
