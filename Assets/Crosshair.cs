@@ -2,26 +2,32 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class Crosshair : SingletonMonoBehaviour<Crosshair>
+public class Crosshair : BaseBehaviour
 {
-    public float returnRate = 1f;
-    public AnimationCurve returnCurve;
+    private FirstPersonController _fpsController;
 
-    public float TargetSpreadValue { get; set; } = 0f;
-
-    private Animator _animator;
+    private Gun CurrentGun
+    {
+        get
+        {
+            return _fpsController.Gun;
+        }
+    }
 
     private void Start()
     {
-        _animator = GetComponent<Animator>();
+        _fpsController = FindObjectOfType<FirstPersonController>();
     }
 
     private void Update()
     {
-        TargetSpreadValue -= Time.deltaTime * returnRate * returnCurve.Evaluate(TargetSpreadValue);
+        float targetSpread = 0f;
 
-        TargetSpreadValue = Mathf.Clamp01(TargetSpreadValue);
+        if (CurrentGun)
+            targetSpread = CurrentGun.CurrentSpreadValue;
 
-        _animator.SetFloat("Spread", TargetSpreadValue);
+        Animator.SetFloat("Spread", targetSpread);
     }
+
+
 }

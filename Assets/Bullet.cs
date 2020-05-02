@@ -8,13 +8,17 @@ using UnityEngine;
 [RequireComponent(typeof(AudioSource))]
 public class Bullet : BaseBehaviour
 {
-    public float speed = 1f;
-    public float distance = 1f;
+    public float decalDistance = 1f;
     public PersistentDecal decalPrefab;
 
     public Word Word { get; set; }
 
     private bool _isMoving;
+
+    private void Start()
+    {
+        Despawn();
+    }
 
     private void OnTriggerEnter(Collider other)
     {
@@ -23,7 +27,7 @@ public class Bullet : BaseBehaviour
 
         var direction = Rigidbody.velocity.normalized;
         var contactPoint = Collider.ClosestPointOnBounds(other.transform.position);
-        var decalPosition = contactPoint - direction * distance;
+        var decalPosition = contactPoint - direction * decalDistance;
         var rotation = Quaternion.LookRotation(direction);
 
         var persistentDecal = Instantiate(decalPrefab, decalPosition, rotation);
@@ -31,10 +35,11 @@ public class Bullet : BaseBehaviour
         var index = persistentDecal.Decal.Atlas.Regions.FindIndex(x => x.Name == Word.word.ToLower());
         persistentDecal.Decal.AtlasRegionIndex = index;
         DecalManager.PersistentDecals.Add(persistentDecal);
+        persistentDecal.Decal.LateBake();
+
+        Debug.Log(DecalManager.PersistentDecals.Count);
 
         _isMoving = false;
-
-        Despawn();
     }
 
     private void Despawn()
@@ -42,7 +47,7 @@ public class Bullet : BaseBehaviour
         Destroy(gameObject, 1f);
     }
 
-    public void Move(Vector3 direction)
+    public virtual void Move(Vector3 direction, float speed)
     {
         AudioSource.Play();
 
