@@ -77,6 +77,18 @@ public class BaseBehaviour : MonoBehaviour
         }
     }
 
+    private Animator _animator;
+    public Animator Animator
+    {
+        get
+        {
+            if (!_animator)
+                _animator = GetComponent<Animator>();
+
+            return _animator;
+        }
+    }
+
     private Camera _camera;
     public Camera Camera
     {

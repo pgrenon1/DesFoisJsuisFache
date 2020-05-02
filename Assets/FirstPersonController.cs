@@ -48,9 +48,11 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
 
     private Camera _mainCamera;
-    private Gun _gun;
     private int _previousIndexInt;
     private int _currentIndexInt;
+
+    public Gun Gun { get; set; }
+
     private int CurrentIndexInt
     {
         get
@@ -64,8 +66,8 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
                 _currentIndexInt = value;
 
                 if (_currentIndexInt < 0)
-                    _currentIndexInt = _gun.poem.words.Count - 1;
-                else if (_currentIndexInt > _gun.poem.words.Count - 1)
+                    _currentIndexInt = Gun.poem.words.Count - 1;
+                else if (_currentIndexInt > Gun.poem.words.Count - 1)
                     _currentIndexInt = 0;
 
                 ChangeSelection();
@@ -130,7 +132,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
     private void UpdateScroll()
     {
-        if (!_gun)
+        if (!Gun)
             return;
 
         var scrollValue = Input.GetAxis("Mouse ScrollWheel");
@@ -153,10 +155,10 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
     private void ChangeSelection()
     {
-        PoemHUD.Instance.Select(_currentIndexInt);
+        PoemHUD.Instance.Select(CurrentIndexInt);
         PoemHUD.Instance.Deselect(_previousIndexInt);
 
-        _previousIndexInt = _currentIndexInt;
+        _previousIndexInt = CurrentIndexInt;
 
         _selectionChangeThreshold = 0;
 
@@ -165,7 +167,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
     private void UpdateClick()
     {
-        if (Input.GetMouseButtonDown(0))
+        if (Input.GetMouseButton(0))
         {
             RaycastHit hitInfo;
             var forward = _mainCamera.transform.forward;
@@ -179,25 +181,33 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
                 }
             }
 
-            if (_gun)
+            if (Gun && Gun.IsROFReady)
             {
                 Shoot();
+            }
+        }
+
+        if (Input.GetMouseButtonUp(0))
+        {
+            if (Gun)
+            {
+                Gun.HasReleasedTrigger = true;
             }
         }
     }
 
     private void Shoot()
     {
-        _gun.Shoot(_currentIndexInt);
+        Gun.Shoot(_currentIndexInt);
 
         _cameraShake.shakeDuration = .05f;
     }
 
     private void Equip(Gun gun)
     {
-        if (_gun != null)
+        if (Gun != null)
         {
-            _gun.Unequip(gun.transform.position);
+            Gun.Unequip(gun.transform.position);
         }
 
         gun.transform.parent = _weaponHolder.transform;
@@ -208,7 +218,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
         _currentIndexInt = 0;
 
-        _gun = gun;
+        Gun = gun;
     }
 
     public IEnumerator RefreshAtEndOfFrame()
@@ -220,7 +230,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
     public void StepGun()
     {
-        if (!_gun)
+        if (!Gun)
             return;
 
         _weaponHolder.Step();
