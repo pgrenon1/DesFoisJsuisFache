@@ -37,7 +37,7 @@ public class TTSWriter : OdinSerializedBaseBehaviour
         var jsonString = Resources.Load<TextAsset>(fileName);
         var data = JsonUtility.FromJson<PoemDataCollection>(jsonString.text);
 
-        //StartCoroutine(CreateAssets(data));
+        StartCoroutine(CreateAssets(data));
     }
 
     private IEnumerator CreateAssets(PoemDataCollection data)
@@ -74,7 +74,19 @@ public class TTSWriter : OdinSerializedBaseBehaviour
                     yield return StartCoroutine(RequestAndAddClip(lowerWord));
                 }
 
-                AudioClip clip = clipCollection.allWords.Find(x => x.word == lowerWord).clip;
+                AudioClip clip = null;
+                foreach (var wordData in clipCollection.allWords)
+                {
+                    if (wordData != null && wordData.word != null)
+                    {
+                        if (wordData.word == lowerWord)
+                        {
+                            clip = wordData.clip;
+                            break;
+                        }
+                    }
+                }
+
                 if (clip != null)
                 {
                     poemAsset.words.Add(new Word(word, clip));
@@ -97,9 +109,6 @@ public class TTSWriter : OdinSerializedBaseBehaviour
             AssetDatabase.SaveAssets();
             EditorUtility.FocusProjectWindow();
             Selection.activeObject = poemAsset;
-
-            SpeechManager.voiceName = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.VoiceName.frCACaroline : CognitiveServicesTTS.VoiceName.frCHGuillaume;
-            SpeechManager.gender = SpeechManager.voiceName == CognitiveServicesTTS.VoiceName.frCHGuillaume ? CognitiveServicesTTS.Gender.Male : CognitiveServicesTTS.Gender.Female;
         }
     }
 
@@ -107,62 +116,62 @@ public class TTSWriter : OdinSerializedBaseBehaviour
     {
         Debug.Log("Processing word: " + word);
 
-        _speechManager.GetSpeech(word);
+        _speechManager.SpeakWithRESTAPI(word);
 
         yield return new WaitForSeconds(5);
     }
 }
 
-public static class Extensions
-{
-    public static string RemoveDiacritics(this string text)
-    {
-        if (string.IsNullOrWhiteSpace(text))
-            return text;
+//public static class Extensions
+//{
+//    public static string RemoveDiacritics(this string text)
+//    {
+//        if (string.IsNullOrWhiteSpace(text))
+//            return text;
 
-        text = text.Normalize(NormalizationForm.FormD);
-        var chars = text.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray();
-        var noApostrphe = new string(chars).ToString().Replace("'", "");
-        return noApostrphe.Normalize(NormalizationForm.FormC);
-    }
+//        text = text.Normalize(NormalizationForm.FormD);
+//        var chars = text.Where(c => CharUnicodeInfo.GetUnicodeCategory(c) != UnicodeCategory.NonSpacingMark).ToArray();
+//        var noApostrphe = new string(chars).ToString().Replace("'", "");
+//        return noApostrphe.Normalize(NormalizationForm.FormC);
+//    }
 
-    public static void AddUnique<T>(this List<T> list, T element)
-    {
-        if (!list.Contains(element))
-            list.Add(element);
-    }
+//    public static void AddUnique<T>(this List<T> list, T element)
+//    {
+//        if (!list.Contains(element))
+//            list.Add(element);
+//    }
 
-    public static void Play(AudioClip clip)
-    {
-        if (clip == null)
-            return;
+//    public static void Play(AudioClip clip)
+//    {
+//        if (clip == null)
+//            return;
 
-        Debug.Log("Playing " + clip);
+//        Debug.Log("Playing " + clip);
 
-        var source = new GameObject().AddComponent<AudioSource>();
+//        var source = new GameObject().AddComponent<AudioSource>();
 
-        source.PlayOneShot(clip);
+//        source.PlayOneShot(clip);
 
-        GameObject.Destroy(source.gameObject, clip.length);
-    }
+//        GameObject.Destroy(source.gameObject, clip.length);
+//    }
 
-    public static List<List<string>> GetTokenizedLines(string poem)
-    {
-        var tokenized = new List<List<string>>();
+//    public static List<List<string>> GetTokenizedLines(string poem)
+//    {
+//        var tokenized = new List<List<string>>();
 
-        var lines = poem.Split('\n');
+//        var lines = poem.Split('\n');
 
-        foreach (var line in lines)
-        {
-            var noPunc = new string(line.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
-            var noReturn = noPunc.Replace("\n", " ");
-            var split = noReturn.Split(' ');
-            var words = split.Where(w => w != string.Empty && w != "" && w != " ").ToList();
+//        foreach (var line in lines)
+//        {
+//            var noPunc = new string(line.Where(c => c == '-' || c == '\'' || c == '’' || !char.IsPunctuation(c)).ToArray());
+//            var noReturn = noPunc.Replace("\n", " ");
+//            var split = noReturn.Split(' ');
+//            var words = split.Where(w => w != string.Empty && w != "" && w != " ").ToList();
 
-            tokenized.Add(words);
-        }
+//            tokenized.Add(words);
+//        }
 
-        return tokenized;
-    }
-}
+//        return tokenized;
+//    }
+//}
 #endif
