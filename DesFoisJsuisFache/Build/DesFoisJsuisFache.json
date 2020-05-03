@@ -1,0 +1,17 @@
+{
+"companyName": "DefaultCompany",
+"productName": "DesFoisJsuisFache",
+"productVersion": "0.1",
+"dataUrl": "DesFoisJsuisFache.data.unityweb",
+"wasmCodeUrl": "DesFoisJsuisFache.wasm.code.unityweb",
+"wasmFrameworkUrl": "DesFoisJsuisFache.wasm.framework.unityweb",
+"graphicsAPI": ["WebGL 2.0","WebGL 1.0"],
+"webglContextAttributes": {"preserveDrawingBuffer": false},
+"backgroundUrl": "DesFoisJsuisFache.jpg",
+"splashScreenStyle": "Dark",
+"backgroundColor": "#FFFFFF",
+"cacheControl": {"default": "must-revalidate"},
+"developmentBuild": false,
+"multithreading": false,
+"unityVersion": "2019.3.7f1"
+}

@@ -24,888 +24,608 @@ MonoBehaviour:
   allWords:
   - word: a
     clip: {fileID: 8300000, guid: d02dfddfc5342a2489931bbce435481a, type: 3}
-    texture: {fileID: 2800000, guid: 815242209dc971e4ababf6a844ce3cc5, type: 3}
   - word: "\xE0"
     clip: {fileID: 8300000, guid: 6e2df7ebfc7f24a49a371e3f66c3486a, type: 3}
-    texture: {fileID: 2800000, guid: 5f19f021f161765489d21affa6a3f58d, type: 3}
   - word: affaiblissant
     clip: {fileID: 8300000, guid: 0961e0e511e7c1b439f70860698e58c6, type: 3}
-    texture: {fileID: 2800000, guid: 417dcfc55dd08e3448ca3f0a24164a25, type: 3}
   - word: affreuse
     clip: {fileID: 8300000, guid: 3af03faab9025f04180778e130ca2927, type: 3}
-    texture: {fileID: 2800000, guid: 416125d21397f874293c0d6456b4585b, type: 3}
   - word: afin
     clip: {fileID: 8300000, guid: a70a0e0f0b1c86f42afb3109d8ec79e9, type: 3}
-    texture: {fileID: 2800000, guid: deb77332453c3464bba07aef85b6dbe9, type: 3}
   - word: ah
     clip: {fileID: 8300000, guid: 32ac50fd79588944fa9546ba829a433e, type: 3}
-    texture: {fileID: 2800000, guid: 64b40fd6b9026194f84ccf834811747b, type: 3}
   - word: "aim\xE9"
     clip: {fileID: 8300000, guid: b7c0cc1980011b240a4d8ecfe3ca6640, type: 3}
-    texture: {fileID: 2800000, guid: 9acb99b52aca10f4a8954052516f76a3, type: 3}
   - word: "all\xE9s"
     clip: {fileID: 8300000, guid: 7024d90452e711441a34158ac80be2c5, type: 3}
-    texture: {fileID: 2800000, guid: af299fde4bd33194fa8b478387e8bf5a, type: 3}
   - word: "\xE2me"
     clip: {fileID: 8300000, guid: 8548196591e25df4cbc3e73acdfa400f, type: 3}
-    texture: {fileID: 2800000, guid: 8ea6fe3079cbbd041a965d8b46c05149, type: 3}
   - word: "am\xE8re"
     clip: {fileID: 8300000, guid: b7c7a60ba98089240862c43dd1d20313, type: 3}
-    texture: {fileID: 2800000, guid: 37e072091afb3904eb4c4929194f2e68, type: 3}
   - word: angoisses
     clip: {fileID: 8300000, guid: 08cd47ccfed93944fa4b15859fe6b6a3, type: 3}
-    texture: {fileID: 2800000, guid: d2bbb987f61cf8744912098d7484c5a2, type: 3}
   - word: apaise
     clip: {fileID: 8300000, guid: 27ba9410f4664bf4fb649a3792425e97, type: 3}
-    texture: {fileID: 2800000, guid: 79dbf925a8ccaae478e1710f63fe3840, type: 3}
   - word: armes
     clip: {fileID: 8300000, guid: 96603f4699bb3ec4994ec1f2bb221ed5, type: 3}
-    texture: {fileID: 2800000, guid: 61df31d5fa14bef44b898ea4d116f777, type: 3}
   - word: attitude
     clip: {fileID: 8300000, guid: 482bb334b0c817f4ea05bc9c9d8a6408, type: 3}
-    texture: {fileID: 2800000, guid: e297e80c945b09a49868baa6ce0c1c80, type: 3}
   - word: au
     clip: {fileID: 8300000, guid: ecbcd713ed40619438d1a55df765765d, type: 3}
-    texture: {fileID: 2800000, guid: b7c287321ca78654fb57ccbad1703b35, type: 3}
   - word: "au-del\xE0"
     clip: {fileID: 8300000, guid: d96e9b24f68217f49bc78d6179e2061f, type: 3}
-    texture: {fileID: 2800000, guid: 1729dc3e81ae3294fad24a0eedb5b785, type: 3}
   - word: avalanche
     clip: {fileID: 8300000, guid: 48660b11acfcc67459738ac14ebedc43, type: 3}
-    texture: {fileID: 2800000, guid: 0d536be975d64114599c678b90560158, type: 3}
   - word: avec
     clip: {fileID: 8300000, guid: 593ca021724bbec408c41d60d50402c5, type: 3}
-    texture: {fileID: 2800000, guid: ded2de57811f7104d887aeac2fb218fd, type: 3}
   - word: baiser
     clip: {fileID: 8300000, guid: dc194c32e78a5994d8238cd9519bc443, type: 3}
-    texture: {fileID: 2800000, guid: 08915a8b6dda25040bcca8f982210464, type: 3}
   - word: besoin
     clip: {fileID: 8300000, guid: 7cbf1ecb76497104583e6d14c6e70c4a, type: 3}
-    texture: {fileID: 2800000, guid: 3f6f9d61205ed8a40a18506bd8e26237, type: 3}
   - word: "bient\xF4t"
     clip: {fileID: 8300000, guid: 1de4e843e9b585a42bab337e41650046, type: 3}
-    texture: {fileID: 2800000, guid: b16a67e7a28910f41b77d9234b4cac97, type: 3}
   - word: "bless\xE9"
     clip: {fileID: 8300000, guid: 52d9d259020cc3e4f98259105af5fbbd, type: 3}
-    texture: {fileID: 2800000, guid: bfe4dc702e7ad704fb52cc96336ef8b6, type: 3}
   - word: bleu
     clip: {fileID: 8300000, guid: be13db9fdf348f34893318e702f87fb9, type: 3}
-    texture: {fileID: 2800000, guid: fb6dbf0b42420e2419bb4c236aa5beda, type: 3}
   - word: blonds
     clip: {fileID: 8300000, guid: 88615aaf0285cdf4f938ad9235f4605f, type: 3}
-    texture: {fileID: 2800000, guid: 44b9aede1c60df1499dcf77c18588843, type: 3}
   - word: bois
     clip: {fileID: 8300000, guid: 8d7bb34315ecfe84c979a8aecf3ce55e, type: 3}
-    texture: {fileID: 2800000, guid: 141a6d096809d2744bb25b9cf658c4e2, type: 3}
   - word: branches
     clip: {fileID: 8300000, guid: 7b3b49c7a06de5545aed54cc9728badb, type: 3}
-    texture: {fileID: 2800000, guid: f20d783c344d75546bb8ecda8422f629, type: 3}
   - word: "br\xE8ve"
     clip: {fileID: 8300000, guid: 2c3b47c3327edbc49a989b5016289d38, type: 3}
-    texture: {fileID: 2800000, guid: bc0d6519b538bc343826238fc4ace6e4, type: 3}
   - word: "c\u2019est"
     clip: {fileID: 8300000, guid: 98d6e07d664698d46b1d6beb00893f3b, type: 3}
-    texture: {fileID: 2800000, guid: db5ec3700a11719438bcf4c078acc046, type: 3}
   - word: "c\xE2ble"
     clip: {fileID: 8300000, guid: 2af3ab59fd4242440aed163b789d5069, type: 3}
-    texture: {fileID: 2800000, guid: 92ebf2593ee389a4d932e60acb388e9d, type: 3}
   - word: "car\xE8ne"
     clip: {fileID: 8300000, guid: 8da90cf9f42f4f14a914e737c3fa074c, type: 3}
-    texture: {fileID: 2800000, guid: fa58a2d41b1fb51489b614ee6d566753, type: 3}
   - word: caresse
     clip: {fileID: 8300000, guid: 0d5f571eebe152745a02b6845572fd7e, type: 3}
-    texture: {fileID: 2800000, guid: 4e0942d4deba91647a3c2818e45fbb7b, type: 3}
   - word: "cass\xE9"
     clip: {fileID: 8300000, guid: 7f824fb7b3141524c8abe26a606cf02b, type: 3}
-    texture: {fileID: 2800000, guid: 88c3bb0c37d050244b4011227f6470db, type: 3}
   - word: ce
     clip: {fileID: 8300000, guid: cd8c9c0c7e2f3ca4795c9da39c0a0b75, type: 3}
-    texture: {fileID: 2800000, guid: 4cb5ae3fbd911ec4da3db41e896e7cad, type: 3}
   - word: "celle-l\xE0"
     clip: {fileID: 8300000, guid: 8bcb7f0d863ee05429bd06a75cba6fd5, type: 3}
-    texture: {fileID: 2800000, guid: c9bd4a369f5f4284c9bbf1ec4e12ac91, type: 3}
   - word: cercueil
     clip: {fileID: 8300000, guid: ecc7d20df204c824da1ebeeec7c94722, type: 3}
-    texture: {fileID: 2800000, guid: 9c9a5e2d40c9b304a8e1ff02e1133abc, type: 3}
   - word: cette
     clip: {fileID: 8300000, guid: f57495dc497df6f49b710d10be660165, type: 3}
-    texture: {fileID: 2800000, guid: 159948c8082283a45a6ede3696e9b81b, type: 3}
   - word: chairs
     clip: {fileID: 8300000, guid: 69ffcb0c00879694eaa6f4d22b376d4c, type: 3}
-    texture: {fileID: 2800000, guid: 9c3202a0a9d181e4d96327cfb2c2945d, type: 3}
   - word: chanson
     clip: {fileID: 8300000, guid: 2a6946fa7ed5d31499d90ff6f6f09560, type: 3}
-    texture: {fileID: 2800000, guid: a0fbf1e8330be9148852423b7e68052e, type: 3}
   - word: chantait
     clip: {fileID: 8300000, guid: 048b4f38233b0144ca9132dd8aa81be4, type: 3}
-    texture: {fileID: 2800000, guid: 7203026036d63464dbf9c88d8464b5ce, type: 3}
   - word: cheveux
     clip: {fileID: 8300000, guid: 7deb84bb705afb943a7f64ecdb4c420d, type: 3}
-    texture: {fileID: 2800000, guid: 244db0f7b2eef08418389f9405f1be09, type: 3}
   - word: choses
     clip: {fileID: 8300000, guid: 1ec9e058e6a2e5942a6a0d7ad44d4787, type: 3}
-    texture: {fileID: 2800000, guid: 060229371bf493042b3b13743ef0513c, type: 3}
   - word: ciel
     clip: {fileID: 8300000, guid: 836818bb573e61b4fb8b8d190bf52cab, type: 3}
-    texture: {fileID: 2800000, guid: 74dfc186877c0a94e8b5ab0478e41ff6, type: 3}
   - word: ciels
     clip: {fileID: 8300000, guid: 9120ca86bbd658b4596c966cad74987b, type: 3}
-    texture: {fileID: 2800000, guid: 21a7026a379c65846bdc59b56a25e689, type: 3}
   - word: "c\u0153ur"
     clip: {fileID: 8300000, guid: ce278be7aeabb9940b37cde09facc855, type: 3}
-    texture: {fileID: 2800000, guid: 32695619ebd455347bfa1060c942488d, type: 3}
   - word: colonnes
     clip: {fileID: 8300000, guid: 5fe9fa69321cef5458aed3438982fd86, type: 3}
-    texture: {fileID: 2800000, guid: 980348a9226ce1b4e900afa89877792c, type: 3}
   - word: comme
     clip: {fileID: 8300000, guid: 7d17f33748e281c46ae79810b986398a, type: 3}
-    texture: {fileID: 2800000, guid: 8d4c733474f5ca643a0294aec995fc03, type: 3}
   - word: compagnon
     clip: {fileID: 8300000, guid: cf6a38694ae83bb45bb46b4bddf0f0ba, type: 3}
-    texture: {fileID: 2800000, guid: ad8f01b75f91c254fa4af30cf0c24b8c, type: 3}
   - word: "condamn\xE9"
     clip: {fileID: 8300000, guid: 82a8c93606300f542bb5a871a612ead6, type: 3}
-    texture: {fileID: 2800000, guid: 68cea1ce3ae9417438c600b0caafed5c, type: 3}
   - word: consolatrice
     clip: {fileID: 8300000, guid: 5a0c702da107d884883397c1c4b722df, type: 3}
-    texture: {fileID: 2800000, guid: b190b5e023e299d4ca93fb549204e319, type: 3}
   - word: consumer
     clip: {fileID: 8300000, guid: a80585f094df04b48b67815bb27c6a96, type: 3}
-    texture: {fileID: 2800000, guid: de81ef9fb14201b4ba7ffcea1431fdbc, type: 3}
   - word: creux
     clip: {fileID: 8300000, guid: 29321ba4ae456124ea2bd2ec15e082c6, type: 3}
-    texture: {fileID: 2800000, guid: 93f648f33592dec46abc2e8d0760149b, type: 3}
   - word: cris
     clip: {fileID: 8300000, guid: 50a3f46a453990c498ac33c4fef93d9f, type: 3}
-    texture: {fileID: 2800000, guid: c9cb63ae21d7e9249969057305c47309, type: 3}
   - word: cruel
     clip: {fileID: 8300000, guid: 557411f23f2906c47b55f636acc10a24, type: 3}
-    texture: {fileID: 2800000, guid: 68fa275dffe27774d809c6e74950e86f, type: 3}
   - word: cyprine
     clip: {fileID: 8300000, guid: bb3eb573ad124a24aa189884bc59506c, type: 3}
-    texture: {fileID: 2800000, guid: 8c971b04a59734245a58add6149466e3, type: 3}
   - word: "d\u2019amour"
     clip: {fileID: 8300000, guid: aee2b61d2eaa4b04797e77587ea80fed, type: 3}
-    texture: {fileID: 2800000, guid: ffe1b564cbe70674387722e4076e39ef, type: 3}
   - word: "d\u2019or"
     clip: {fileID: 8300000, guid: 01848ccb008d53342bd81375eaecd5e1, type: 3}
-    texture: {fileID: 2800000, guid: d90ceb4242ae9b44ab640bc718932991, type: 3}
   - word: "d\u2019o\xF9"
     clip: {fileID: 8300000, guid: cafe78e7d1f546f4cb67302db748b15b, type: 3}
-    texture: {fileID: 2800000, guid: 193bf2a78a469374ba887e6a28f09f79, type: 3}
   - word: "d\u2019une"
     clip: {fileID: 8300000, guid: e35d4e691c65f634a83f755f7062047d, type: 3}
-    texture: {fileID: 2800000, guid: 57291903ed4b36244b2e746ca1c061a0, type: 3}
   - word: dans
     clip: {fileID: 8300000, guid: 0e7a52c98e659af44a3c325eb34fa026, type: 3}
-    texture: {fileID: 2800000, guid: 768b0af199f23b54a887084ea0c410c8, type: 3}
   - word: de
     clip: {fileID: 8300000, guid: 24c0b777b602e6840ba9a84e3674c1f6, type: 3}
-    texture: {fileID: 2800000, guid: 6c90eb4770c648246a8adcd57d67f04d, type: 3}
   - word: "d\xE9go\xFBt"
     clip: {fileID: 8300000, guid: 82f54eced56612b4eab074acbe09f59c, type: 3}
-    texture: {fileID: 2800000, guid: 74bb2db7c65772649a09ce4be44591e4, type: 3}
   - word: "d\xE9livres"
     clip: {fileID: 8300000, guid: dde5ab6f05d3df14abc54fb66f5f949a, type: 3}
-    texture: {fileID: 2800000, guid: 1a76a1f92006d7142975bd74d4f1cc3f, type: 3}
   - word: "d\xE9rive"
     clip: {fileID: 8300000, guid: 411f30b1e524da9468594009d6055e43, type: 3}
-    texture: {fileID: 2800000, guid: 6f6785772ecd62941aa87e4dfe6ad5b2, type: 3}
   - word: derniers
     clip: {fileID: 8300000, guid: fa9c4d414ee35ee47aeb1ac0f7a31d92, type: 3}
-    texture: {fileID: 2800000, guid: e224d667951ece64cb2c06606636d60d, type: 3}
   - word: des
     clip: {fileID: 8300000, guid: 84e06d8d51f0cdf4ba1ad2cde25a9b48, type: 3}
-    texture: {fileID: 2800000, guid: a0ec5f7b2a9d491439d831863b35765b, type: 3}
   - word: descend
     clip: {fileID: 8300000, guid: bd6dac742e72f5a4690de345ff9dba2e, type: 3}
-    texture: {fileID: 2800000, guid: 64b2b9f201fdcdb4da7ed1bdba483a8b, type: 3}
   - word: "d\xE9sert\xE9"
     clip: {fileID: 8300000, guid: e715766d4ae796347b07d68445bbde33, type: 3}
-    texture: {fileID: 2800000, guid: f186a71d6a6f35b438a95d83d33eaf38, type: 3}
   - word: "d\xE9tresse"
     clip: {fileID: 8300000, guid: f99d4a815a7c2614cae14b7c5120d3e4, type: 3}
-    texture: {fileID: 2800000, guid: 134c2f2146789e645949775ebbcb639d, type: 3}
   - word: devenu
     clip: {fileID: 8300000, guid: efc89dbee7139404e9cb5083bb819837, type: 3}
-    texture: {fileID: 2800000, guid: e20c257b1aba9cc4d85886ba44fc2ac2, type: 3}
   - word: diaphanes
     clip: {fileID: 8300000, guid: 3a2ee9b351aaff8418b68a7d9540682e, type: 3}
-    texture: {fileID: 2800000, guid: 3e4f5c16f0ca5094fa23fc8e96a3ebce, type: 3}
   - word: dieux
     clip: {fileID: 8300000, guid: 3852c2d9581955d498cdc6db218a3de1, type: 3}
-    texture: {fileID: 2800000, guid: 199c906151bcd1c46887f7214820356d, type: 3}
   - word: dirige
     clip: {fileID: 8300000, guid: ae04a6be1af55014aa466032b89e248a, type: 3}
-    texture: {fileID: 2800000, guid: 56eac62b34ca3284e82128de9d7b8b8c, type: 3}
   - word: "disput\xE9s"
     clip: {fileID: 8300000, guid: 58a9563e00a832646b87ed4ddcc4a5d9, type: 3}
-    texture: {fileID: 2800000, guid: 9ee1df7c633fd1947b85130936a1ecaf, type: 3}
   - word: dissipent
     clip: {fileID: 8300000, guid: f619c0d7d5536d9489f1017289f97d43, type: 3}
-    texture: {fileID: 2800000, guid: 52cc38a96dbbf4b4094ea15efb65cc1b, type: 3}
   - word: doigts
     clip: {fileID: 8300000, guid: a5663160da983de42bca07b1afd460b6, type: 3}
-    texture: {fileID: 2800000, guid: 7e00f33f7fbde64459afc212a5ed8fb5, type: 3}
   - word: dont
     clip: {fileID: 8300000, guid: 6ab4c6a30d7acfc4da144b19b4b85488, type: 3}
-    texture: {fileID: 2800000, guid: c3107bc69c8fa7b4a87f18a56aeae2da, type: 3}
   - word: dos
     clip: {fileID: 8300000, guid: 94de6720052901f42b82d40a7e7f050a, type: 3}
-    texture: {fileID: 2800000, guid: d9bdb3a3095e7d34989e3ebf358e99c5, type: 3}
   - word: doucement
     clip: {fileID: 8300000, guid: e8ba36d407eb00942ad55bf206a4ad31, type: 3}
-    texture: {fileID: 2800000, guid: 7a298f7fe3e98594cb8fb96f360d659a, type: 3}
   - word: douleur
     clip: {fileID: 8300000, guid: 4ec433d1ff8039049af9c6b61080e676, type: 3}
-    texture: {fileID: 2800000, guid: 41d115de67c2cbd4abe48a42e30eb690, type: 3}
   - word: doute
     clip: {fileID: 8300000, guid: 3f9283023ae0f834eaff27e79487239c, type: 3}
-    texture: {fileID: 2800000, guid: 10fc07eaf35ca464194321ccea748d5f, type: 3}
   - word: du
     clip: {fileID: 8300000, guid: 25f4cd8c3ade2934f985d711159700f1, type: 3}
-    texture: {fileID: 2800000, guid: 6e2d3bb7c9be4064293ebece94d02e3d, type: 3}
   - word: "\xE9clats"
     clip: {fileID: 8300000, guid: 01f4af7b20b8e6e488b6463a1b664c1e, type: 3}
-    texture: {fileID: 2800000, guid: ce5be3c131b1ed148bf518f2c48391bd, type: 3}
   - word: "\xE9cras\xE9"
     clip: {fileID: 8300000, guid: ceba31f4020b2de47bf7abe55e99c566, type: 3}
-    texture: {fileID: 2800000, guid: b65e8c4aa8ae49349ae3c6a118147152, type: 3}
   - word: "\xE9cueil"
     clip: {fileID: 8300000, guid: 324924c6e7c6ae24580e6adb65828dac, type: 3}
-    texture: {fileID: 2800000, guid: 6ab5fceea0fed8a4c8b002e97ac5182d, type: 3}
   - word: en
     clip: {fileID: 8300000, guid: f668a082a3d3e18489ccdae113a1b849, type: 3}
-    texture: {fileID: 2800000, guid: df3cd09091a835c4db0394e05c678080, type: 3}
   - word: endormir
     clip: {fileID: 8300000, guid: 7d8b713053a4aff458f46dcaee8a0c23, type: 3}
-    texture: {fileID: 2800000, guid: c0c5c47972b3d9944914dc7eddbde163, type: 3}
   - word: enfin
     clip: {fileID: 8300000, guid: 2ea73accd55b2704490a9bfb59e9d083, type: 3}
-    texture: {fileID: 2800000, guid: 92b7e239df51dbc428f9ee42da4d7eb9, type: 3}
   - word: "enti\xE8re"
     clip: {fileID: 8300000, guid: 6d140c15d536d9045988fe30430a6449, type: 3}
-    texture: {fileID: 2800000, guid: bcc03cd63f02cd640b05fecf4e517aea, type: 3}
   - word: entre
     clip: {fileID: 8300000, guid: bb4b6412db373fe4096f7ee2dce9d958, type: 3}
-    texture: {fileID: 2800000, guid: 3ebe3de3ba0b8a647af57da01a3e048d, type: 3}
   - word: "\xE9pars"
     clip: {fileID: 8300000, guid: e77003be6ddb11f479b03b0f65a19a36, type: 3}
-    texture: {fileID: 2800000, guid: c2faf6170c357ae4a881594b11f0e93d, type: 3}
   - word: "\xE9paules"
     clip: {fileID: 8300000, guid: b8ffd4207dc5fa1478c25a8a3360da25, type: 3}
-    texture: {fileID: 2800000, guid: 11dc13af3d84d584faeb4701ac0d3a46, type: 3}
   - word: "\xE9prouvait"
     clip: {fileID: 8300000, guid: 998fb3f20a8f0e84992bf5c4bc460f78, type: 3}
-    texture: {fileID: 2800000, guid: a2975811e50850c40a36bbf317b0ad3d, type: 3}
   - word: espoir
     clip: {fileID: 8300000, guid: 5684267718a76f84eb9ef1dda07fe07b, type: 3}
-    texture: {fileID: 2800000, guid: 3253823452e31134d91ec9a6c4ee774f, type: 3}
   - word: espoirs
     clip: {fileID: 8300000, guid: f1c412c0fbd743d46a431cc7df998f1f, type: 3}
-    texture: {fileID: 2800000, guid: f7c9d241d4059f347b1b55f02b03dea1, type: 3}
   - word: est
     clip: {fileID: 8300000, guid: 0b5d6816d954e074a989b885ea00dbeb, type: 3}
-    texture: {fileID: 2800000, guid: f0d98b80c4d66844186cfe65503c2418, type: 3}
   - word: et
     clip: {fileID: 8300000, guid: fd9a301a10d18e64db5ad2f13a604ef4, type: 3}
-    texture: {fileID: 2800000, guid: 92bff2054aa1fb84e959b938b61f0714, type: 3}
   - word: "\xE9tangs"
     clip: {fileID: 8300000, guid: 7076bf8f41c37804c806fd9fc1f4dcd0, type: 3}
-    texture: {fileID: 2800000, guid: 1f821522532d6844f837bb1cbd973a41, type: 3}
   - word: eux
     clip: {fileID: 8300000, guid: d80daac890015054aac3e3c04d861873, type: 3}
-    texture: {fileID: 2800000, guid: 667e7f15957913c49bf12864fb21dd81, type: 3}
   - word: excessif
     clip: {fileID: 8300000, guid: e5022a4bbfbb164438f0d5bb2990f375, type: 3}
-    texture: {fileID: 2800000, guid: 6fbfe5f5262f1c64caff7a7cbcbd525c, type: 3}
   - word: faut-il
     clip: {fileID: 8300000, guid: b261af8ce5455dd40849708e77f114d2, type: 3}
-    texture: {fileID: 2800000, guid: 7c48d2494f4c02b4799d6c93cb802f84, type: 3}
   - word: "ferm\xE9s"
     clip: {fileID: 8300000, guid: c44d7b463de866a4ab9834f41dff9323, type: 3}
-    texture: {fileID: 2800000, guid: f91e8581ce0e81648836dc50b1579b6e, type: 3}
   - word: "f\xE9vrier"
     clip: {fileID: 8300000, guid: 2ba31a29a0c75c9448d0f0f815c37fc6, type: 3}
-    texture: {fileID: 2800000, guid: 5c4b91c41b4ba29499e39bda569acb67, type: 3}
   - word: "fi\xE8re"
     clip: {fileID: 8300000, guid: 1c3b5d77cd8b8964b885615142bffda6, type: 3}
-    texture: {fileID: 2800000, guid: c58c32f295e8b4b45bfd93fee08a1875, type: 3}
   - word: fil
     clip: {fileID: 8300000, guid: 730c980e5fde69b4a80ed593cf1d0a9c, type: 3}
-    texture: {fileID: 2800000, guid: 9a7c338541f09564485c7b1e9b2eb3f0, type: 3}
   - word: flancs
     clip: {fileID: 8300000, guid: 8f2cacf1c370f094cac12336f1bd37a6, type: 3}
-    texture: {fileID: 2800000, guid: dc1cc336b3a95d54bab4564e751b90f9, type: 3}
   - word: flotte
     clip: {fileID: 8300000, guid: f921918cb47f3304d93f7cdf498e4435, type: 3}
-    texture: {fileID: 2800000, guid: 4346a133e9467ad47b8a2f931c146d15, type: 3}
   - word: folles
     clip: {fileID: 8300000, guid: 4282d08e7214c0e4b832ce44dd1807a7, type: 3}
-    texture: {fileID: 2800000, guid: 7373d96f9f6e53140b38e21ea4377793, type: 3}
   - word: fort
     clip: {fileID: 8300000, guid: db54fac454d045c43b49269d83bf3599, type: 3}
-    texture: {fileID: 2800000, guid: 037e5858bd43d8f41ad96c4964937f0b, type: 3}
   - word: frapper
     clip: {fileID: 8300000, guid: 3124980331799f54f9517d35784aa606, type: 3}
-    texture: {fileID: 2800000, guid: 7b12c6e52492eb64c91dfc46c3caba78, type: 3}
   - word: frisson
     clip: {fileID: 8300000, guid: 2917f8a40df026e4382f0ac81f116ac1, type: 3}
-    texture: {fileID: 2800000, guid: 3d1f5bbec633f314c8e543ad3900d525, type: 3}
   - word: frissonnent
     clip: {fileID: 8300000, guid: 3e47644734e639342b20895426cc8fca, type: 3}
-    texture: {fileID: 2800000, guid: 01c0a052dcec3444bbeef96e90fd8134, type: 3}
   - word: front
     clip: {fileID: 8300000, guid: e0ea9182498853a498864b812bb8b011, type: 3}
-    texture: {fileID: 2800000, guid: 5e7d298a5ffb9214b9bdabf1688ee9d7, type: 3}
   - word: fut
     clip: {fileID: 8300000, guid: a554fe6f0002f0b4b98c713be2f67158, type: 3}
-    texture: {fileID: 2800000, guid: e02a02fcc2ccaa94b8ff6d0769a4d147, type: 3}
   - word: garder
     clip: {fileID: 8300000, guid: 94284e20fb0219743abb385b1c049e30, type: 3}
-    texture: {fileID: 2800000, guid: a732170478cec05419656f85646d4d67, type: 3}
   - word: "g\xE9ante"
     clip: {fileID: 8300000, guid: fe25c681f03507e4daf75befcd8395f9, type: 3}
-    texture: {fileID: 2800000, guid: 50c563c0db7485043930ba9f830a3174, type: 3}
   - word: "gel\xE9s"
     clip: {fileID: 8300000, guid: 666fa241536e5b94997542716b974f66, type: 3}
-    texture: {fileID: 2800000, guid: 6a2c7dd41542e6e43832075775317ff3, type: 3}
   - word: "gen\xE9vrier"
     clip: {fileID: 8300000, guid: ec93382e425ed2d4182079b4f699f3e3, type: 3}
-    texture: {fileID: 2800000, guid: b80984b70426ee0458c05d6aba8d6d68, type: 3}
   - word: gisent
     clip: {fileID: 8300000, guid: 32508c35f40646c47a4204402e6d64d7, type: 3}
-    texture: {fileID: 2800000, guid: 7d3d994a32abb0e4b9855cd75a94097c, type: 3}
   - word: givre
     clip: {fileID: 8300000, guid: e2fb614d510145d44917b9766c8379e0, type: 3}
-    texture: {fileID: 2800000, guid: d57f3e8ad77ab7944888e30d5417521b, type: 3}
   - word: gouffre
     clip: {fileID: 8300000, guid: ea45c06695f5a0846886604ffbf88150, type: 3}
-    texture: {fileID: 2800000, guid: 42d02959740a77a4f84d224325431dcd, type: 3}
   - word: grand
     clip: {fileID: 8300000, guid: c60cd781360ad3247867c5ac0f3ea447, type: 3}
-    texture: {fileID: 2800000, guid: 0607bdb8f89ecc948bcf9f0790fa0f11, type: 3}
   - word: grave
     clip: {fileID: 8300000, guid: 6267eb19ff65b114ab1d3415955daf7e, type: 3}
-    texture: {fileID: 2800000, guid: 0c73accfaddc28849af2c66e5441ac91, type: 3}
   - word: "gu\xE9rir"
     clip: {fileID: 8300000, guid: 0ddafa2da6d26cc429f009202da1b96e, type: 3}
-    texture: {fileID: 2800000, guid: e43cf700540cc9841bd0bc1fe079c55f, type: 3}
   - word: haine
     clip: {fileID: 8300000, guid: 967e9ea3f7da3574da0806f274e3c587, type: 3}
-    texture: {fileID: 2800000, guid: 91860bab6891a02498c8a0ec367e8f11, type: 3}
   - word: "h\xE9las"
     clip: {fileID: 8300000, guid: 759638593f702464291254259a144d7c, type: 3}
-    texture: {fileID: 2800000, guid: c23f70d6ddc380a40b5b32e75e8fe073, type: 3}
   - word: horizons
     clip: {fileID: 8300000, guid: b71515b40e548404dbfbe37458b922e1, type: 3}
-    texture: {fileID: 2800000, guid: e3cf5b97665b977489d6278864f00e41, type: 3}
   - word: horrible
     clip: {fileID: 8300000, guid: ad3f7066267eb054f8b2ebb0d455b711, type: 3}
-    texture: {fileID: 2800000, guid: 9feb377627a96aa4884eb694d36b8181, type: 3}
   - word: houles
     clip: {fileID: 8300000, guid: 0bdc4613b12626d45b2a2520f9044414, type: 3}
-    texture: {fileID: 2800000, guid: eeb683f5724e6df458b52c2755520198, type: 3}
   - word: il
     clip: {fileID: 8300000, guid: da3ce72d045ef0345918449b3f88b87d, type: 3}
-    texture: {fileID: 2800000, guid: 35d84ebbc68a1514987e170916e08466, type: 3}
   - word: immuable
     clip: {fileID: 8300000, guid: 04c51e5e3505c344b95be6a281972b62, type: 3}
-    texture: {fileID: 2800000, guid: a724d929c8a4f8541abd4d4140b4fc8f, type: 3}
   - word: inclina
     clip: {fileID: 8300000, guid: 9ac68d78a0840264699edec2721d5b5f, type: 3}
-    texture: {fileID: 2800000, guid: e8dcf06d439b9324f85dcf0feb37dcaa, type: 3}
   - word: inconnues
     clip: {fileID: 8300000, guid: d842e8f005c5ab945a363942701cba3b, type: 3}
-    texture: {fileID: 2800000, guid: 6018ddd08af500141a68c36ab0343868, type: 3}
   - word: "j\u2019ai"
     clip: {fileID: 8300000, guid: a3380110785810945a56013fbf98f31f, type: 3}
-    texture: {fileID: 2800000, guid: c9cc105a493bc504ebbc93905dfeca03, type: 3}
   - word: "j\u2019\xE9coute"
     clip: {fileID: 8300000, guid: 9e570e67b2c4bf84aa98f5069065cbe5, type: 3}
-    texture: {fileID: 2800000, guid: 5e453667bd7c1fa4dad9d0b8a503b01c, type: 3}
   - word: "j\u2019entends"
     clip: {fileID: 8300000, guid: dd074045821285e4bb6c65edf4b0dc72, type: 3}
-    texture: {fileID: 2800000, guid: 317b3a41694c69d4d82ecf32dbdeafc2, type: 3}
   - word: jamais
     clip: {fileID: 8300000, guid: b879c035a59fc1e4397a7d6731dca041, type: 3}
-    texture: {fileID: 2800000, guid: e6ae641204c1cc348beafb0b75276a6b, type: 3}
   - word: jardin
     clip: {fileID: 8300000, guid: 4bb47159fcff7ea439d3dea1fd21aba9, type: 3}
-    texture: {fileID: 2800000, guid: bc607b9c1ff0c144d949e499aad75be2, type: 3}
   - word: je
     clip: {fileID: 8300000, guid: 5134809e9d0ad9a4ca7e224b3d87d4c2, type: 3}
-    texture: {fileID: 2800000, guid: 81897208d563e844abb165cd7fc54ee3, type: 3}
   - word: jour
     clip: {fileID: 8300000, guid: ef0ec699aa3deb34088a59e78d9baf87, type: 3}
-    texture: {fileID: 2800000, guid: 3c1faf55903c1f44b942bb83da443954, type: 3}
   - word: "l\u2019ab\xEEme"
     clip: {fileID: 8300000, guid: bf3e89ffa46043a46b78bfa4f8f645f2, type: 3}
-    texture: {fileID: 2800000, guid: cfc2a4f823d200b4fb0acfc1279e385e, type: 3}
   - word: "l\u2019\xE2me"
     clip: {fileID: 8300000, guid: 828bc3350a574204884347190de694bc, type: 3}
-    texture: {fileID: 2800000, guid: 926d87cb0a50eae489f6adfdf290d89c, type: 3}
   - word: "l\u2019amour"
     clip: {fileID: 8300000, guid: 445592770499fac44af38fd64683add7, type: 3}
-    texture: {fileID: 2800000, guid: 30178c6804716bb48bdb65dd84adc3b5, type: 3}
   - word: "l\u2019archange"
     clip: {fileID: 8300000, guid: fbf10b6d8f1c0264bacf453628b105aa, type: 3}
-    texture: {fileID: 2800000, guid: fc966695188bdf64bb2f7a05ed18c93f, type: 3}
   - word: "l\u2019aspiration"
     clip: {fileID: 8300000, guid: 5fb7814bf13ed16439c6be0a2c83b394, type: 3}
-    texture: {fileID: 2800000, guid: e354d75ca19cfde4b810f3fb8a0e23e1, type: 3}
   - word: "l\u2019azur"
     clip: {fileID: 8300000, guid: 8734b64b6e9af0047aca4e7c55b0696c, type: 3}
-    texture: {fileID: 2800000, guid: e5911f879f18b57498dbc8fe85259c37, type: 3}
   - word: "l\u2019\xE9motion"
     clip: {fileID: 8300000, guid: 9b00ac9882a3d6b49a2457f0360c6721, type: 3}
-    texture: {fileID: 2800000, guid: b9a864b39a9da8545aa7a858cfe68822, type: 3}
   - word: "l\u2019ennui"
     clip: {fileID: 8300000, guid: 1c3dfd3bc1d985c4491c6a2e971db58b, type: 3}
-    texture: {fileID: 2800000, guid: c3bdecf0e5c6be247a90b3f2d7787634, type: 3}
   - word: "l\u2019heure"
     clip: {fileID: 8300000, guid: 776342268f5ece6409bfe6db5f6ccfd0, type: 3}
-    texture: {fileID: 2800000, guid: 403723ed711326e4a9abb6a7442ef793, type: 3}
   - word: "l\u2019imp\xE9rieux"
     clip: {fileID: 8300000, guid: cfb418354786d0549b0bde0eb0a12eb7, type: 3}
-    texture: {fileID: 2800000, guid: df56c3dad58152a489cfa4f43326fc0d, type: 3}
   - word: "l\u2019occupe"
     clip: {fileID: 8300000, guid: 3f70a3be98fb45248a7479e6f6826465, type: 3}
-    texture: {fileID: 2800000, guid: 7c3f3e20c78a1d640ad76b0fbefa340a, type: 3}
   - word: "l\u2019oc\xE9an"
     clip: {fileID: 8300000, guid: deccc28a15490014c85ac298530d1a40, type: 3}
-    texture: {fileID: 2800000, guid: 57e9067ba5ef0454ea6ea6d4f7b922b4, type: 3}
   - word: "l\u2019ombre"
     clip: {fileID: 8300000, guid: 5fcad9816bdc90c46a617ede6cea5e2d, type: 3}
-    texture: {fileID: 2800000, guid: d92d9ce591f0a1447be5b5b0d58a54af, type: 3}
   - word: "l\u2019or"
     clip: {fileID: 8300000, guid: 2aa81db5e2961a048a0c814051436c47, type: 3}
-    texture: {fileID: 2800000, guid: c0fba6a4cb01aa7489243db8f190b220, type: 3}
   - word: la
     clip: {fileID: 8300000, guid: 1fcc7b7991a72504fa814a4cede84b3c, type: 3}
-    texture: {fileID: 2800000, guid: b1786daff96fd6b4aa402857baf36472, type: 3}
   - word: le
     clip: {fileID: 8300000, guid: 0c81b21110bd0af4681c6a530336041d, type: 3}
-    texture: {fileID: 2800000, guid: 3708e1064cbbf364cab61223ea04159f, type: 3}
   - word: les
     clip: {fileID: 8300000, guid: 9d0569c32830d8a46bd84b95a42912cb, type: 3}
-    texture: {fileID: 2800000, guid: 3c5fc0e4ae8c8ad4985a34dcfcfe30d0, type: 3}
   - word: leur
     clip: {fileID: 8300000, guid: 2228b27a3610f1a459b5a7b2a3a3c480, type: 3}
-    texture: {fileID: 2800000, guid: 7208b4a4617a7a04f9bb0519458f7b93, type: 3}
   - word: leurs
     clip: {fileID: 8300000, guid: b73ca0bfae9be5d41abb879b91be479b, type: 3}
-    texture: {fileID: 2800000, guid: 7b80ea660e317824db13599e710b190f, type: 3}
   - word: livres
     clip: {fileID: 8300000, guid: 3cb27d91988ce2f43b3e5b52265c687d, type: 3}
-    texture: {fileID: 2800000, guid: ff6201f7d4324ed4fb3475d21b3cd056, type: 3}
   - word: loin
     clip: {fileID: 8300000, guid: 6f16fd45888d7f446ad1767f69b284b9, type: 3}
-    texture: {fileID: 2800000, guid: 102a3ea9a617d324299fd69b712a7e91, type: 3}
   - word: lui
     clip: {fileID: 8300000, guid: 6ba2634de62650f41becc7d2d559a71b, type: 3}
-    texture: {fileID: 2800000, guid: 1baaa27eaa8a9bf4897c8f1a34178fd0, type: 3}
   - word: "m\u2019est"
     clip: {fileID: 8300000, guid: 104c42726b6287c4f9b6635e9a20bcca, type: 3}
-    texture: {fileID: 2800000, guid: 3f59fe40f8d0bc643ac78730190b57c5, type: 3}
   - word: "m\u2019ont"
     clip: {fileID: 8300000, guid: 3e4499d0a8749314baa8161f9044663d, type: 3}
-    texture: {fileID: 2800000, guid: 8aadb3e6f99f54549a75b90334b2adcb, type: 3}
   - word: ma
     clip: {fileID: 8300000, guid: 34e0be1b40933744fa44091069cbcdb8, type: 3}
-    texture: {fileID: 2800000, guid: d23bbd5a336f6574988b05801831f3af, type: 3}
   - word: mais
     clip: {fileID: 8300000, guid: cd6f3dabb08b6ab49b2e11846b41e82e, type: 3}
-    texture: {fileID: 2800000, guid: a2fae4d1d09597a43b70f70e423cfa34, type: 3}
   - word: mal
     clip: {fileID: 8300000, guid: 76bd4fa7aefbc254880e73d3a713a001, type: 3}
-    texture: {fileID: 2800000, guid: 061d12344335f4a4394c5e74ac97b0fb, type: 3}
   - word: marins
     clip: {fileID: 8300000, guid: df3745ae8afea9a41ac2b32d13c49d1e, type: 3}
-    texture: {fileID: 2800000, guid: 0de1671638ed617408cb13ef9194df10, type: 3}
   - word: massif
     clip: {fileID: 8300000, guid: f75ae726613e0224880b4703e5926a4e, type: 3}
-    texture: {fileID: 2800000, guid: 94f304fd21d040a4a8cb6199812a9319, type: 3}
   - word: "m\xE2ts"
     clip: {fileID: 8300000, guid: a46211e593c1f1340aed959352a53293, type: 3}
-    texture: {fileID: 2800000, guid: 69572da5c59b8924b904cecbde49c4cd, type: 3}
   - word: mauvaise
     clip: {fileID: 8300000, guid: 52f910dd0bf477449aa5e7200c5e097f, type: 3}
-    texture: {fileID: 2800000, guid: 6d4ca7b0b38dfda4fad258d3a273c11a, type: 3}
   - word: me
     clip: {fileID: 8300000, guid: 276914162138c3842ae9e2eec0325279, type: 3}
-    texture: {fileID: 2800000, guid: 6a55fba41168bfe4d9955da20633db43, type: 3}
   - word: mer
     clip: {fileID: 8300000, guid: c37ff3e04fc55eb4288fa1cac3ba5aaf, type: 3}
-    texture: {fileID: 2800000, guid: 712cf37211c8748458e9c60088d52aa8, type: 3}
   - word: mers
     clip: {fileID: 8300000, guid: 9c1246b607e11f940b677ff747775b4c, type: 3}
-    texture: {fileID: 2800000, guid: f2c90e644d52d234a942f5adf7dcccf6, type: 3}
   - word: mes
     clip: {fileID: 8300000, guid: 215b72e9bd400a349b45ff98ab5a770f, type: 3}
-    texture: {fileID: 2800000, guid: 7c7340ffcaa2f66469f40535f92d1d3f, type: 3}
   - word: moi
     clip: {fileID: 8300000, guid: 9ce854c4a6469db44a4597b4d3f0263e, type: 3}
-    texture: {fileID: 2800000, guid: 3cca1f4015dfff446b94ef7117f4c6a0, type: 3}
   - word: mon
     clip: {fileID: 8300000, guid: 981900a8431d2c345b618d2125b65f76, type: 3}
-    texture: {fileID: 2800000, guid: 9f4e2165bd6f7bd42aa37fc2e15eac61, type: 3}
   - word: morts
     clip: {fileID: 8300000, guid: e4856555aff1f6641a23c9a409b0f274, type: 3}
-    texture: {fileID: 2800000, guid: e4356ae419235c1438c03bfe92a9b15c, type: 3}
   - word: naufrage
     clip: {fileID: 8300000, guid: f9bb21532719dc64cb378a001266862e, type: 3}
-    texture: {fileID: 2800000, guid: 23724f1964128194698066140e79ff97, type: 3}
   - word: navire
     clip: {fileID: 8300000, guid: e32c7eca5b7358048aa14b3b322a5a89, type: 3}
-    texture: {fileID: 2800000, guid: b6029d998667d884ea5128d24e676b63, type: 3}
   - word: ne
     clip: {fileID: 8300000, guid: 755e786499d1e5d4c90e972e35886d71, type: 3}
-    texture: {fileID: 2800000, guid: 4e3b980f0c7d0bd45b542326a766e6e3, type: 3}
   - word: neige
     clip: {fileID: 8300000, guid: cfa67df542008074f8bc797a75c9e393, type: 3}
-    texture: {fileID: 2800000, guid: b5a01b72295bc974e8441a6ec7592592, type: 3}
   - word: "neig\xE9"
     clip: {fileID: 8300000, guid: 9256e227df7ebc54392b9b85f220f47d, type: 3}
-    texture: {fileID: 2800000, guid: 8c009ebc9896869469d6ce5f45f6c93e, type: 3}
   - word: nerfs
     clip: {fileID: 8300000, guid: b9d6e7199a6c6b64d9a7237c20a2f507, type: 3}
-    texture: {fileID: 2800000, guid: c47855db3cc0e53449e16c814fa9ba32, type: 3}
   - word: "n\xE9vrose"
     clip: {fileID: 8300000, guid: 49154cda50e2e8941876902849ebd826, type: 3}
-    texture: {fileID: 2800000, guid: 3c685dd4691591349bba165e748c9b9d, type: 3}
   - word: noire
     clip: {fileID: 8300000, guid: 0098c2eca85a22649bbc09ae3f40c9d1, type: 3}
-    texture: {fileID: 2800000, guid: 753abe5479664d74aa789492efc21fdd, type: 3}
   - word: "norv\xE8ge"
     clip: {fileID: 8300000, guid: f0928550ea0c88d47ba146f86ea6395c, type: 3}
-    texture: {fileID: 2800000, guid: c136a58009e955c43aaefac312e5382b, type: 3}
   - word: nouvelle
     clip: {fileID: 8300000, guid: 46adf2ccb932b1f4d82f954472e8b722, type: 3}
-    texture: {fileID: 2800000, guid: 5d04ca75b92f5144382035559bb4ee25, type: 3}
   - word: "noy\xE9s"
     clip: {fileID: 8300000, guid: 5f491174f57d9e54dbb5985214043bfe, type: 3}
-    texture: {fileID: 2800000, guid: e2df4ce5328992f4497daa55e7fab50a, type: 3}
   - word: nu
     clip: {fileID: 8300000, guid: 357664e4bbffeb140895b884132d236c, type: 3}
-    texture: {fileID: 2800000, guid: 236d3170f75c6b243b3125c41a3c4cda, type: 3}
   - word: nues
     clip: {fileID: 8300000, guid: 6f1910adc07baa2418b92de9495d877f, type: 3}
-    texture: {fileID: 2800000, guid: 57ef923a5e3b36942835ee612c80a1ef, type: 3}
   - word: nuit
     clip: {fileID: 8300000, guid: 5700915ac33bf3443814a01a8358a0ff, type: 3}
-    texture: {fileID: 2800000, guid: a4a95bd9b5aa0604e8558b379a9204eb, type: 3}
   - word: "\xF4"
     clip: {fileID: 8300000, guid: a22beec2a0df1454e9091d2e35e9a3f8, type: 3}
-    texture: {fileID: 2800000, guid: 6b59298436101d246a848c14f7fd6e1c, type: 3}
   - word: oiseaux
     clip: {fileID: 8300000, guid: 8e6201746355a784dbe41876acfc0cec, type: 3}
-    texture: {fileID: 2800000, guid: baf130615e6c68c49b9bbea99c54e823, type: 3}
   - word: ont
     clip: {fileID: 8300000, guid: becfee0c9b8d9a442bcc30054ad66c2f, type: 3}
-    texture: {fileID: 2800000, guid: 43b4c242cd70a4a43a29a0c805c273a8, type: 3}
   - word: "o\xF9"
     clip: {fileID: 8300000, guid: c89506f0c488b5442b39b087a2b9186a, type: 3}
-    texture: {fileID: 2800000, guid: 06f8b7680f75b0a469231462c590e1a7, type: 3}
   - word: par
     clip: {fileID: 8300000, guid: 3268bc5ab212a2d4ba2be6dfd67c6025, type: 3}
-    texture: {fileID: 2800000, guid: db26e9274e9be144f846fd89c6cc435a, type: 3}
   - word: paroles
     clip: {fileID: 8300000, guid: 52025d83bc30b874d96041d465356687, type: 3}
-    texture: {fileID: 2800000, guid: f685fbffc2c6c06499c1b832b3710be6, type: 3}
   - word: "pass\xE9e"
     clip: {fileID: 8300000, guid: 36d6c7a5aeb38af4f8e6ccd58bdf0cb4, type: 3}
-    texture: {fileID: 2800000, guid: 9ae92049c49c0ed4e82a91fcf817060e, type: 3}
   - word: "pens\xE9e"
     clip: {fileID: 8300000, guid: e298eb84db36adf4689160568e0b7716, type: 3}
-    texture: {fileID: 2800000, guid: 66acea4090a1e1941bc942f4bf5d1f55, type: 3}
   - word: pire
     clip: {fileID: 8300000, guid: 47813a602f0473d42a3291ba82e17603, type: 3}
-    texture: {fileID: 2800000, guid: 91b4a7fbaf43e564bb6e2aa2013eee55, type: 3}
   - word: pleurer
     clip: {fileID: 8300000, guid: 932387ccc6dbed9429e50d97479b50a5, type: 3}
-    texture: {fileID: 2800000, guid: 22fb88cfcac53764cbd1f263822cc4aa, type: 3}
   - word: pleurez
     clip: {fileID: 8300000, guid: 9cb840f7854169c4c92387915dc2449d, type: 3}
-    texture: {fileID: 2800000, guid: dc0d8f0735d1ded42a8f5db926410259, type: 3}
   - word: pleurs
     clip: {fileID: 8300000, guid: c3bdd2d1f6a75c340b4a4c73dd68a9de, type: 3}
-    texture: {fileID: 2800000, guid: 273d15e6ff41ca141971d447ab564e0a, type: 3}
   - word: "po\xE8te"
     clip: {fileID: 0}
-    texture: {fileID: 2800000, guid: f2815a4ea13805b4f84d725a646a98f1, type: 3}
   - word: poids
     clip: {fileID: 8300000, guid: 70eb4a16f9a80234cbefa6a5cc8f3feb, type: 3}
-    texture: {fileID: 2800000, guid: f84b15ad0fd1c3646858bbc666684662, type: 3}
   - word: portes
     clip: {fileID: 8300000, guid: 72751ff42a63bcb48971c0f02d11a7ae, type: 3}
-    texture: {fileID: 2800000, guid: 5e6b251e046004644b0fd7c371b8baf0, type: 3}
   - word: poser
     clip: {fileID: 8300000, guid: ef4a2b7e5f209bd47a6d5266ee3f75f9, type: 3}
-    texture: {fileID: 2800000, guid: 76d7feb2da2c11b47956f1c2842e0e14, type: 3}
   - word: pour
     clip: {fileID: 8300000, guid: b02276978925f154292d5ac546d94a6f, type: 3}
-    texture: {fileID: 2800000, guid: 8e5511282dbc1654f89ffec80dfb718a, type: 3}
   - word: pourraient
     clip: {fileID: 8300000, guid: aaa913aff0375994fbb73c7c4e0967d3, type: 3}
-    texture: {fileID: 2800000, guid: 2249c5a83a974064fb66267781ce010c, type: 3}
   - word: pourrait
     clip: {fileID: 0}
-    texture: {fileID: 2800000, guid: 8880837484484f24c89ca3707df219d9, type: 3}
   - word: pressent
     clip: {fileID: 8300000, guid: f8f298d4e7a1de34582a01f451635a09, type: 3}
-    texture: {fileID: 2800000, guid: b520a22cd7c01a94c840d557e7bd97f7, type: 3}
   - word: pris
     clip: {fileID: 8300000, guid: f957b38ef2bd60140a4a632798945a74, type: 3}
-    texture: {fileID: 2800000, guid: 77c91b2f8eee4ee4c8ef68561f7cebef, type: 3}
   - word: profanes
     clip: {fileID: 8300000, guid: 990f6f3d73363804fac920eea6db48f0, type: 3}
-    texture: {fileID: 2800000, guid: 16220b49a9789674d8cf7032c298d5e3, type: 3}
   - word: profondeurs
     clip: {fileID: 8300000, guid: 1325986e2c3393e4ea4474b161066622, type: 3}
-    texture: {fileID: 2800000, guid: cd2800e919c4f28469ccc7357e10e922, type: 3}
   - word: "prot\xE9g\xE9"
     clip: {fileID: 8300000, guid: 59debcbbe17c4f14ca1177638449062c, type: 3}
-    texture: {fileID: 2800000, guid: 045f27631fbbc7846aad28fda9e60281, type: 3}
   - word: proue
     clip: {fileID: 8300000, guid: 55997a441291bb540a7e98e24c81a0d6, type: 3}
-    texture: {fileID: 2800000, guid: 139976918f5866848b6e2c3015007956, type: 3}
   - word: puis
     clip: {fileID: 8300000, guid: fb11a43ea787e744eb17b409c7359e38, type: 3}
-    texture: {fileID: 2800000, guid: 8c8f29cc416bd384e93b5b64952438c9, type: 3}
   - word: "qu\u2019est"
     clip: {fileID: 8300000, guid: b44e131bd12fff54fa1a1efd28636a79, type: 3}
-    texture: {fileID: 2800000, guid: e51ebd4fe318d434b98842e81ac5f86f, type: 3}
   - word: "qu\u2019est-ce"
     clip: {fileID: 8300000, guid: a6d0514743ed342439db5a145c08aff1, type: 3}
-    texture: {fileID: 2800000, guid: 38255d92f6dfbfc48a24bf4fe120e2e4, type: 3}
   - word: "qu\u2019heureusement"
     clip: {fileID: 8300000, guid: 75f1766deac08d34dbbd26b66b8d7a5a, type: 3}
-    texture: {fileID: 2800000, guid: 8da84dfbc66b5244a908e73065aa5859, type: 3}
   - word: quand
     clip: {fileID: 8300000, guid: 4045db31b7c6a8d4285fef68e243822c, type: 3}
-    texture: {fileID: 2800000, guid: 8311bfd1bb8d9de47afba02a90beeb0f, type: 3}
   - word: que
     clip: {fileID: 8300000, guid: 07917caae9a5dde4a907ba498718937b, type: 3}
-    texture: {fileID: 2800000, guid: 3f54e35c7ba5cdd4ebed529074841f18, type: 3}
   - word: qui
     clip: {fileID: 8300000, guid: f436cda16331575458fdcd05e3f9794e, type: 3}
-    texture: {fileID: 2800000, guid: 932779c531fd245478bd3e5965559317, type: 3}
   - word: redoute
     clip: {fileID: 8300000, guid: f7a515270df341646a29e4f923259fb8, type: 3}
-    texture: {fileID: 2800000, guid: 9d31c3ecaccfaa54b9b1ad8e6c0db99e, type: 3}
   - word: refusent
     clip: {fileID: 8300000, guid: e3f268bea2d3ff24ea5adfd6880004c9, type: 3}
-    texture: {fileID: 2800000, guid: c8676f94293c9a747ada4b0eb432640f, type: 3}
   - word: regard
     clip: {fileID: 8300000, guid: 61dc4ebf6815b43439b4a06809080ee5, type: 3}
-    texture: {fileID: 2800000, guid: b15952e79d327174b965d2700e61dae1, type: 3}
   - word: reste-t-il
     clip: {fileID: 8300000, guid: 0e8602c87f5a4374da9f9e231f715785, type: 3}
-    texture: {fileID: 2800000, guid: b22c8905f9d3c0f44a478af35c3552d9, type: 3}
   - word: "r\xEAve"
     clip: {fileID: 8300000, guid: a676bb3b4b5a59b4d9938d6c345a0265, type: 3}
-    texture: {fileID: 2800000, guid: 7d7ae4b9eb6a2af4985a0ede47acc03e, type: 3}
   - word: "r\xEAv\xE9"
     clip: {fileID: 8300000, guid: 211110d9206c0b64ab402bb03847d650, type: 3}
-    texture: {fileID: 2800000, guid: 799e8c64b2c2f984783fc977bc9bde20, type: 3}
   - word: "r\xE9v\xE9laient"
     clip: {fileID: 8300000, guid: c97078bc5854fac42a2f296e22139392, type: 3}
-    texture: {fileID: 2800000, guid: 02d7a74cb271f1747ada18f0f495f680, type: 3}
   - word: rien
     clip: {fileID: 8300000, guid: f7a6d39a835ba89428663a1cd00d923f, type: 3}
-    texture: {fileID: 2800000, guid: 4a252946cbba0f64cbd3cb1b3ac60d86, type: 3}
   - word: rompu
     clip: {fileID: 8300000, guid: 5be06bdecf978a042b34cdfa410d4059, type: 3}
-    texture: {fileID: 2800000, guid: a0d10bb4a244ef7498d19969be1b5891, type: 3}
   - word: roses
     clip: {fileID: 8300000, guid: cfd8c383c8110ca428d690c2012b6f1a, type: 3}
-    texture: {fileID: 2800000, guid: fdb80eff655f5444fa0f04e8704b6446, type: 3}
   - word: "s\u2019empare"
     clip: {fileID: 8300000, guid: 886f60a3e6668d34e99f79d22a97c850, type: 3}
-    texture: {fileID: 2800000, guid: 36eed78686c4545409d3a61adc02a0fa, type: 3}
   - word: "s\u2019en"
     clip: {fileID: 8300000, guid: 34921ab0f90df644990d723839080d4c, type: 3}
-    texture: {fileID: 2800000, guid: f26a252756d3c89479ebd3f4920825f3, type: 3}
   - word: "s\u2019\xE9talait"
     clip: {fileID: 8300000, guid: 5555e93b8a10104489b0582e76543eec, type: 3}
-    texture: {fileID: 2800000, guid: 978dff3da397cab4e9044357dcec3574, type: 3}
   - word: sa
     clip: {fileID: 8300000, guid: 19abd35a8aba3be43b694140e27d431b, type: 3}
-    texture: {fileID: 2800000, guid: fa0fc1382b3cfa04faca15d03ce4b741, type: 3}
   - word: sais
     clip: {fileID: 8300000, guid: a2468d43acb8da2498fd3203d1f3fd29, type: 3}
-    texture: {fileID: 2800000, guid: 11fc578cbb065ed47a91a04c7ae426fb, type: 3}
   - word: sans
     clip: {fileID: 8300000, guid: 077449145af483446a5c0baf8487fb14, type: 3}
-    texture: {fileID: 2800000, guid: 5bcd4fecd054b1549b2ebff0c6275baa, type: 3}
   - word: sel
     clip: {fileID: 8300000, guid: 861aab2b72024524d8800498cf248c75, type: 3}
-    texture: {fileID: 2800000, guid: 88bcec30f08f642469d7825419db2169, type: 3}
   - word: ses
     clip: {fileID: 8300000, guid: 53a77d4d058367d4db163f730945102b, type: 3}
-    texture: {fileID: 2800000, guid: c26dcaede112f804ea1194b29c607f80, type: 3}
   - word: seul
     clip: {fileID: 8300000, guid: 0e109cb8cd45369429e6c36c801764f7, type: 3}
-    texture: {fileID: 2800000, guid: 3351414a23f0d214595a45a758bffcbc, type: 3}
   - word: si
     clip: {fileID: 0}
-    texture: {fileID: 2800000, guid: 28c39d4e411a72340a0da7275bf8585a, type: 3}
   - word: silences
     clip: {fileID: 8300000, guid: 5302960e5312ef045a8c5106c2edc25b, type: 3}
-    texture: {fileID: 2800000, guid: 96aef3734ea6b204fbcf696ee715b902, type: 3}
   - word: sinistre
     clip: {fileID: 8300000, guid: fb6bbd692c7cbb340a04a2ee342bce38, type: 3}
-    texture: {fileID: 2800000, guid: e77041bc5d5347d498d5744fa08f9d7b, type: 3}
   - word: "sir\xE8ne"
     clip: {fileID: 8300000, guid: eaa7e46bfe074b54485230c48a57fb58, type: 3}
-    texture: {fileID: 2800000, guid: 4b2c01b60de519f47a3822366610403f, type: 3}
   - word: "s\u0153ur"
     clip: {fileID: 8300000, guid: b134d4c139bdfdd4c9fc7bda36364066, type: 3}
-    texture: {fileID: 2800000, guid: 084984158fbae564e9107b99771e1b7b, type: 3}
   - word: soleil
     clip: {fileID: 8300000, guid: 851ff4c1d13b0e149bf6fd399ab695c6, type: 3}
-    texture: {fileID: 2800000, guid: 554dbae0bc379aa4f8def6cd192204dc, type: 3}
   - word: solitude
     clip: {fileID: 8300000, guid: a0b8a1dd6851d5b44b9122bff8d28f12, type: 3}
-    texture: {fileID: 2800000, guid: d0dad5e7dae089e42b6f7dd7022bb7d3, type: 3}
   - word: "sombr\xE9"
     clip: {fileID: 8300000, guid: 9e061cbba50013c439d3cfc5f5c53cc0, type: 3}
-    texture: {fileID: 2800000, guid: 74820ae079f1a85409ad5d33145b915b, type: 3}
   - word: songeur
     clip: {fileID: 0}
-    texture: {fileID: 2800000, guid: f8cf5f42549aa2143ae6e65658cf17c1, type: 3}
   - word: sont
     clip: {fileID: 8300000, guid: da2d7c5507eeafe489f01eea93663bc3, type: 3}
-    texture: {fileID: 2800000, guid: 8b0aea3d0a732594288aef53e8f7bcab, type: 3}
   - word: souffre
     clip: {fileID: 8300000, guid: 908891f3b7cd6ed4db4d2feba01ad363, type: 3}
-    texture: {fileID: 2800000, guid: bc31b36a7213dec4889b2408ccddd7b8, type: 3}
   - word: sourire
     clip: {fileID: 8300000, guid: 0bb87ad49c5b13e47b346270f92b3cd4, type: 3}
-    texture: {fileID: 2800000, guid: 871e222c1c4ad674d8b25a5457a85651, type: 3}
   - word: sous
     clip: {fileID: 8300000, guid: 0a521064357a5f64f9baa0795f9c416c, type: 3}
-    texture: {fileID: 2800000, guid: 27086deea76ef3946b5cf6e6618f4f1c, type: 3}
   - word: spasme
     clip: {fileID: 8300000, guid: baa11e889ca4fd547bd151681e13c1ce, type: 3}
-    texture: {fileID: 2800000, guid: a410de9225978864490809d385e85191, type: 3}
   - word: subtil
     clip: {fileID: 8300000, guid: a8e897ca250f76548b4b110a90274a63, type: 3}
-    texture: {fileID: 2800000, guid: defc73cea010e2d4c854ac1c87fe2a32, type: 3}
   - word: suis
     clip: {fileID: 8300000, guid: 7ec9ab066d84cf740b70a0f92c2a609f, type: 3}
-    texture: {fileID: 2800000, guid: 9580743cea2e24842867cbeefe6d3cff, type: 3}
   - word: "supr\xEAme"
     clip: {fileID: 8300000, guid: 93c5e4a4db80c0344bac3877c108b6e7, type: 3}
-    texture: {fileID: 2800000, guid: ce8814edca5780948ba66b717b864064, type: 3}
   - word: sur
     clip: {fileID: 8300000, guid: 8ef200cfd26129d48a475dfa6d636326, type: 3}
-    texture: {fileID: 2800000, guid: a349e785fcddc8045977c871f453cb17, type: 3}
   - word: "t\u2019aimer"
     clip: {fileID: 8300000, guid: 4202e7581098a7541a487fe5761aaf0e, type: 3}
-    texture: {fileID: 2800000, guid: 42a0f5629b8641b4484c2261a00f5c76, type: 3}
   - word: "t\u2019en"
     clip: {fileID: 8300000, guid: 0c33285b06d1825489d23d71f581f511, type: 3}
-    texture: {fileID: 2800000, guid: f4c7aacce4f76ea45b8c75eb23c6e305, type: 3}
   - word: "taill\xE9"
     clip: {fileID: 8300000, guid: 99a0d47a72d4037488f7bbef28f9ff96, type: 3}
-    texture: {fileID: 2800000, guid: cba1aff3acccaae4cbdfac2c182f5980, type: 3}
   - word: te
     clip: {fileID: 8300000, guid: 104efbb60a033b54f984332f020f2f6b, type: 3}
-    texture: {fileID: 2800000, guid: 1d4bba8ba0ab3c64596e7381d5a1189b, type: 3}
   - word: "temp\xEAte"
     clip: {fileID: 8300000, guid: c7ef512e03513084493111121ed72040, type: 3}
-    texture: {fileID: 2800000, guid: e58519231f0844046a09848a19e7b0b2, type: 3}
   - word: tendre
     clip: {fileID: 8300000, guid: 20abff54df18f96468cce7c711171cbb, type: 3}
-    texture: {fileID: 2800000, guid: 5d819cb86a7c1f043ad6547a74433b44, type: 3}
   - word: toi
     clip: {fileID: 8300000, guid: 64461990bd03d7c48a64f156f794a899, type: 3}
-    texture: {fileID: 2800000, guid: 44f0a71130cdccd48a89d826cb45e817, type: 3}
   - word: "toi-m\xEAme"
     clip: {fileID: 8300000, guid: fa607a05497cf29409025866f91142df, type: 3}
-    texture: {fileID: 2800000, guid: 6caa0f946fa3e3745aeaa1349c66da6e, type: 3}
   - word: "tomb\xE9s"
     clip: {fileID: 8300000, guid: 02ffd509cc921db41a5bc42216818188, type: 3}
-    texture: {fileID: 2800000, guid: 48aec34249218414e92076b201a55085, type: 3}
   - word: ton
     clip: {fileID: 8300000, guid: b592ba9fab7b1344ea1436edb142bfda, type: 3}
-    texture: {fileID: 2800000, guid: d40bf29d8d960704ba08df699672b214, type: 3}
   - word: torturer
     clip: {fileID: 8300000, guid: 4b29d69ec4e3e1341ae4be667a110b9d, type: 3}
-    texture: {fileID: 2800000, guid: 8357494405a6ff941b0d4e88e35de281, type: 3}
   - word: touchaient
     clip: {fileID: 8300000, guid: 079bc08a8ddce834dbe367e96e8e9e4b, type: 3}
-    texture: {fileID: 2800000, guid: ace9372e27455714ebab4ee40542c2fa, type: 3}
   - word: toujours
     clip: {fileID: 8300000, guid: f0c186838d431af479a782fd519f9592, type: 3}
-    texture: {fileID: 2800000, guid: 6ca8e6beeaac937458480218633a69c8, type: 3}
   - word: tourment
     clip: {fileID: 8300000, guid: 340b0d3f746e9084a9c0d282f0617d23, type: 3}
-    texture: {fileID: 2800000, guid: 1b2b5bae2174f0847a69049dcc7905be, type: 3}
   - word: tous
     clip: {fileID: 8300000, guid: 9957cb0aa960b7e48832f93c7d4abac8, type: 3}
-    texture: {fileID: 2800000, guid: d10cf586eb9927a46aa3668c75d61139, type: 3}
   - word: tout
     clip: {fileID: 8300000, guid: 4311d912e21b86a4d8849c15df6eee99, type: 3}
-    texture: {fileID: 2800000, guid: 8b4b53e17e2ce7e4cbc1cd20310486c3, type: 3}
   - word: "tr\xE9sors"
     clip: {fileID: 8300000, guid: 5cff1d831c31dbb44abf98001e2f2990, type: 3}
-    texture: {fileID: 2800000, guid: ad9948e0acbe104478e95daf48ac5716, type: 3}
   - word: triste
     clip: {fileID: 0}
-    texture: {fileID: 2800000, guid: 35310a819e7a35a4f95c3965ca5e58f1, type: 3}
   - word: trompeur
     clip: {fileID: 8300000, guid: e9b1c57e7eb46a74b9d9c797f4ee5787, type: 3}
-    texture: {fileID: 2800000, guid: 9ee239b57e43a1a4da9c607ced9080e2, type: 3}
   - word: tu
     clip: {fileID: 8300000, guid: c0d5cf8d7422fab44b7450130ad09e6b, type: 3}
-    texture: {fileID: 2800000, guid: 57b1415a6ba260f48a85af258e85ba85, type: 3}
   - word: "tu\xE9"
     clip: {fileID: 8300000, guid: f2a8f4e6bdb99d248989c89a98b4b422, type: 3}
-    texture: {fileID: 2800000, guid: 7c4ef26d0b53f8c4f83a4f33396e6eca, type: 3}
   - word: un
     clip: {fileID: 8300000, guid: 20fa39dc80e1a364c87d84ee49625884, type: 3}
-    texture: {fileID: 2800000, guid: 808fe37183d77934f9e63d2f5be157a7, type: 3}
   - word: une
     clip: {fileID: 8300000, guid: dcb21741d73e0b94fa3b4847b8a3aa46, type: 3}
-    texture: {fileID: 2800000, guid: bd125ace7110f43478fe9be3604a1112, type: 3}
   - word: va
     clip: {fileID: 8300000, guid: dd3f92b6b8cda1f4d859e380daa97d8f, type: 3}
-    texture: {fileID: 2800000, guid: 227fbd50f78ae634fb3f93da9eb96c6f, type: 3}
   - word: vais-je
     clip: {fileID: 8300000, guid: 8f77363895e98844bba2c39fcf265a45, type: 3}
-    texture: {fileID: 2800000, guid: ebaa8b6cb790c2f48ae008f81f53cef8, type: 3}
   - word: vaisseau
     clip: {fileID: 8300000, guid: 466423993e1f3194db044dfb1433b994, type: 3}
-    texture: {fileID: 2800000, guid: ea9d45ac41916004896421a4e6714376, type: 3}
   - word: vers
     clip: {fileID: 8300000, guid: 388f235a6aa56d04390e96e4cf52a901, type: 3}
-    texture: {fileID: 2800000, guid: 81be29c4ea2fd734ab489abfca6e1888, type: 3}
   - word: viendra-t-il
     clip: {fileID: 8300000, guid: c2fd135532ac15843bf006d95cbd0f31, type: 3}
-    texture: {fileID: 2800000, guid: e7b5a81ba42c76c48a731af236139921, type: 3}
   - word: vint
     clip: {fileID: 8300000, guid: 0da771279fd3201469ec6d0954eb44d9, type: 3}
-    texture: {fileID: 2800000, guid: 1b3edaf7f5ee1c24eab48351c07e7d00, type: 3}
   - word: vis-je
     clip: {fileID: 8300000, guid: 0b718f7db4bfba64c9daa45ad32d3dc7, type: 3}
-    texture: {fileID: 2800000, guid: 7d8781bf00db3104e8f2c167921df486, type: 3}
   - word: vitre
     clip: {fileID: 8300000, guid: f6c1c7135ac4eca41aa3837f893d506e, type: 3}
-    texture: {fileID: 2800000, guid: 303853711410e1742a726074849eb10d, type: 3}
   - word: vivre
     clip: {fileID: 8300000, guid: 6fba44ea8bd64c949863078241b50361, type: 3}
-    texture: {fileID: 2800000, guid: 65e8b70c21e1c9c4882b6c4d69f9e494, type: 3}
   - word: voix
     clip: {fileID: 8300000, guid: 06e443c06b686c74cb2541261675971a, type: 3}
-    texture: {fileID: 2800000, guid: 5d746a7afe07ab54ca19503c89302a73, type: 3}
   - word: yeux
     clip: {fileID: 8300000, guid: 30c5094aa1659eb44b532c37cbcdeab7, type: 3}
-    texture: {fileID: 2800000, guid: 9ac7b3ec85c230c4fb243de82d2b832d, type: 3}
+  - word: fer
+    clip: {fileID: 0}
+  - word: se
+    clip: {fileID: 0}
+  - word: rompt
+    clip: {fileID: 0}
+  - word: net
+    clip: {fileID: 8300000, guid: bc532f9988ebd74439f979c5907ec0cc, type: 3}
+  - word: fils
+    clip: {fileID: 8300000, guid: fc158a2eac0b652409937223534018a0, type: 3}
+  - word: bouquet
+    clip: {fileID: 8300000, guid: 37264e83d7b5b2e4eaca196551e733a5, type: 3}
+  - word: fou
+    clip: {fileID: 8300000, guid: 8c70f9d9d00e96c42a0f5fafefaa3a7e, type: 3}
   poems:
   - {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708, type: 2}
-  - {fileID: 11400000, guid: ef8311e97c1540947b6fc9980b4f28d0, type: 2}
-  - {fileID: 11400000, guid: ace8c08f56f8a3041896f6028f75ae23, type: 2}
-  - {fileID: 11400000, guid: 719aaaa61f8aede418cdfaf96785e3d8, type: 2}
+  - {fileID: 11400000, guid: bdd01b04c4f582d48973623a843341df, type: 2}
+  - {fileID: 11400000, guid: f5592d74b86865249ab22b8bfb3d944e, type: 2}
+  - {fileID: 11400000, guid: 22c6bdecde15b4049b2d9191392a9695, type: 2}
