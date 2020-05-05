@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -10,5 +11,10 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private void Start()
     {
         Instantiate(firstPersonControllerPrefab, transform.position, Quaternion.identity, null);
+    }
+
+    public void Reset()
+    {
+        DecalManager.Instance.Reset();
     }
 }

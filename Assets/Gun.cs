@@ -21,6 +21,8 @@ public class Gun : BaseBehaviour
     public Transform projectileOrigin;
     public bool isFullAuto = false;
     public float rateOfFire = 0.5f;
+    public bool shootsVerses = false;
+    [HideIf("shootsVerses")]
     public int bulletsPerShot = 1;
     public float spreadFactor = 0.001f;
     public float recoilPerShot = 0.5f;
@@ -117,24 +119,47 @@ public class Gun : BaseBehaviour
         _isEquipped = false;
     }
 
+    private void ShootSingleBullet(Word word)
+    {
+        Bullet bullet = Instantiate(bulletPrefab, projectileOrigin.position, Quaternion.identity, transform);
+
+        bullet.Word = word;
+        bullet.AudioSource.clip = word.clip;
+
+        if (shootsVerses || bulletsPerShot > 1)
+            bullet.HasAudioDelay = true;
+
+        bullet.transform.parent = null;
+        bullet.gameObject.SetActive(true);
+
+        var direction = Camera.main.transform.forward;
+
+        direction.x += Random.Range(-spreadFactor, spreadFactor);
+        direction.y += Random.Range(-spreadFactor, spreadFactor);
+        direction.z += Random.Range(-spreadFactor, spreadFactor);
+
+        bullet.Move(direction, bulletSpeed);
+    }
+
     public void Shoot(int index)
     {
-        for (int i = 0; i < bulletsPerShot; i++)
+        if (shootsVerses)
         {
-            var bullet = Instantiate(bulletPrefab, projectileOrigin.position/*Camera.main.transform.position*/, Quaternion.identity, transform);
+            var line = poem.lines[index];
+            var words = line.words;
 
-            bullet.Word = poem.words[index];
-            bullet.AudioSource.clip = bullet.Word.clip;
-            bullet.transform.parent = null;
-            bullet.gameObject.SetActive(true);
+            for (int i = 0; i < words.Count; i++)
+            {
+                ShootSingleBullet(words[i]);
+            }
 
-            var direction = Camera.main.transform.forward;
-
-            direction.x += Random.Range(-spreadFactor, spreadFactor);
-            direction.y += Random.Range(-spreadFactor, spreadFactor);
-            direction.z += Random.Range(-spreadFactor, spreadFactor);
-
-            bullet.Move(direction, bulletSpeed);
+        }
+        else
+        {
+            for (int i = 0; i < bulletsPerShot; i++)
+            {
+                ShootSingleBullet(poem.words[index]);
+            }
         }
 
         muzzleFlash.Play();

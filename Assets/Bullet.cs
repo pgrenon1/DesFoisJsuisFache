@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Linq;
 using UnityEditor;
 using UnityEngine;
+using Random = UnityEngine.Random;
 
 [RequireComponent(typeof(AudioSource))]
 public class Bullet : BaseBehaviour
@@ -11,8 +12,10 @@ public class Bullet : BaseBehaviour
     public float decalDistance = 1f;
     public PersistentDecal decalPrefab;
     public LayerMask layerMask;
+    public float maxDelay;
 
     public Word Word { get; set; }
+    public bool HasAudioDelay { get; set; }
 
     private bool _isMoving;
     private Vector3 _lastPosition;
@@ -55,6 +58,7 @@ public class Bullet : BaseBehaviour
         persistentDecal.Decal.AtlasRegionIndex = index;
         DecalManager.PersistentDecals.Add(persistentDecal);
         persistentDecal.Decal.LateBake();
+        //persistentDecal.transform.SetParent(DecalManager.Instance.transform);
 
         //Debug.Log(DecalManager.PersistentDecals.Count);
 
@@ -68,7 +72,10 @@ public class Bullet : BaseBehaviour
 
     public virtual void Move(Vector3 direction, float speed)
     {
-        AudioSource.Play();
+        if (HasAudioDelay)
+            AudioSource.PlayDelayed(Random.Range(0f, maxDelay));
+        else
+            AudioSource.Play();
 
         transform.rotation.SetLookRotation(direction);
 

@@ -1,0 +1,18 @@
+newmtl Desk_bell:lambert7SG
+illum 4
+Kd 0.10 0.00 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Desk_bell:lambert8SG
+illum 4
+Kd 0.00 0.50 0.12
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00
+newmtl Desk_bell:lambert9SG
+illum 4
+Kd 0.50 0.00 0.50
+Ka 0.00 0.00 0.00
+Tf 1.00 1.00 1.00
+Ni 1.00

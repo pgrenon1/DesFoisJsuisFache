@@ -54,6 +54,7 @@ MonoBehaviour:
   layerMask:
     serializedVersion: 2
     m_Bits: 1
+  maxDelay: 0.1
 --- !u!135 &2765105672506084455
 SphereCollider:
   m_ObjectHideFlags: 0

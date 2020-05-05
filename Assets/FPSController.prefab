@@ -13,6 +13,7 @@ GameObject:
   - component: {fileID: 5400000}
   - component: {fileID: 8200000}
   - component: {fileID: -2523145760985938490}
+  - component: {fileID: 2320862880067704035}
   m_Layer: 9
   m_Name: FPSController
   m_TagString: Untagged
@@ -292,6 +293,20 @@ MonoBehaviour:
   equipGunOnStart: 0
   smallStepTime: 0.1
   bigStepTime: 0.4
+--- !u!136 &2320862880067704035
+CapsuleCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 100000}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 1
+  m_Enabled: 1
+  m_Radius: 0.5
+  m_Height: 1.8
+  m_Direction: 1
+  m_Center: {x: 0, y: 0, z: 0}
 --- !u!1 &100002
 GameObject:
   m_ObjectHideFlags: 0

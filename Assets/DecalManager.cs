@@ -1,4 +1,5 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -9,5 +10,13 @@ public class DecalManager : SingletonMonoBehaviour<DecalManager>
     private void Start()
     {
 
+    }
+
+    public void Reset()
+    {
+        for (int i = PersistentDecals.Count - 1; i >= 0; i--)
+        {
+            Destroy(PersistentDecals[i].gameObject);
+        }
     }
 }
