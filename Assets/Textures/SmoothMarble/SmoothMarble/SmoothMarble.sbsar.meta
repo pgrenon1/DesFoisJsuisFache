@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: f9887609e5f5d2a4896b61cac3ae85a4
+guid: d05526d5d2e11114e90ef6d272171948
 ScriptedImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -11,27 +11,24 @@ ScriptedImporter:
   version: 24
   projectContext: 0
   mGraphInstanceData:
-  - graphLabel: Marble stone
-    prototypeName: Marble stone
+  - graphLabel: Marble
+    prototypeName: Marble
     graphDescIndex: 0
     generateAllOutputs: 0
     generateMipMaps: 1
-    preset: " <sbspreset pkgurl=\"pkg://Marble_stone\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"4052404169\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"$randomseed\" uid=\"2801324443\" type=\"4\" value=\"6614\"
-      />\n  <presetinput identifier=\"pattern_scale\" uid=\"2156175216\" type=\"0\"
-      value=\"2\" />\n  <presetinput identifier=\"Pattern_size_width\" uid=\"2156449106\"
-      type=\"0\" value=\"73\" />\n  <presetinput identifier=\"Pattern_size_height\"
-      uid=\"2156449161\" type=\"0\" value=\"436\" />\n  <presetinput identifier=\"veins_opacity\"
-      uid=\"2155920301\" type=\"0\" value=\"0.307\" />\n </sbspreset>\n"
+    preset: " <sbspreset pkgurl=\"pkg://Marble\" label=\"\" >\n  <presetinput identifier=\"$outputsize\"
+      uid=\"3998941830\" type=\"8\" value=\"9,9\" />\n  <presetinput identifier=\"$randomseed\"
+      uid=\"3106477268\" type=\"4\" value=\"4174\" />\n  <presetinput identifier=\"Base_Color\"
+      uid=\"2641138531\" type=\"0\" value=\"0.091\" />\n  <presetinput identifier=\"Seam_Color\"
+      uid=\"2641138549\" type=\"0\" value=\"0.758\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
-      shaderKeywords: _MAINTEX _NORMALMAP _PARALLAXMAP
+      shaderKeywords: _MAINTEX _METALLICGLOSSMAP _NORMALMAP _PARALLAXMAP _ROUGHNESSMAP
       lightmapFlags: 4
       texEnvs:
       - name: _BumpMap
-        texture: {fileID: -905711567217014733, guid: f9887609e5f5d2a4896b61cac3ae85a4,
+        texture: {fileID: -6434546713265833433, guid: d05526d5d2e11114e90ef6d272171948,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -49,15 +46,16 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 3, y: 1}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MainTex
-        texture: {fileID: 3919274690155963532, guid: f9887609e5f5d2a4896b61cac3ae85a4,
+        texture: {fileID: -5770893121829810773, guid: d05526d5d2e11114e90ef6d272171948,
           type: 3}
-        scale: {x: 3, y: 1}
+        scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
-        texture: {instanceID: 0}
+        texture: {fileID: -4654474090791176329, guid: d05526d5d2e11114e90ef6d272171948,
+          type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _OcclusionMap
@@ -65,7 +63,7 @@ ScriptedImporter:
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
       - name: _ParallaxMap
-        texture: {fileID: 7194936404800499838, guid: f9887609e5f5d2a4896b61cac3ae85a4,
+        texture: {fileID: -6612643904982993138, guid: d05526d5d2e11114e90ef6d272171948,
           type: 3}
         scale: {x: 1, y: 1}
         offset: {x: 0, y: 0}
@@ -135,6 +133,15 @@ ScriptedImporter:
       bImage: 1
       bNumerical: 0
       bLinear: 1
+    - outputName: metallic
+      identifier: metallic
+      usageName: metallic
+      channelStr: metallic
+      label: Metallic
+      usage: 34
+      bImage: 1
+      bNumerical: 0
+      bLinear: 1
     - outputName: height
       identifier: height
       usageName: height
@@ -160,25 +167,34 @@ ScriptedImporter:
       - sourceName: roughness
         from: 0
         to: 3
+    - targetName: metallic
+      components:
+      - sourceName: smoothness
+        from: 0
+        to: 3
     - targetName: height
       components:
       - sourceName: height
         from: 0
         to: 3
     textureParameters:
-    - textureName: Marble stone - baseColor
+    - textureName: Marble - baseColor
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Marble stone - normal
+    - textureName: Marble - normal
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Marble stone - roughness
+    - textureName: Marble - roughness
       wrapMode: 0
       filterMode: 1
       aniso: 1
-    - textureName: Marble stone - height
+    - textureName: Marble - metallic
+      wrapMode: 0
+      filterMode: 1
+      aniso: 1
+    - textureName: Marble - height
       wrapMode: 0
       filterMode: 1
       aniso: 1
@@ -193,9 +209,10 @@ ScriptedImporter:
       textureFormatMode: 0
       normalCompressed: 0
       bGenerateOnLoad: 1
-    material: {fileID: -8975349304080235608, guid: f9887609e5f5d2a4896b61cac3ae85a4,
+    material: {fileID: -5758955834144789715, guid: d05526d5d2e11114e90ef6d272171948,
       type: 3}
     generatedTextures:
-    - {fileID: 3919274690155963532, guid: f9887609e5f5d2a4896b61cac3ae85a4, type: 3}
-    - {fileID: -905711567217014733, guid: f9887609e5f5d2a4896b61cac3ae85a4, type: 3}
-    - {fileID: 7194936404800499838, guid: f9887609e5f5d2a4896b61cac3ae85a4, type: 3}
+    - {fileID: -5770893121829810773, guid: d05526d5d2e11114e90ef6d272171948, type: 3}
+    - {fileID: -6434546713265833433, guid: d05526d5d2e11114e90ef6d272171948, type: 3}
+    - {fileID: -4654474090791176329, guid: d05526d5d2e11114e90ef6d272171948, type: 3}
+    - {fileID: -6612643904982993138, guid: d05526d5d2e11114e90ef6d272171948, type: 3}
