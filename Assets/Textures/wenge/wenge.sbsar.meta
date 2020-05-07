@@ -21,14 +21,16 @@ ScriptedImporter:
       uid=\"126551726\" type=\"0\" value=\"0.1\" />\n  <presetinput identifier=\"Basic_parameters_Saturation\"
       uid=\"126551722\" type=\"0\" value=\"0.55\" />\n  <presetinput identifier=\"Basic_parameters_Normal_Intensity\"
       uid=\"126551732\" type=\"0\" value=\"0.6\" />\n  <presetinput identifier=\"Basic_parameters_Height_Range\"
-      uid=\"126551730\" type=\"0\" value=\"0.5\" />\n  <presetinput identifier=\"amount\"
-      uid=\"125849471\" type=\"4\" value=\"7\" />\n  <presetinput identifier=\"slice_size\"
-      uid=\"126636161\" type=\"1\" value=\"0.461,1\" />\n  <presetinput identifier=\"difference_color_random\"
-      uid=\"126549625\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"wood_veins_tile\"
-      uid=\"126548987\" type=\"4\" value=\"12\" />\n  <presetinput identifier=\"wood_veins_opacity\"
+      uid=\"126551730\" type=\"0\" value=\"0.381\" />\n  <presetinput identifier=\"amount\"
+      uid=\"125849471\" type=\"4\" value=\"6\" />\n  <presetinput identifier=\"slice_size\"
+      uid=\"126636161\" type=\"1\" value=\"0.55,1\" />\n  <presetinput identifier=\"difference_color_random\"
+      uid=\"126549625\" type=\"0\" value=\"0\" />\n  <presetinput identifier=\"wood_veins_tile\"
+      uid=\"126548987\" type=\"4\" value=\"1\" />\n  <presetinput identifier=\"wood_veins_opacity\"
       uid=\"126548956\" type=\"0\" value=\"0\" />\n  <presetinput identifier=\"edge_width\"
-      uid=\"126543360\" type=\"0\" value=\"1.5\" />\n  <presetinput identifier=\"edges_opacity\"
-      uid=\"126543476\" type=\"0\" value=\"0.317\" />\n </sbspreset>\n"
+      uid=\"126543360\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"edges_opacity\"
+      uid=\"126543476\" type=\"0\" value=\"0\" />\n  <presetinput identifier=\"intensity_roughness\"
+      uid=\"126541941\" type=\"0\" value=\"0.203\" />\n  <presetinput identifier=\"grunge_roughness\"
+      uid=\"126542211\" type=\"0\" value=\"0.136\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -54,12 +56,12 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 4, y: 4}
+        scale: {x: 2, y: 2}
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {fileID: -881261831107839740, guid: 9178c745acb50c24fa22fdb7a9984da8,
           type: 3}
-        scale: {x: 4, y: 4}
+        scale: {x: 2, y: 2}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: -6233649233483090998, guid: 9178c745acb50c24fa22fdb7a9984da8,

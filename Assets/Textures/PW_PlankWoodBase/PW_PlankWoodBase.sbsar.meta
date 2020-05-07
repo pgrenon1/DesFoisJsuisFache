@@ -17,8 +17,13 @@ ScriptedImporter:
     generateAllOutputs: 0
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://PW_PlankWoodBase\" label=\"\" >\n  <presetinput
-      identifier=\"$outputsize\" uid=\"2140602692\" type=\"8\" value=\"9,9\" />\n
-      </sbspreset>\n"
+      identifier=\"$outputsize\" uid=\"2140602692\" type=\"8\" value=\"9,9\" />\n 
+      <presetinput identifier=\"Height_Range\" uid=\"255033106\" type=\"0\" value=\"0.448\"
+      />\n  <presetinput identifier=\"Height_Position\" uid=\"255033134\" type=\"0\"
+      value=\"0.546\" />\n  <presetinput identifier=\"Roughness\" uid=\"255004092\"
+      type=\"0\" value=\"0.784\" />\n  <presetinput identifier=\"Contrast\" uid=\"255004060\"
+      type=\"0\" value=\"-1\" />\n  <presetinput identifier=\"Highpass_Radius\" uid=\"255032342\"
+      type=\"0\" value=\"0\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}

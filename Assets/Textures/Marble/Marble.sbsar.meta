@@ -19,22 +19,23 @@ ScriptedImporter:
     preset: " <sbspreset pkgurl=\"pkg://Marble\" label=\"\" >\n  <presetinput identifier=\"$outputsize\"
       uid=\"3998941830\" type=\"8\" value=\"9,9\" />\n  <presetinput identifier=\"Nb_X\"
       uid=\"2638217282\" type=\"4\" value=\"15\" />\n  <presetinput identifier=\"TargetColor\"
-      uid=\"2639813689\" type=\"2\" value=\"0.481132,0.283686,0.331456\" />\n  <presetinput
+      uid=\"2639813689\" type=\"2\" value=\"0.764151,0.675462,0.565904\" />\n  <presetinput
       identifier=\"Level\" uid=\"2639433314\" type=\"0\" value=\"1\" />\n  <presetinput
       identifier=\"luminosity\" uid=\"2639594971\" type=\"0\" value=\"0.518\" />\n 
       <presetinput identifier=\"outputcolor_2\" uid=\"2638245056\" type=\"0\" value=\"0.76\"
       />\n  <presetinput identifier=\"mblurangle\" uid=\"2639431944\" type=\"0\"
       value=\"0.392\" />\n  <presetinput identifier=\"TargetColor_1\" uid=\"2639431744\"
-      type=\"2\" value=\"0.839623,0.839623,0.839623\" />\n  <presetinput identifier=\"color_var\"
+      type=\"2\" value=\"0.866667,0.8,0.717647\" />\n  <presetinput identifier=\"color_var\"
       uid=\"2638399464\" type=\"0\" value=\"0.678\" />\n  <presetinput identifier=\"Position_2\"
       uid=\"2639431979\" type=\"0\" value=\"0.374\" />\n  <presetinput identifier=\"Contrast_2\"
       uid=\"2639432129\" type=\"0\" value=\"0.579\" />\n  <presetinput identifier=\"opacitymult_4\"
       uid=\"2640014143\" type=\"0\" value=\"1\" />\n  <presetinput identifier=\"Position\"
       uid=\"2640172243\" type=\"0\" value=\"0.106\" />\n  <presetinput identifier=\"Contrast\"
       uid=\"2640169578\" type=\"0\" value=\"0.476\" />\n  <presetinput identifier=\"outputcolor_4\"
-      uid=\"2638304570\" type=\"3\" value=\"1,1,1,1\" />\n  <presetinput identifier=\"outputcolor_1\"
-      uid=\"2638244485\" type=\"3\" value=\"1,1,1,1\" />\n  <presetinput identifier=\"outputcolor\"
-      uid=\"2639908528\" type=\"3\" value=\"1,1,1,1\" />\n </sbspreset>\n"
+      uid=\"2638304570\" type=\"3\" value=\"0.866667,0.8,0.717647,1\" />\n  <presetinput
+      identifier=\"outputcolor_1\" uid=\"2638244485\" type=\"3\" value=\"0.866667,0.8,0.717647,1\"
+      />\n  <presetinput identifier=\"outputcolor\" uid=\"2639908528\" type=\"3\"
+      value=\"0.866667,0.8,0.717647,1\" />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
       shader: {fileID: 46, guid: 0000000000000000f000000000000000, type: 0}
@@ -60,12 +61,12 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       - name: _EmissionMap
         texture: {instanceID: 0}
-        scale: {x: 1, y: 1}
+        scale: {x: 2, y: 0.5}
         offset: {x: 0, y: 0}
       - name: _MainTex
         texture: {fileID: -5770893121829810773, guid: 86971bc143b4a9f46af12f7a6684a2a9,
           type: 3}
-        scale: {x: 1, y: 1}
+        scale: {x: 2, y: 0.5}
         offset: {x: 0, y: 0}
       - name: _MetallicGlossMap
         texture: {fileID: -4654474090791176329, guid: 86971bc143b4a9f46af12f7a6684a2a9,
@@ -103,7 +104,7 @@ ScriptedImporter:
       - name: _OcclusionStrength
         float: 1
       - name: _Parallax
-        float: 0.02
+        float: 0.0293
       - name: _SmoothnessTextureChannel
         float: 0
       - name: _SpecularHighlights
