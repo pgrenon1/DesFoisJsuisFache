@@ -4,9 +4,8 @@
 Material:
   serializedVersion: 6
   m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
+  m_PrefabParentObject: {fileID: 0}
+  m_PrefabInternal: {fileID: 0}
   m_Name: DecalCracks_A
   m_Shader: {fileID: 4800000, guid: dfdc3438aa55f2b4cae690d9e87aed28, type: 3}
   m_ShaderKeywords: 
@@ -32,7 +31,7 @@ Material:
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _MainTex:
-        m_Texture: {fileID: 2800000, guid: 68fa275dffe27774d809c6e74950e86f, type: 3}
+        m_Texture: {fileID: 2800000, guid: 4b0c9c1e6c0ab7e40b388a00783fb1f0, type: 3}
         m_Scale: {x: 1, y: 1}
         m_Offset: {x: 0, y: 0}
     - _ShadowTex:
