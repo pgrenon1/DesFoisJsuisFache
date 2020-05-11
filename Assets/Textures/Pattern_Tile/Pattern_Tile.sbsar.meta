@@ -126,7 +126,7 @@ ScriptedImporter:
       usage: 9
       bImage: 1
       bNumerical: 0
-      bLinear: 1
+      bLinear: 0
     - outputName: roughness
       identifier: roughness
       usageName: roughness
@@ -144,7 +144,7 @@ ScriptedImporter:
       usage: 5
       bImage: 1
       bNumerical: 0
-      bLinear: 1
+      bLinear: 0
     - outputName: baseColor
       identifier: baseColor
       usageName: baseColor
@@ -162,7 +162,7 @@ ScriptedImporter:
       usage: 34
       bImage: 1
       bNumerical: 0
-      bLinear: 1
+      bLinear: 0
     texturePackingList:
     - targetName: normal
       components:

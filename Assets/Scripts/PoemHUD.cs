@@ -16,12 +16,14 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
     {
         get
         {
-            return _poem;
+            return FirstPersonController.Instance.ActivePoem;
         }
         set
         {
             _poem = value;
-            poemText.SetText(_poem.poem);
+            
+            if (_poem != null)
+                poemText.SetText(_poem.poem);
         }
     }
 
@@ -37,7 +39,7 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 
     private void Update()
     {
-        var alpha = Mathf.SmoothDamp(_canvasGroup.alpha, _poem != null ? 1f : 0f, ref _currentAlphaVelocity, fadeSpeed);
+        var alpha = Mathf.SmoothDamp(_canvasGroup.alpha, Poem != null && FirstPersonController.Instance.Gun != null ? 1f : 0f, ref _currentAlphaVelocity, fadeSpeed);
         _canvasGroup.alpha = alpha;
     }
 

@@ -52,15 +52,19 @@ public class Bullet : BaseBehaviour
     {
         var rotation = Quaternion.LookRotation(direction);
         var decalPosition = point - direction * decalDistance;
+
+        decalPrefab.Decal.Atlas = FirstPersonController.Instance.ActivePoem.decalTextureAtlas;
+
         var persistentDecal = Instantiate(decalPrefab, decalPosition, rotation);
         persistentDecal.Word = Word.word;
-        var index = persistentDecal.Decal.Atlas.Regions.FindIndex(x => x.Name == Word.word.ToLower());
-        persistentDecal.Decal.AtlasRegionIndex = index;
-        DecalManager.PersistentDecals.Add(persistentDecal);
-        persistentDecal.Decal.LateBake();
-        //persistentDecal.transform.SetParent(DecalManager.Instance.transform);
 
-        //Debug.Log(DecalManager.PersistentDecals.Count);
+        var index = persistentDecal.Decal.Atlas.Regions.FindIndex(x => x.Name == Word.word.ToLower());
+
+        persistentDecal.Decal.AtlasRegionIndex = index;
+
+        DecalManager.PersistentDecals.Add(persistentDecal);
+
+        persistentDecal.Decal.LateBake();
 
         _isMoving = false;
     }

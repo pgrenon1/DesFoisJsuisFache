@@ -13,7 +13,7 @@ GameObject:
   - component: {fileID: 2736941648021200911}
   - component: {fileID: 1750293988262895474}
   m_Layer: 0
-  m_Name: plinth 1
+  m_Name: Plinth
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -59,7 +59,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -4273040689238831296, guid: 286d72636b2037f40a207cb12c83eb1a, type: 3}
+  - {fileID: 2100000, guid: 37536f26b9772a2448e062e6c7e66b6d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0

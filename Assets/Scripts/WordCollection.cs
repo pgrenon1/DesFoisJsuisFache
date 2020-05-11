@@ -1,5 +1,6 @@
 ﻿#if UNITY_EDITOR
 using Unity.EditorCoroutines.Editor;
+using UnityEditor.Sprites;
 #endif
 using Sirenix.OdinInspector;
 using System.Collections;
@@ -10,6 +11,15 @@ using UnityEngine;
 using System.Linq;
 using UnityEngine.Networking;
 using ch.sycoforge.Decal;
+//using System.Drawing;
+//using System.Drawing.Imaging;
+//using Font = System.Drawing.Font;
+//using Graphics = System.Drawing.Graphics;
+//using Color = System.Drawing.Color;
+//using System.Drawing.Text;
+using SimpleSpritePacker;
+using TMPro.SpriteAssetUtilities;
+using UnityEngine.U2D;
 
 [CreateAssetMenu(fileName = "ClipCollection", menuName = "Clip Collection")]
 public class WordCollection : OdinSerializedScriptableObject
@@ -26,29 +36,24 @@ public class WordCollection : OdinSerializedScriptableObject
         _isStopped = true;
     }
 
-    [Button("SORT")]
-    public void Sort()
-    {
-        allWords.Sort((x, y) => string.Compare(x.word, y.word));
-    }
-
-    //[Button("GetWords")]
-    //public void GetWords()
+    //[Button("SORT")]
+    //public void Sort()
     //{
-    //    foreach (var pair in allClips)
-    //    {
-    //        allWords.AddUnique(new Word(pair.Key, pair.Value));
-    //    }
-
-    //    EditorUtility.SetDirty(this);
+    //    allWords.Sort((x, y) => string.Compare(x.word, y.word));
     //}
 
-    [Button("GetImages")]
-    public void GetImages()
-    {
-        _isStopped = false;
+    //[Button("GetImages")]
+    //public void GetImages()
+    //{
+    //    _isStopped = false;
 
-        EditorCoroutineUtility.StartCoroutineOwnerless(GetRequest());
+    //    EditorCoroutineUtility.StartCoroutineOwnerless(GetRequest());
+    //}
+
+    [Button("PackSprites")]
+    public void PackSprites()
+    {
+        
     }
 
     public void SaveTextureToFile(Texture texture, string fileName)

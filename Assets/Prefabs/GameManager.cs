@@ -11,6 +11,8 @@ public class GameManager : SingletonMonoBehaviour<GameManager>
     private void Start()
     {
         Instantiate(firstPersonControllerPrefab, transform.position, Quaternion.identity, null);
+
+        Debug.Log(QualitySettings.GetQualityLevel());
     }
 
     public void Reset()

@@ -159,7 +159,7 @@ ScriptedImporter:
       usage: 34
       bImage: 1
       bNumerical: 0
-      bLinear: 1
+      bLinear: 0
     texturePackingList:
     - targetName: baseColor
       components:

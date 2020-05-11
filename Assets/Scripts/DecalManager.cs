@@ -18,5 +18,6 @@ public class DecalManager : SingletonMonoBehaviour<DecalManager>
         {
             Destroy(PersistentDecals[i].gameObject);
         }
+        PersistentDecals.Clear();
     }
 }

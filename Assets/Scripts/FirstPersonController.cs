@@ -28,9 +28,9 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     [SerializeField] private AudioClip m_JumpSound;           // the sound played when character leaves the ground.
     [SerializeField] private AudioClip m_LandSound;           // the sound played when character touches back on ground.
     [Space]
-    public bool equipGunOnStart = false;
     public float smallStepTime = 0.1f;
     public float bigStepTime = 0.5f;
+    public bool waitsOnStart = true;
 
     private WeaponHolder _weaponHolder;
     private Camera m_Camera;
@@ -47,33 +47,42 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private bool m_Jumping;
     private AudioSource m_AudioSource;
 
+    private bool _isWaiting = false;
     private bool _isScrollKeyDown;
     private float _lastStep;
     private float _stepTime;
     private Camera _mainCamera;
-    private int _previousIndexInt;
-    private int _currentIndexInt;
-
-    public Gun Gun { get; set; }
-
-    private int CurrentIndexInt
+    private int _previousWordIndex;
+    private int _wordIndex;
+    private int _poemIndex;
+    public Poem ActivePoem
     {
         get
         {
-            return _currentIndexInt;
+            return GameManager.Instance.wordCollection.poems[_poemIndex];
+        }
+    }
+
+    public Gun Gun { get; set; }
+
+    public int WordIndex
+    {
+        get
+        {
+            return _wordIndex;
         }
         set
         {
-            if (_currentIndexInt != value)
+            if (_wordIndex != value)
             {
-                _currentIndexInt = value;
+                _wordIndex = value;
 
-                if (_currentIndexInt < 0)
-                    _currentIndexInt = Gun.poem.words.Count - 1;
-                else if (_currentIndexInt > Gun.poem.words.Count - 1)
-                    _currentIndexInt = 0;
+                if (_wordIndex < 0)
+                    _wordIndex = ActivePoem.words.Count - 1;
+                else if (_wordIndex > ActivePoem.words.Count - 1)
+                    _wordIndex = 0;
 
-                ChangeSelection();
+                RefreshSelection();
             }
         }
     }
@@ -99,14 +108,25 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
         _cameraShake = _mainCamera.GetComponent<CameraShake>();
         _weaponHolder = GetComponentInChildren<WeaponHolder>();
 
-        if (equipGunOnStart)
-            Equip(FindObjectOfType<Gun>());
+        if (waitsOnStart)
+            StartCoroutine(Wait());
     }
 
+    private IEnumerator Wait()
+    {
+        _isWaiting = true;
+
+        yield return new WaitForSeconds(1f);
+
+        _isWaiting = false;
+    }
 
     // Update is called once per frame
     private void Update()
     {
+        if (_isWaiting)
+            return;
+
         RotateView();
         // the jump state needs to read here to make sure it is not missed
         if (!m_Jump)
@@ -167,57 +187,48 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
                 _lastStep = Time.time;
                 _stepTime = _isScrollKeyDown ? smallStepTime : bigStepTime;
                 _isScrollKeyDown = true;
-                CurrentIndexInt += indexDelta;
+                WordIndex += indexDelta;
             }
         }
         else
         {
             _isScrollKeyDown = false;
         }
-
-        //if ((_selectionChangeThreshold > 1f || Input.GetKey(KeyCode.E)) && _selectionTimer < 0f)
-        //{
-        //    CurrentIndexInt++;
-        //}
-        //else if ((_selectionChangeThreshold < -1f || Input.GetKey(KeyCode.Q)) && _selectionTimer <= 0f)
-        //{
-        //    CurrentIndexInt--;
-        //}
-
-        //if (_selectionTimer > 0f)
-        //{
-        //    _selectionTimer -= Time.deltaTime;
-        //}
     }
 
-    private void ChangeSelection()
+    private void RefreshSelection()
     {
-        PoemHUD.Instance.Select(CurrentIndexInt);
-        PoemHUD.Instance.Deselect(_previousIndexInt);
+        if (_previousWordIndex != WordIndex)
+            PoemHUD.Instance.Deselect(_previousWordIndex);
 
-        _previousIndexInt = CurrentIndexInt;
+        PoemHUD.Instance.Select(WordIndex);
 
-        //_selectionChangeThreshold = 0;
+        _previousWordIndex = WordIndex;
+    }
 
-        //_selectionTimer = selectionTime;
+    public void CyclePoem()
+    {
+        _poemIndex++;
+        if (_poemIndex > GameManager.Instance.wordCollection.poems.Count - 1)
+            _poemIndex = 0;
+
+        PoemHUD.Instance.Poem = ActivePoem;
+
+        StartCoroutine(LateSelect());
+    }
+
+    private IEnumerator LateSelect()
+    {
+        yield return null;
+
+        WordIndex = 0;
+        PoemHUD.Instance.Select(WordIndex);
     }
 
     private void UpdateClick()
     {
         if (Input.GetMouseButton(0))
         {
-            RaycastHit hitInfo;
-            var forward = _mainCamera.transform.forward;
-            if (Physics.Raycast(_mainCamera.transform.position, forward, out hitInfo))
-            {
-                var gun = hitInfo.collider.GetComponentInParent<Gun>();
-                if (gun)
-                {
-                    Equip(gun);
-                    return;
-                }
-            }
-
             if (Gun && Gun.IsROFReady)
             {
                 Shoot();
@@ -235,34 +246,40 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
 
     private void Shoot()
     {
-        Gun.Shoot(_currentIndexInt);
+        Gun.Shoot(_wordIndex);
 
         _cameraShake.shakeDuration = .05f;
     }
 
-    private void Equip(Gun gun)
+    public Gun Equip(GunPickup gunPickup)
     {
+        var newGun = gunPickup.Gun;
+        gunPickup.Gun = null;
+
+        var previousGun = Gun;
         if (Gun != null)
         {
-            Gun.Unequip(gun.transform.position);
+            Gun.Unequip(gunPickup);
         }
 
-        gun.transform.parent = _weaponHolder.transform;
-        gun.transform.localPosition = Vector3.zero;
-        gun.transform.parent = _weaponHolder.weaponPivot;
-        gun.transform.localRotation = Quaternion.identity;
-        gun.Equip();
+        newGun.transform.parent = _weaponHolder.transform;
+        newGun.transform.localPosition = Vector3.zero;
+        newGun.transform.parent = _weaponHolder.weaponPivot;
+        newGun.transform.localRotation = Quaternion.identity;
+        newGun.Equip();
 
-        _currentIndexInt = 0;
+        PoemHUD.Instance.Poem = ActivePoem;
 
-        Gun = gun;
+        Gun = newGun;
+
+        return previousGun;
     }
 
     public IEnumerator RefreshAtEndOfFrame()
     {
         yield return null;
 
-        PoemHUD.Instance.Select(_currentIndexInt);
+        PoemHUD.Instance.Select(_wordIndex);
     }
 
     public void StepGun()

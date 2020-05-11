@@ -71,7 +71,6 @@ MonoBehaviour:
     - {fileID: 8300000, guid: 215b72e9bd400a349b45ff98ab5a770f, type: 3}
     - {fileID: 8300000, guid: c3bdd2d1f6a75c340b4a4c73dd68a9de, type: 3}
     - {fileID: 8300000, guid: cfd8c383c8110ca428d690c2012b6f1a, type: 3}
-    - {fileID: 0}
     - {fileID: 8300000, guid: 7b3b49c7a06de5545aed54cc9728badb, type: 3}
     - {fileID: 8300000, guid: 25f4cd8c3ade2934f985d711159700f1, type: 3}
     - {fileID: 8300000, guid: ec93382e425ed2d4182079b4f699f3e3, type: 3}
@@ -1121,8 +1120,8 @@ MonoBehaviour:
       Entry: 1
       Data: Aux
     - Name: clip
-      Entry: 10
-      Data: 55
+      Entry: 6
+      Data: 
     - Name: 
       Entry: 8
       Data: 
@@ -1134,7 +1133,7 @@ MonoBehaviour:
       Data: branches
     - Name: clip
       Entry: 10
-      Data: 56
+      Data: 55
     - Name: 
       Entry: 8
       Data: 
@@ -1146,7 +1145,7 @@ MonoBehaviour:
       Data: du
     - Name: clip
       Entry: 10
-      Data: 57
+      Data: 56
     - Name: 
       Entry: 8
       Data: 
@@ -1158,7 +1157,7 @@ MonoBehaviour:
       Data: "gen\xE9vrier"
     - Name: clip
       Entry: 10
-      Data: 58
+      Data: 57
     - Name: 
       Entry: 8
       Data: 
@@ -1338,7 +1337,7 @@ MonoBehaviour:
       Data: tout
     - Name: clip
       Entry: 10
-      Data: 59
+      Data: 58
     - Name: 
       Entry: 8
       Data: 
@@ -1350,7 +1349,7 @@ MonoBehaviour:
       Data: "l\u2019ennui"
     - Name: clip
       Entry: 10
-      Data: 60
+      Data: 59
     - Name: 
       Entry: 8
       Data: 
@@ -1386,13 +1385,13 @@ MonoBehaviour:
   poem: "Ah ! Comme la neige a neig\xE9 !\nMa vitre est un jardin de givre.\nAh !
     comme la neige a neig\xE9 !\nQu\u2019est-ce que le spasme de vivre\n\xC0 la douleur,
     que j\u2019ai, que j\u2019ai !\nTous les \xE9tangs gisent gel\xE9s,\nMon \xE2me
-    est noire : O\xF9 vis-je ? o\xF9 vais-je ?\nTous ses espoirs gisent gel\xE9s :\nJe
-    suis la nouvelle Norv\xE8ge\nD\u2019o\xF9 les blonds ciels s\u2019en sont all\xE9s.\nPleurez,
-    oiseaux de f\xE9vrier,\nAu sinistre frisson des choses,\nPleurez, oiseaux de f\xE9vrier,\nPleurez
-    mes pleurs, pleurez mes roses,\nAux branches du gen\xE9vrier.\nAh ! comme la neige
-    a neig\xE9 !\nMa vitre est un jardin de givre.\nAh ! comme la neige a neig\xE9
-    !\nQu\u2019est-ce que le spasme de vivre\n\xC0 tout l\u2019ennui que j\u2019ai,
-    que j\u2019ai !"
+    est noire : O\xF9 vis-je ? o\xF9 vais-je ?\nTous ses espoirs gisent gel\xE9s
+    :\nJe suis la nouvelle Norv\xE8ge\nD\u2019o\xF9 les blonds ciels s\u2019en sont
+    all\xE9s.\nPleurez, oiseaux de f\xE9vrier,\nAu sinistre frisson des choses,\nPleurez,
+    oiseaux de f\xE9vrier,\nPleurez mes pleurs, pleurez mes roses,\nAux branches
+    du gen\xE9vrier.\nAh ! comme la neige a neig\xE9 !\nMa vitre est un jardin de
+    givre.\nAh ! comme la neige a neig\xE9 !\nQu\u2019est-ce que le spasme de vivre\n\xC0
+    tout l\u2019ennui que j\u2019ai, que j\u2019ai !"
   words:
   - word: Ah
     clip: {fileID: 8300000, guid: 32ac50fd79588944fa9546ba829a433e, type: 3}
@@ -1628,3 +1627,4 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 07917caae9a5dde4a907ba498718937b, type: 3}
   - word: "j\u2019ai"
     clip: {fileID: 8300000, guid: a3380110785810945a56013fbf98f31f, type: 3}
+  decalTextureAtlas: {fileID: 11400000, guid: 3dfa1cf640b525d469d814b768ea0188, type: 2}

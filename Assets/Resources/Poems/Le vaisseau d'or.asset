@@ -1752,3 +1752,4 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 25f4cd8c3ade2934f985d711159700f1, type: 3}
   - word: "R\xEAve"
     clip: {fileID: 8300000, guid: a676bb3b4b5a59b4d9938d6c345a0265, type: 3}
+  decalTextureAtlas: {fileID: 11400000, guid: 07995fc1a0e6a694fb789ec1f4389925, type: 2}

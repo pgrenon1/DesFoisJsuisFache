@@ -10,7 +10,6 @@ using Sirenix.OdinInspector;
 [RequireComponent(typeof(AudioSource))]
 public class Gun : BaseBehaviour
 {
-    public Poem poem;
     public AudioSource emptySound;
     public Bullet bulletPrefab;
     public GameObject pickupVisuals;
@@ -46,6 +45,14 @@ public class Gun : BaseBehaviour
         get
         {
             return _rateOfFireValue <= 0f && (isFullAuto || HasReleasedTrigger);
+        }
+    }
+
+    public Poem Poem
+    {
+        get
+        {
+            return FirstPersonController.Instance.ActivePoem;
         }
     }
 
@@ -94,8 +101,6 @@ public class Gun : BaseBehaviour
 
     public void Equip()
     {
-        PoemHUD.Instance.Poem = poem;
-
         FirstPersonController.Instance.StartCoroutine(FirstPersonController.Instance.RefreshAtEndOfFrame());
 
         pickupVisuals.SetActive(false);
@@ -108,10 +113,12 @@ public class Gun : BaseBehaviour
             _crosshair = Instantiate(crosshairPrefab, new Vector3(Screen.width * 0.5f, Screen.height * 0.5f, 0), Quaternion.identity, FindObjectOfType<Canvas>().transform);
     }
 
-    public void Unequip(Vector3 position)
+    public void Unequip(GunPickup gunPickup)
     {
-        transform.parent = null;
-        transform.position = position;
+        transform.parent = gunPickup.spawnTransform;
+        transform.position = gunPickup.spawnTransform.position;
+        transform.rotation = gunPickup.spawnTransform.rotation;
+        gunPickup.Gun = this;
 
         pickupVisuals.SetActive(true);
         equipedVisuals.SetActive(false);
@@ -145,7 +152,7 @@ public class Gun : BaseBehaviour
     {
         if (shootsVerses)
         {
-            var line = poem.lines[index];
+            var line = Poem.lines[index];
             var words = line.words;
 
             for (int i = 0; i < words.Count; i++)
@@ -158,7 +165,7 @@ public class Gun : BaseBehaviour
         {
             for (int i = 0; i < bulletsPerShot; i++)
             {
-                ShootSingleBullet(poem.words[index]);
+                ShootSingleBullet(Poem.words[index]);
             }
         }
 
