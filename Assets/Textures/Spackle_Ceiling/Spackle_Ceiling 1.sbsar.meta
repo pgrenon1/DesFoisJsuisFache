@@ -18,8 +18,8 @@ ScriptedImporter:
     generateMipMaps: 1
     preset: " <sbspreset pkgurl=\"pkg://Painted_Gypsum\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"3793323156\" type=\"8\" value=\"9,9\" />\n 
-      <presetinput identifier=\"Paint_Color\" uid=\"2444330705\" type=\"3\" value=\"0.141509,0.0634122,0.0634122,1\"
-      />\n  <presetinput identifier=\"Gloss\" uid=\"2444330636\" type=\"0\" value=\"0.317\"
+      <presetinput identifier=\"Paint_Color\" uid=\"2444330705\" type=\"3\" value=\"0.105882,0.0291919,0.0291919,1\"
+      />\n  <presetinput identifier=\"Gloss\" uid=\"2444330636\" type=\"0\" value=\"0.629\"
       />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:
@@ -68,7 +68,7 @@ ScriptedImporter:
         offset: {x: 0, y: 0}
       floats:
       - name: _BumpScale
-        float: 0.25
+        float: -1.22
       - name: _Cutoff
         float: 0.5
       - name: _DetailNormalMapScale
@@ -76,7 +76,7 @@ ScriptedImporter:
       - name: _DstBlend
         float: 0
       - name: _GlossMapScale
-        float: 0.867
+        float: 0.939
       - name: _Glossiness
         float: 0.5
       - name: _GlossyReflections

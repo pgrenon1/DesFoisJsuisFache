@@ -627,3 +627,5 @@ MonoBehaviour:
   poems:
   - {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708, type: 2}
   - {fileID: 11400000, guid: bdd01b04c4f582d48973623a843341df, type: 2}
+  - {fileID: 11400000, guid: 22c6bdecde15b4049b2d9191392a9695, type: 2}
+  - {fileID: 11400000, guid: f5592d74b86865249ab22b8bfb3d944e, type: 2}

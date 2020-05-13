@@ -1068,3 +1068,4 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: b71515b40e548404dbfbe37458b922e1, type: 3}
   - word: morts
     clip: {fileID: 8300000, guid: e4856555aff1f6641a23c9a409b0f274, type: 3}
+  decalTextureAtlas: {fileID: 11400000, guid: 9251651bdf66edd45bc8072febb309d2, type: 2}

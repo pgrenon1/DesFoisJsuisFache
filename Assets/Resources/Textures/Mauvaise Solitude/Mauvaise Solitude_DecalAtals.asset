@@ -1,0 +1,926 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 225627996, guid: ffea41b2ef7376143bee608c897e587a, type: 3}
+  m_Name: Mauvaise Solitude_DecalAtals
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 0336b7275dddb784cb559bf2dd2ec572, type: 2}
+  regions:
+  - name: affaiblissant
+    region:
+      serializedVersion: 2
+      x: 0.38476562
+      y: 0
+      width: 0.15722656
+      height: 0.06640625
+  - name: affreuse
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.2734375
+      width: 0.10644531
+      height: 0.06640625
+  - name: afin
+    region:
+      serializedVersion: 2
+      x: 0.58496094
+      y: 0.8886719
+      width: 0.057617188
+      height: 0.06640625
+  - name: "aim\xE9"
+    region:
+      serializedVersion: 2
+      x: 0.34179688
+      y: 0.8203125
+      width: 0.068359375
+      height: 0.06640625
+  - name: "am\xE8re"
+    region:
+      serializedVersion: 2
+      x: 0.095703125
+      y: 0.546875
+      width: 0.083984375
+      height: 0.06640625
+  - name: angoisses
+    region:
+      serializedVersion: 2
+      x: 0.25
+      y: 0.13671875
+      width: 0.12109375
+      height: 0.06640625
+  - name: apaise
+    region:
+      serializedVersion: 2
+      x: 0.18164062
+      y: 0.6152344
+      width: 0.08300781
+      height: 0.06640625
+  - name: attitude
+    region:
+      serializedVersion: 2
+      x: 0.8769531
+      y: 0.20507812
+      width: 0.10644531
+      height: 0.06640625
+  - name: au
+    region:
+      serializedVersion: 2
+      x: 0.52246094
+      y: 0.41015625
+      width: 0.040039062
+      height: 0.06640625
+  - name: baiser
+    region:
+      serializedVersion: 2
+      x: 0.09765625
+      y: 0.41015625
+      width: 0.08105469
+      height: 0.06640625
+  - name: besoin
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.8886719
+      width: 0.08984375
+      height: 0.06640625
+  - name: "bient\xF4t"
+    region:
+      serializedVersion: 2
+      x: 0.5263672
+      y: 0.2734375
+      width: 0.099609375
+      height: 0.06640625
+  - name: "bless\xE9"
+    region:
+      serializedVersion: 2
+      x: 0.1796875
+      y: 0.41015625
+      width: 0.080078125
+      height: 0.06640625
+  - name: caresse
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.68359375
+      width: 0.09277344
+      height: 0.06640625
+  - name: ce
+    region:
+      serializedVersion: 2
+      x: 0.56640625
+      y: 0.34179688
+      width: 0.03515625
+      height: 0.06640625
+  - name: "celle-l\xE0"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.7519531
+      width: 0.09277344
+      height: 0.06640625
+  - name: cette
+    region:
+      serializedVersion: 2
+      x: 0.3408203
+      y: 0.7519531
+      width: 0.068359375
+      height: 0.06640625
+  - name: chanson
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.20507812
+      width: 0.11230469
+      height: 0.06640625
+  - name: comme
+    region:
+      serializedVersion: 2
+      x: 0.42382812
+      y: 0.2734375
+      width: 0.1015625
+      height: 0.06640625
+  - name: compagnon
+    region:
+      serializedVersion: 2
+      x: 0.54296875
+      y: 0
+      width: 0.15722656
+      height: 0.06640625
+  - name: consolatrice
+    region:
+      serializedVersion: 2
+      x: 0.2265625
+      y: 0
+      width: 0.15722656
+      height: 0.06640625
+  - name: consumer
+    region:
+      serializedVersion: 2
+      x: 0.29296875
+      y: 0.068359375
+      width: 0.13183594
+      height: 0.06640625
+  - name: cruel
+    region:
+      serializedVersion: 2
+      x: 0.26953125
+      y: 0.8886719
+      width: 0.07128906
+      height: 0.06640625
+  - name: "c\u0153ur"
+    region:
+      serializedVersion: 2
+      x: 0.33984375
+      y: 0.41015625
+      width: 0.07519531
+      height: 0.06640625
+  - name: "c\u2019est"
+    region:
+      serializedVersion: 2
+      x: 0.4111328
+      y: 0.68359375
+      width: 0.06347656
+      height: 0.06640625
+  - name: dans
+    region:
+      serializedVersion: 2
+      x: 0.41015625
+      y: 0.7519531
+      width: 0.06640625
+      height: 0.06640625
+  - name: de
+    region:
+      serializedVersion: 2
+      x: 0.53027344
+      y: 0.47851562
+      width: 0.0390625
+      height: 0.06640625
+  - name: des
+    region:
+      serializedVersion: 2
+      x: 0.47851562
+      y: 0.546875
+      width: 0.048828125
+      height: 0.06640625
+  - name: descend
+    region:
+      serializedVersion: 2
+      x: 0.2265625
+      y: 0.20507812
+      width: 0.10839844
+      height: 0.06640625
+  - name: dirige
+    region:
+      serializedVersion: 2
+      x: 0.18066406
+      y: 0.34179688
+      width: 0.07910156
+      height: 0.06640625
+  - name: dissipent
+    region:
+      serializedVersion: 2
+      x: 0.3720703
+      y: 0.13671875
+      width: 0.119140625
+      height: 0.06640625
+  - name: doigts
+    region:
+      serializedVersion: 2
+      x: 0.18261719
+      y: 0.8203125
+      width: 0.08496094
+      height: 0.06640625
+  - name: dont
+    region:
+      serializedVersion: 2
+      x: 0.3408203
+      y: 0.68359375
+      width: 0.06933594
+      height: 0.06640625
+  - name: doucement
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.068359375
+      width: 0.14941406
+      height: 0.06640625
+  - name: doute
+    region:
+      serializedVersion: 2
+      x: 0.09765625
+      y: 0.34179688
+      width: 0.08203125
+      height: 0.06640625
+  - name: "d\xE9livres"
+    region:
+      serializedVersion: 2
+      x: 0.3203125
+      y: 0.2734375
+      width: 0.10253906
+      height: 0.06640625
+  - name: "d\xE9tresse"
+    region:
+      serializedVersion: 2
+      x: 0.107421875
+      y: 0.2734375
+      width: 0.10546875
+      height: 0.06640625
+  - name: "d\u2019une"
+    region:
+      serializedVersion: 2
+      x: 0.18164062
+      y: 0.47851562
+      width: 0.080078125
+      height: 0.06640625
+  - name: endormir
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.13671875
+      width: 0.12597656
+      height: 0.06640625
+  - name: enfin
+    region:
+      serializedVersion: 2
+      x: 0.265625
+      y: 0.68359375
+      width: 0.07421875
+      height: 0.06640625
+  - name: "enti\xE8re"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.6152344
+      width: 0.09375
+      height: 0.06640625
+  - name: espoir
+    region:
+      serializedVersion: 2
+      x: 0.18066406
+      y: 0.546875
+      width: 0.083984375
+      height: 0.06640625
+  - name: est
+    region:
+      serializedVersion: 2
+      x: 0.52246094
+      y: 0.34179688
+      width: 0.04296875
+      height: 0.06640625
+  - name: et
+    region:
+      serializedVersion: 2
+      x: 0.60839844
+      y: 0.47851562
+      width: 0.032226562
+      height: 0.06640625
+  - name: faut-il
+    region:
+      serializedVersion: 2
+      x: 0.095703125
+      y: 0.47851562
+      width: 0.08496094
+      height: 0.06640625
+  - name: "fi\xE8re"
+    region:
+      serializedVersion: 2
+      x: 0.41308594
+      y: 0.6152344
+      width: 0.06347656
+      height: 0.06640625
+  - name: folles
+    region:
+      serializedVersion: 2
+      x: 0.33984375
+      y: 0.47851562
+      width: 0.07421875
+      height: 0.06640625
+  - name: fort
+    region:
+      serializedVersion: 2
+      x: 0.6435547
+      y: 0.8886719
+      width: 0.056640625
+      height: 0.06640625
+  - name: front
+    region:
+      serializedVersion: 2
+      x: 0.265625
+      y: 0.6152344
+      width: 0.07421875
+      height: 0.06640625
+  - name: garder
+    region:
+      serializedVersion: 2
+      x: 0.18164062
+      y: 0.8886719
+      width: 0.08691406
+      height: 0.06640625
+  - name: grave
+    region:
+      serializedVersion: 2
+      x: 0.3408203
+      y: 0.34179688
+      width: 0.07421875
+      height: 0.06640625
+  - name: "gu\xE9rir"
+    region:
+      serializedVersion: 2
+      x: 0.18164062
+      y: 0.68359375
+      width: 0.08300781
+      height: 0.06640625
+  - name: jamais
+    region:
+      serializedVersion: 2
+      x: 0.09472656
+      y: 0.6152344
+      width: 0.0859375
+      height: 0.06640625
+  - name: je
+    region:
+      serializedVersion: 2
+      x: 0.58496094
+      y: 0.6152344
+      width: 0.029296875
+      height: 0.06640625
+  - name: jour
+    region:
+      serializedVersion: 2
+      x: 0.4111328
+      y: 0.8203125
+      width: 0.060546875
+      height: 0.06640625
+  - name: la
+    region:
+      serializedVersion: 2
+      x: 0.63671875
+      y: 0.34179688
+      width: 0.030273438
+      height: 0.06640625
+  - name: le
+    region:
+      serializedVersion: 2
+      x: 0.63671875
+      y: 0.41015625
+      width: 0.030273438
+      height: 0.06640625
+  - name: les
+    region:
+      serializedVersion: 2
+      x: 0.9580078
+      y: 0.13671875
+      width: 0.041015625
+      height: 0.06640625
+  - name: livres
+    region:
+      serializedVersion: 2
+      x: 0.26660156
+      y: 0.7519531
+      width: 0.07324219
+      height: 0.06640625
+  - name: loin
+    region:
+      serializedVersion: 2
+      x: 0.47753906
+      y: 0.7519531
+      width: 0.05859375
+      height: 0.06640625
+  - name: "l\u2019amour"
+    region:
+      serializedVersion: 2
+      x: 0.6611328
+      y: 0.20507812
+      width: 0.107421875
+      height: 0.06640625
+  - name: "l\u2019ennui"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.41015625
+      width: 0.09667969
+      height: 0.06640625
+  - name: "l\u2019heure"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.546875
+      width: 0.09472656
+      height: 0.06640625
+  - name: "l\u2019imp\xE9rieux"
+    region:
+      serializedVersion: 2
+      x: 0.7011719
+      y: 0
+      width: 0.14941406
+      height: 0.06640625
+  - name: "l\u2019occupe"
+    region:
+      serializedVersion: 2
+      x: 0.72753906
+      y: 0.13671875
+      width: 0.11425781
+      height: 0.06640625
+  - name: "l\u2019ombre"
+    region:
+      serializedVersion: 2
+      x: 0.76953125
+      y: 0.20507812
+      width: 0.10644531
+      height: 0.06640625
+  - name: "l\u2019\xE2me"
+    region:
+      serializedVersion: 2
+      x: 0.92089844
+      y: 0.2734375
+      width: 0.076171875
+      height: 0.06640625
+  - name: "l\u2019\xE9motion"
+    region:
+      serializedVersion: 2
+      x: 0.42578125
+      y: 0.068359375
+      width: 0.12988281
+      height: 0.06640625
+  - name: mal
+    region:
+      serializedVersion: 2
+      x: 0.9433594
+      y: 0.068359375
+      width: 0.055664062
+      height: 0.06640625
+  - name: mauvaise
+    region:
+      serializedVersion: 2
+      x: 0.12695312
+      y: 0.13671875
+      width: 0.12207031
+      height: 0.06640625
+  - name: me
+    region:
+      serializedVersion: 2
+      x: 0.4736328
+      y: 0.34179688
+      width: 0.047851562
+      height: 0.06640625
+  - name: moi
+    region:
+      serializedVersion: 2
+      x: 0.5253906
+      y: 0.8886719
+      width: 0.05859375
+      height: 0.06640625
+  - name: "m\u2019est"
+    region:
+      serializedVersion: 2
+      x: 0.265625
+      y: 0.546875
+      width: 0.076171875
+      height: 0.06640625
+  - name: ne
+    region:
+      serializedVersion: 2
+      x: 0.56347656
+      y: 0.41015625
+      width: 0.0390625
+      height: 0.06640625
+  - name: paroles
+    region:
+      serializedVersion: 2
+      x: 0.72558594
+      y: 0.2734375
+      width: 0.09667969
+      height: 0.06640625
+  - name: "pass\xE9e"
+    region:
+      serializedVersion: 2
+      x: 0.18066406
+      y: 0.7519531
+      width: 0.08496094
+      height: 0.06640625
+  - name: "pens\xE9e"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.8203125
+      width: 0.091796875
+      height: 0.06640625
+  - name: pire
+    region:
+      serializedVersion: 2
+      x: 0.5908203
+      y: 0.8203125
+      width: 0.057617188
+      height: 0.06640625
+  - name: pleurer
+    region:
+      serializedVersion: 2
+      x: 0.6269531
+      y: 0.2734375
+      width: 0.09765625
+      height: 0.06640625
+  - name: portes
+    region:
+      serializedVersion: 2
+      x: 0.09375
+      y: 0.7519531
+      width: 0.0859375
+      height: 0.06640625
+  - name: poser
+    region:
+      serializedVersion: 2
+      x: 0.2626953
+      y: 0.47851562
+      width: 0.076171875
+      height: 0.06640625
+  - name: pour
+    region:
+      serializedVersion: 2
+      x: 0.34277344
+      y: 0.546875
+      width: 0.0703125
+      height: 0.06640625
+  - name: pourraient
+    region:
+      serializedVersion: 2
+      x: 0.15039062
+      y: 0.068359375
+      width: 0.14160156
+      height: 0.06640625
+  - name: pourrait
+    region:
+      serializedVersion: 2
+      x: 0.11328125
+      y: 0.20507812
+      width: 0.11230469
+      height: 0.06640625
+  - name: "po\xE8te"
+    region:
+      serializedVersion: 2
+      x: 0.2607422
+      y: 0.41015625
+      width: 0.078125
+      height: 0.06640625
+  - name: puis
+    region:
+      serializedVersion: 2
+      x: 0.47753906
+      y: 0.6152344
+      width: 0.061523438
+      height: 0.06640625
+  - name: quand
+    region:
+      serializedVersion: 2
+      x: 0.09082031
+      y: 0.8886719
+      width: 0.08984375
+      height: 0.06640625
+  - name: que
+    region:
+      serializedVersion: 2
+      x: 0.41601562
+      y: 0.34179688
+      width: 0.056640625
+      height: 0.06640625
+  - name: qui
+    region:
+      serializedVersion: 2
+      x: 0.47753906
+      y: 0.47851562
+      width: 0.051757812
+      height: 0.06640625
+  - name: "qu\u2019heureusement"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.22558594
+      height: 0.06640625
+  - name: redoute
+    region:
+      serializedVersion: 2
+      x: 0.21386719
+      y: 0.2734375
+      width: 0.10546875
+      height: 0.06640625
+  - name: regard
+    region:
+      serializedVersion: 2
+      x: 0.09375
+      y: 0.68359375
+      width: 0.08691406
+      height: 0.06640625
+  - name: rien
+    region:
+      serializedVersion: 2
+      x: 0.47265625
+      y: 0.8203125
+      width: 0.05859375
+      height: 0.06640625
+  - name: "r\xEAv\xE9"
+    region:
+      serializedVersion: 2
+      x: 0.46484375
+      y: 0.8886719
+      width: 0.059570312
+      height: 0.06640625
+  - name: sa
+    region:
+      serializedVersion: 2
+      x: 0.60253906
+      y: 0.34179688
+      width: 0.033203125
+      height: 0.06640625
+  - name: sais
+    region:
+      serializedVersion: 2
+      x: 0.46972656
+      y: 0.41015625
+      width: 0.051757812
+      height: 0.06640625
+  - name: sans
+    region:
+      serializedVersion: 2
+      x: 0.34179688
+      y: 0.8886719
+      width: 0.060546875
+      height: 0.06640625
+  - name: si
+    region:
+      serializedVersion: 2
+      x: 0.58496094
+      y: 0.68359375
+      width: 0.028320312
+      height: 0.06640625
+  - name: solitude
+    region:
+      serializedVersion: 2
+      x: 0.44433594
+      y: 0.20507812
+      width: 0.107421875
+      height: 0.06640625
+  - name: songeur
+    region:
+      serializedVersion: 2
+      x: 0.3359375
+      y: 0.20507812
+      width: 0.107421875
+      height: 0.06640625
+  - name: souffre
+    region:
+      serializedVersion: 2
+      x: 0.8232422
+      y: 0.2734375
+      width: 0.09667969
+      height: 0.06640625
+  - name: sourire
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.47851562
+      width: 0.09472656
+      height: 0.06640625
+  - name: subtil
+    region:
+      serializedVersion: 2
+      x: 0.2607422
+      y: 0.34179688
+      width: 0.07910156
+      height: 0.06640625
+  - name: "supr\xEAme"
+    region:
+      serializedVersion: 2
+      x: 0.6113281
+      y: 0.13671875
+      width: 0.115234375
+      height: 0.06640625
+  - name: sur
+    region:
+      serializedVersion: 2
+      x: 0.5283203
+      y: 0.546875
+      width: 0.047851562
+      height: 0.06640625
+  - name: "s\u0153ur"
+    region:
+      serializedVersion: 2
+      x: 0.2685547
+      y: 0.8203125
+      width: 0.072265625
+      height: 0.06640625
+  - name: "s\u2019empare"
+    region:
+      serializedVersion: 2
+      x: 0.4921875
+      y: 0.13671875
+      width: 0.11816406
+      height: 0.06640625
+  - name: te
+    region:
+      serializedVersion: 2
+      x: 0.6035156
+      y: 0.41015625
+      width: 0.032226562
+      height: 0.06640625
+  - name: tendre
+    region:
+      serializedVersion: 2
+      x: 0.09277344
+      y: 0.8203125
+      width: 0.08886719
+      height: 0.06640625
+  - name: toi
+    region:
+      serializedVersion: 2
+      x: 0.54003906
+      y: 0.68359375
+      width: 0.043945312
+      height: 0.06640625
+  - name: "toi-m\xEAme"
+    region:
+      serializedVersion: 2
+      x: 0.6855469
+      y: 0.068359375
+      width: 0.12792969
+      height: 0.06640625
+  - name: ton
+    region:
+      serializedVersion: 2
+      x: 0.41601562
+      y: 0.41015625
+      width: 0.052734375
+      height: 0.06640625
+  - name: torturer
+    region:
+      serializedVersion: 2
+      x: 0.5527344
+      y: 0.20507812
+      width: 0.107421875
+      height: 0.06640625
+  - name: toujours
+    region:
+      serializedVersion: 2
+      x: 0.84277344
+      y: 0.13671875
+      width: 0.11425781
+      height: 0.06640625
+  - name: tourment
+    region:
+      serializedVersion: 2
+      x: 0.5566406
+      y: 0.068359375
+      width: 0.12792969
+      height: 0.06640625
+  - name: tous
+    region:
+      serializedVersion: 2
+      x: 0.4140625
+      y: 0.546875
+      width: 0.06347656
+      height: 0.06640625
+  - name: tout
+    region:
+      serializedVersion: 2
+      x: 0.47558594
+      y: 0.68359375
+      width: 0.06347656
+      height: 0.06640625
+  - name: triste
+    region:
+      serializedVersion: 2
+      x: 0.3408203
+      y: 0.6152344
+      width: 0.07128906
+      height: 0.06640625
+  - name: tu
+    region:
+      serializedVersion: 2
+      x: 0.57714844
+      y: 0.546875
+      width: 0.037109375
+      height: 0.06640625
+  - name: "t\u2019aimer"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.34179688
+      width: 0.09667969
+      height: 0.06640625
+  - name: "t\u2019en"
+    region:
+      serializedVersion: 2
+      x: 0.53222656
+      y: 0.8203125
+      width: 0.057617188
+      height: 0.06640625
+  - name: un
+    region:
+      serializedVersion: 2
+      x: 0.54003906
+      y: 0.6152344
+      width: 0.043945312
+      height: 0.06640625
+  - name: va
+    region:
+      serializedVersion: 2
+      x: 0.5703125
+      y: 0.47851562
+      width: 0.037109375
+      height: 0.06640625
+  - name: vers
+    region:
+      serializedVersion: 2
+      x: 0.5371094
+      y: 0.7519531
+      width: 0.057617188
+      height: 0.06640625
+  - name: viendra-t-il
+    region:
+      serializedVersion: 2
+      x: 0.8515625
+      y: 0
+      width: 0.14453125
+      height: 0.06640625
+  - name: voix
+    region:
+      serializedVersion: 2
+      x: 0.41503906
+      y: 0.47851562
+      width: 0.061523438
+      height: 0.06640625
+  - name: "\xE0"
+    region:
+      serializedVersion: 2
+      x: 0.6142578
+      y: 0.68359375
+      width: 0.022460938
+      height: 0.06640625
+  - name: "\xE2me"
+    region:
+      serializedVersion: 2
+      x: 0.4033203
+      y: 0.8886719
+      width: 0.060546875
+      height: 0.06640625
+  - name: "\xE9prouvait"
+    region:
+      serializedVersion: 2
+      x: 0.8144531
+      y: 0.068359375
+      width: 0.12792969
+      height: 0.06640625
+  - name: "\xF4"
+    region:
+      serializedVersion: 2
+      x: 0.5957031
+      y: 0.7519531
+      width: 0.025390625
+      height: 0.06640625

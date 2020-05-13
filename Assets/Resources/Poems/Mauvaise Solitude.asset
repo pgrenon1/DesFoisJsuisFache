@@ -2794,3 +2794,4 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 6e2df7ebfc7f24a49a371e3f66c3486a, type: 3}
   - word: pleurer
     clip: {fileID: 8300000, guid: 932387ccc6dbed9429e50d97479b50a5, type: 3}
+  decalTextureAtlas: {fileID: 11400000, guid: d94f32f65dff0644bb03f66968e5c786, type: 2}

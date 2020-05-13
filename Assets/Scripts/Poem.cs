@@ -74,20 +74,6 @@ public class Poem : OdinSerializedScriptableObject
     //    var split = noReturn.Split(' ');
     //    var words = split.ToList().Where(w => w != string.Empty && w != "" && w != " ");
 
-    //    //foreach (var word in words)
-    //    //{
-    //    //    Debug.Log(word);
-    //    //    var texture = Resources.Load<Texture2D>(@"WordsPNG\" + word.ToLower()); // + " t:texture2d", new[] { @"Assets\Resources\WordsPNG" });
-
-    //    //    if (texture)
-    //    //        AssetDatabase.CopyAsset(@"Assets\Resources\WordsPNG\" + word.ToLower() + ".png", newFolderPath + @"\" + word + ".png");
-    //    //    else
-    //    //        Debug.Log("No texture at" + @"Assets\Resources\WordsPNG\" + word.ToLower() + ".png");
-
-    //    //    AssetDatabase.SaveAssets();
-    //    //    AssetDatabase.Refresh();
-    //    //}
-
     //    GetOriginals(newFolderPath, title, words);
     //}
 
