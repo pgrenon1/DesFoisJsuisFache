@@ -624,8 +624,573 @@ MonoBehaviour:
     clip: {fileID: 8300000, guid: 37264e83d7b5b2e4eaca196551e733a5, type: 3}
   - word: fou
     clip: {fileID: 8300000, guid: 8c70f9d9d00e96c42a0f5fafefaa3a7e, type: 3}
+  - word: jaillissent
+    clip: {fileID: 8300000, guid: 946e6bd83d6ccb14fa7cffb865e00df8, type: 3}
+  - word: recourbent
+    clip: {fileID: 8300000, guid: 22762f6c74e8cfd419e95b5ceb2b4f18, type: 3}
+  - word: pointes
+    clip: {fileID: 8300000, guid: 41d66ef6d2015a84a9dd1c5fbccec21f, type: 3}
+  - word: vif
+    clip: {fileID: 8300000, guid: 02ec6741f5bf6ca48b5c6a0e0297d198, type: 3}
+  - word: "\xE9miett\xE9"
+    clip: {fileID: 8300000, guid: 73d42cfc9f8b26e4e9f0fdd884e42657, type: 3}
+  - word: "d\xE9fense"
+    clip: {fileID: 8300000, guid: 827bba2165de0174ba7f5f87113e74e2, type: 3}
+  - word: "cro\xFBte"
+    clip: {fileID: 8300000, guid: 21327f1ee4693ce479455fe81e97c5ea, type: 3}
+  - word: "s\xE8che"
+    clip: {fileID: 8300000, guid: 41fb1975f89423c4888494d447709df6, type: 3}
+  - word: "\xE9gren\xE9"
+    clip: {fileID: 8300000, guid: ac3aae227ab0b954c80795b67f4fa5d0, type: 3}
+  - word: mie
+    clip: {fileID: 8300000, guid: 2be9c9290a97d7b40b5eb4bd981bae68, type: 3}
+  - word: "\xE9parpill\xE9"
+    clip: {fileID: 8300000, guid: 20612389e9144d1428b9b0db3331b624, type: 3}
+  - word: cela
+    clip: {fileID: 8300000, guid: eea78f34b6bf57049873e34e54a45780, type: 3}
+  - word: ils
+    clip: {fileID: 8300000, guid: 3256c46d0d8307e4c93633debe1860b9, type: 3}
+  - word: "pi\xE9tin\xE9"
+    clip: {fileID: 8300000, guid: f7311fe78408a284aa26460698118262, type: 3}
+  - word: avoir
+    clip: {fileID: 8300000, guid: b7387877162bb7d48b7c6b79dd38c490, type: 3}
+  - word: "l\u2019air"
+    clip: {fileID: 8300000, guid: 4955624cc714b4b43aef2d4fd06977b7, type: 3}
+  - word: savoir
+    clip: {fileID: 8300000, guid: 80d07a0df279aa0498b53652f7761684, type: 3}
+  - word: vouloir
+    clip: {fileID: 8300000, guid: d2f5b550fdb8ebb419073d551bb1f73c, type: 3}
+  - word: pouvoir
+    clip: {fileID: 8300000, guid: e6400f03620ef264bac33abbd83f3ff5, type: 3}
+  - word: y
+    clip: {fileID: 8300000, guid: e039b0f8b1f4e664ebfcf9ab7878b371, type: 3}
+  - word: penser
+    clip: {fileID: 8300000, guid: c0f8589b176ff3943a2b8d13271e29f5, type: 3}
+  - word: prendre
+    clip: {fileID: 8300000, guid: fc229aef466db684f845e2a2436ad257, type: 3}
+  - word: garde
+    clip: {fileID: 8300000, guid: d026ce48110e1ac4bb49189b9a2b49c2, type: 3}
+  - word: terrible
+    clip: {fileID: 8300000, guid: 9726eecfdc6410941bffdcaaa6c6aa62, type: 3}
+  - word: "myst\xE8re"
+    clip: {fileID: 8300000, guid: 34926a574526a714ca9543c0ef23df73, type: 3}
+  - word: "\xE9tranger"
+    clip: {fileID: 8300000, guid: 7c0a11629ad6edd41926e03714f952ab, type: 3}
+  - word: parce
+    clip: {fileID: 8300000, guid: 1218f4902cdc49546b04d0546691292d, type: 3}
+  - word: "qu\u2019ils"
+    clip: {fileID: 8300000, guid: dd82f0ae4c157604aa6513c208faa266, type: 3}
+  - word: pas
+    clip: {fileID: 8300000, guid: 111a8d5fb4705e44183347dfbe41cdc3, type: 3}
+  - word: venus
+    clip: {fileID: 8300000, guid: 652f4b3be4733ab4f934308397a4d377, type: 3}
+  - word: "m\u2019embrasser"
+    clip: {fileID: 8300000, guid: 2167f3dae5413b64d8ba3014e2144910, type: 3}
+  - word: quel
+    clip: {fileID: 8300000, guid: 80f9fed11618817488f913f514255782, type: 3}
+  - word: "d\xE9sert"
+    clip: {fileID: 8300000, guid: 3d166f4687cdb6741833916e614a6c45, type: 3}
+  - word: "qu\u2019on"
+    clip: {fileID: 8300000, guid: 329195306baa4cb4e82bfb0d968ad69c, type: 3}
+  - word: aille
+    clip: {fileID: 8300000, guid: fb9edd0f87f9eb44d8708df5f2d42d58, type: 3}
+  - word: mourir
+    clip: {fileID: 8300000, guid: 8144ae21c0c07614f9fa7e2b50f6c1bd, type: 3}
+  - word: "soi-m\xEAme"
+    clip: {fileID: 8300000, guid: ada845a30ef682b4c8d07d8cfc1b80b8, type: 3}
+  - word: tranquillement
+    clip: {fileID: 8300000, guid: bf46bb043b50bd14d9b13a84af49745b, type: 3}
+  - word: or
+    clip: {fileID: 8300000, guid: 158161e08fb2971488e358c648899da9, type: 3}
+  - word: vision
+    clip: {fileID: 8300000, guid: ef3b6a01d5c1ad04599335656709b820, type: 3}
+  - word: "d\u2019ombres"
+    clip: {fileID: 8300000, guid: 0054612db88b7334daf755ccb5bc8cb2, type: 3}
+  - word: sanguinolentes
+    clip: {fileID: 8300000, guid: d16c62c4b07588e46b8638485bfa5c87, type: 3}
+  - word: chevaux
+    clip: {fileID: 8300000, guid: 9d98be81a1f2b4547aca73ce8d346d6e, type: 3}
+  - word: fougueux
+    clip: {fileID: 8300000, guid: 54da15dc0602faf48ad5b13e8354d944, type: 3}
+  - word: piaffants
+    clip: {fileID: 8300000, guid: 0186c11266b0dec428c05de4ea2888a4, type: 3}
+  - word: gueux
+    clip: {fileID: 8300000, guid: 08f3af5b89c80ee46a253294f57d7861, type: 3}
+  - word: hoquets
+    clip: {fileID: 8300000, guid: 39ec62301f0b6a047be4f53365f231ad, type: 3}
+  - word: "d\u2019enfants"
+    clip: {fileID: 8300000, guid: 35321edc09d02844dad876b6a8066b05, type: 3}
+  - word: "r\xE2les"
+    clip: {fileID: 8300000, guid: 3413bcafed5c9d74d80203ef6db1ce76, type: 3}
+  - word: "d\u2019expirations"
+    clip: {fileID: 8300000, guid: c4d46a6bb46170544ad434de8a7bef19, type: 3}
+  - word: lentes
+    clip: {fileID: 8300000, guid: 108048a9b8d7af9409501d681a166f34, type: 3}
+  - word: viennent
+    clip: {fileID: 8300000, guid: 0e1adc0da7259024faf2b6fa81120fd3, type: 3}
+  - word: dis-moi
+    clip: {fileID: 8300000, guid: efa29912cc24ccf49b8e72ce7c91090e, type: 3}
+  - word: ouragans
+    clip: {fileID: 8300000, guid: cc604bb5662dedb4694e603c645704ec, type: 3}
+  - word: rauques
+    clip: {fileID: 8300000, guid: 5ce619928bd4894428e0dff356844adb, type: 3}
+  - word: rages
+    clip: {fileID: 8300000, guid: 3b73400b2e1159f468386e461b8ecb9a, type: 3}
+  - word: fifre
+    clip: {fileID: 8300000, guid: b743be76368bb504ab18500e80ebfe1b, type: 3}
+  - word: ou
+    clip: {fileID: 8300000, guid: 67ca0e56d0b81d246b8c58dacdc9b119, type: 3}
+  - word: tambour
+    clip: {fileID: 8300000, guid: b1cc481a833326f41918adae6d0de72f, type: 3}
+  - word: on
+    clip: {fileID: 8300000, guid: 71b513322f5b4954da83b6507de80472, type: 3}
+  - word: dirait
+    clip: {fileID: 8300000, guid: 2ca420347c0fea346bd8ef5231620155, type: 3}
+  - word: dragons
+    clip: {fileID: 8300000, guid: a787014ff45742245a6c26e6a025efd2, type: 3}
+  - word: galopade
+    clip: {fileID: 8300000, guid: 106b428063e43c84c925493ceebe8f97, type: 3}
+  - word: bourg
+    clip: {fileID: 8300000, guid: 0f09bbec1a73b87428eae79c5f6f8389, type: 3}
+  - word: casques
+    clip: {fileID: 8300000, guid: d7e1bbd1e4749274c8ebf44634d77d4b, type: 3}
+  - word: flambant
+    clip: {fileID: 8300000, guid: 94eb1f6186a740046bfe1f4acfb8d410, type: 3}
+  - word: glauques
+    clip: {fileID: 8300000, guid: 36df2994e1df1f74da9c2449e73e7fe4, type: 3}
+  - word: sens
+    clip: {fileID: 8300000, guid: 2cf488a083258cb4ca7398fec7cea748, type: 3}
+  - word: voler
+    clip: {fileID: 8300000, guid: 86a822750b8422642bb91bd48b9d3299, type: 3}
+  - word: "g\xE9nie"
+    clip: {fileID: 8300000, guid: e5accac6a5f713642bf3598056996c4d, type: 3}
+  - word: tendu
+    clip: {fileID: 8300000, guid: 40e0a7dd37d2d774ca06c2d3006bc05b, type: 3}
+  - word: "pi\xE8ge"
+    clip: {fileID: 8300000, guid: efc1d726b2521aa478673bd122e30620, type: 3}
+  - word: "c\xE9r\xE9bral"
+    clip: {fileID: 8300000, guid: 284c709a93eb8ac4aa66e0ce63242df5, type: 3}
+  - word: vols
+    clip: {fileID: 8300000, guid: 7c239c0bf7f6ab44aad6806e5c2e3ade, type: 3}
+  - word: blancs
+    clip: {fileID: 8300000, guid: 99c64b2f74b3e6a4bbfee8141be2d279, type: 3}
+  - word: bruns
+    clip: {fileID: 8300000, guid: acfbf43a62044224e9e8f28e2f209b17, type: 3}
+  - word: gris
+    clip: {fileID: 8300000, guid: 0ab0cb2027d210d4fadd6f55318d6e42, type: 3}
+  - word: "bris\xE9"
+    clip: {fileID: 8300000, guid: a7d71d24a3109164583b3fafca8046fb, type: 3}
+  - word: "r\xE2le"
+    clip: {fileID: 8300000, guid: 89b4e378c5a5e1442b0bab4c81d0bdaf, type: 3}
+  - word: son
+    clip: {fileID: 8300000, guid: d302cdd70cb5587428ce392654567147, type: 3}
+  - word: agonie
+    clip: {fileID: 8300000, guid: 3d4b144b0c416ba41abbf27621c66c6c, type: 3}
+  - word: ouvrez
+    clip: {fileID: 8300000, guid: cfb056466fd07db4295a05df31363d4e, type: 3}
+  - word: porte
+    clip: {fileID: 8300000, guid: 1aa2b9e34a86dce4fb311df99a2c8bad, type: 3}
+  - word: pleure
+    clip: {fileID: 8300000, guid: 9e3b51926b22fb6409ff4be0427a64a4, type: 3}
+  - word: "s\u2019infiltre"
+    clip: {fileID: 8300000, guid: 304dcab558f702e448a0a4d2f27bc724, type: 3}
+  - word: vient
+    clip: {fileID: 8300000, guid: 3ebea13c57500f6498912d8ff144e9f0, type: 3}
+  - word: "s\u2019\xE9teindre"
+    clip: {fileID: 8300000, guid: bdbb54b235c7d6042aa17f0e92d43658, type: 3}
+  - word: "l\u2019espoir"
+    clip: {fileID: 8300000, guid: f3943eb8b63f1f04bbf74b4678c98832, type: 3}
+  - word: tant
+    clip: {fileID: 8300000, guid: 358587cd73bf1fb4f985d5f69c516c97, type: 3}
+  - word: ressemble
+    clip: {fileID: 8300000, guid: ccc62061b814a244d9847af14b06a94d, type: 3}
+  - word: vent
+    clip: {fileID: 8300000, guid: ba2ca822590b6ea4f9925d2a3125f8ed, type: 3}
+  - word: plainte
+    clip: {fileID: 8300000, guid: dec436efe82a34d4fbd1f7015d7b49ff, type: 3}
+  - word: chiens
+    clip: {fileID: 8300000, guid: 6a16c2fdc82cf4348b9614a86166ef8f, type: 3}
+  - word: "n\u2019ont"
+    clip: {fileID: 8300000, guid: 28d204220baf89247a5cc0b084854950, type: 3}
+  - word: "aboy\xE9"
+    clip: {fileID: 8300000, guid: 9fa863cec4c4571429f3fdc997ea39fa, type: 3}
+  - word: ouvrez-moi
+    clip: {fileID: 8300000, guid: 3d31435b3a4720a4797f966a7ef53d5d, type: 3}
+  - word: faites
+    clip: {fileID: 8300000, guid: e3f3948f22d4b2b4b9572c002e11418f, type: 3}
+  - word: "aum\xF4ne"
+    clip: {fileID: 8300000, guid: 374db0af175401a4eab446d9b6711ee1, type: 3}
+  - word: "clart\xE9"
+    clip: {fileID: 8300000, guid: 4d6dcf95d16c964488454edc3a4fe76c, type: 3}
+  - word: "g\xEEt"
+    clip: {fileID: 8300000, guid: 4c707e7fdb0b1784bb131e6fb5d8b192, type: 3}
+  - word: bonheur
+    clip: {fileID: 8300000, guid: efe155899ea4f7a47ae1547834f36751, type: 3}
+  - word: vos
+    clip: {fileID: 8300000, guid: 594248762dd3f68479cf6317a15297e2, type: 3}
+  - word: lampes
+    clip: {fileID: 8300000, guid: bd8f9bbcd0cda3e41b8d6f5984c90941, type: 3}
+  - word: partout
+    clip: {fileID: 8300000, guid: 163c6c1dec9d4e149b79e00234240a6d, type: 3}
+  - word: "cherch\xE9"
+    clip: {fileID: 8300000, guid: 0fa815a45638d424a8c5267febb58184, type: 3}
+  - word: "l\u2019introuvable"
+    clip: {fileID: 8300000, guid: 070a969bf4c849f4fa759c0f1315d7fe, type: 3}
+  - word: routes
+    clip: {fileID: 8300000, guid: 448d167e90ab0194e8985dde77ae3021, type: 3}
+  - word: trop
+    clip: {fileID: 8300000, guid: cd93dffa911d78c41a474242810260c8, type: 3}
+  - word: "broy\xE9es"
+    clip: {fileID: 8300000, guid: dc17d55b81e151f40b2f3d50704e2d8d, type: 3}
+  - word: jadis
+    clip: {fileID: 8300000, guid: c842fe5beb925eb429e93927428c0639, type: 3}
+  - word: "poussi\xE8re"
+    clip: {fileID: 8300000, guid: 5a53d90da9e8bdb45802f56515be84ce, type: 3}
+  - word: auberge
+    clip: {fileID: 8300000, guid: 3cfd94495baf8dd43aeb9e2131015d2d, type: 3}
+  - word: vin
+    clip: {fileID: 8300000, guid: 0fb2e2b71ee4f194fb7f03b5a438b931, type: 3}
+  - word: rouge
+    clip: {fileID: 8300000, guid: 00835dc74a0026c48a9721694bde077f, type: 3}
+  - word: rappelait
+    clip: {fileID: 8300000, guid: 4971219e35f3de744ab4e4851c64180b, type: 3}
+  - word: "d\u2019innombrables"
+    clip: {fileID: 8300000, guid: 58ae972260f76364fb6f70a4cef942d2, type: 3}
+  - word: crimes
+    clip: {fileID: 8300000, guid: ef6f23a7db18f55478f6e0decc2b9d0a, type: 3}
+  - word: balcons
+    clip: {fileID: 8300000, guid: 1ac621e94829f1d4485427f8d28d68be, type: 3}
+  - word: dressoir
+    clip: {fileID: 8300000, guid: 90649bee43eb3f347943cdcaf3d77f7e, type: 3}
+  - word: assiettes
+    clip: {fileID: 8300000, guid: 0d372e7c890cb2647aeb9518efb9cb0a, type: 3}
+  - word: face
+    clip: {fileID: 8300000, guid: cec411f9ccf6e4548a563e5180008c2c, type: 3}
+  - word: "p\xE2le"
+    clip: {fileID: 8300000, guid: 71055d4a22478dd44b1c8f052a257d45, type: 3}
+  - word: vagabonds
+    clip: {fileID: 8300000, guid: fe0d47951e623f247a0a9966d91d5394, type: 3}
+  - word: "illumin\xE9s"
+    clip: {fileID: 8300000, guid: ba5ff1d84dbd5044d80ed368b8812ed4, type: 3}
+  - word: "l\xE0"
+    clip: {fileID: 8300000, guid: 8216edf70d6db2b4c8a5b928772357ea, type: 3}
+  - word: bout
+    clip: {fileID: 8300000, guid: c899786b1302cf841b45250a29766d74, type: 3}
+  - word: "l\u2019aurore"
+    clip: {fileID: 8300000, guid: 6f85519fe8ec8d84ebf9fdbe94aac3d4, type: 3}
+  - word: montagnes
+    clip: {fileID: 8300000, guid: 604c0c68ff5a2a04bac65695946156c8, type: 3}
+  - word: couvrent
+    clip: {fileID: 8300000, guid: 30fd44e460a10ef45b6b8c5e5e95a3f6, type: 3}
+  - word: "d\u2019un"
+    clip: {fileID: 8300000, guid: 5c547c676ab9139498fcd9c205e832dc, type: 3}
+  - word: "ch\xE2le"
+    clip: {fileID: 8300000, guid: c3ab79a7c8198534a8bd47b96a7e38a0, type: 3}
+  - word: brume
+    clip: {fileID: 8300000, guid: 405aa0d34b84c0c43a070ec25ab1b13e, type: 3}
+  - word: carrefour
+    clip: {fileID: 8300000, guid: 9fc3d82659fd27043ae1b31669bc63c6, type: 3}
+  - word: vieux
+    clip: {fileID: 8300000, guid: 51e8cb0e75fe9404386e78529d601c91, type: 3}
+  - word: village
+    clip: {fileID: 8300000, guid: 0ab223c1a0297584d87e900987334abb, type: 3}
+  - word: amour
+    clip: {fileID: 8300000, guid: 1eb01b7c9119eb348846c202538c6919, type: 3}
+  - word: soir
+    clip: {fileID: 8300000, guid: f8eb0d6cadd01844680a2098ec6551fe, type: 3}
+  - word: obscur
+    clip: {fileID: 8300000, guid: 3c51ec8663cd80542b3a2d6098559c8a, type: 3}
+  - word: avait
+    clip: {fileID: 8300000, guid: 47588eac668d4ed43b2c29dce4fb46f7, type: 3}
+  - word: cru
+    clip: {fileID: 8300000, guid: 8f76964190202b14c803d6e7562df0f6, type: 3}
+  - word: mort
+    clip: {fileID: 8300000, guid: 27a9267023f02414db9ac090c89fcdaf, type: 3}
+  - word: surpris
+    clip: {fileID: 8300000, guid: 3ac649c0b94ea33409f5305a28c92522, type: 3}
+  - word: retour
+    clip: {fileID: 8300000, guid: 016ed9c2517af3b4887dc5bf91b142ad, type: 3}
+  - word: flamme
+    clip: {fileID: 8300000, guid: a70bd3198bd8d874188c206893614470, type: 3}
+  - word: "jet\xE9e"
+    clip: {fileID: 8300000, guid: 79a345f3f83fe6d408bf7dc0d3920166, type: 3}
+  - word: "apr\xE8s"
+    clip: {fileID: 8300000, guid: f9067a9977e5b1f42960971b592f5fef, type: 3}
+  - word: "d\xE9part"
+    clip: {fileID: 8300000, guid: 94f5d9392b1f17d4cb3f680bd60b858e, type: 3}
+  - word: "ti\xE8des"
+    clip: {fileID: 8300000, guid: d921817c0b6909a46be502a4a1f882ec, type: 3}
+  - word: encor
+    clip: {fileID: 8300000, guid: dde1c0a5b1711ce40977f0d88376cf7a, type: 3}
+  - word: anneaux
+    clip: {fileID: 8300000, guid: c9e6c48907d86a44c9ac5dc3598e69ef, type: 3}
+  - word: "l\u2019\xE9treinte"
+    clip: {fileID: 8300000, guid: 69c1814d6f70a2c46a00c95a7e1f6fa2, type: 3}
+  - word: "c\xE2bles"
+    clip: {fileID: 8300000, guid: 01957878aed99d14a97116b068a458ba, type: 3}
+  - word: referme
+    clip: {fileID: 8300000, guid: 3190ba7a2bd9de2439b7cb041016a03a, type: 3}
+  - word: "l\u2019affreux"
+    clip: {fileID: 8300000, guid: 140f8331784cde847b55f1405a6b0474, type: 3}
+  - word: patrice
+    clip: {fileID: 8300000, guid: 2f7c88d1dc8fbc34e9cc62a8200c2980, type: 3}
+  - word: vide
+    clip: {fileID: 8300000, guid: 63bf427a8a751ac4f9a1701044d11aa6, type: 3}
+  - word: "d\u2019elle-m\xEAme"
+    clip: {fileID: 8300000, guid: 2f9e297a8aad7404db22d44f962d1bbf, type: 3}
+  - word: main
+    clip: {fileID: 8300000, guid: bce405024bdb6a74b985e802a6f3b6da, type: 3}
+  - word: cherchant
+    clip: {fileID: 8300000, guid: c0ba00610e152ae4da5371ad32c91d05, type: 3}
+  - word: saisir
+    clip: {fileID: 8300000, guid: a5420d8aee4ca7148b4cfa57a1966b05, type: 3}
+  - word: forme
+    clip: {fileID: 8300000, guid: 4d8629ad6f58b8f4092275c10ee37c4b, type: 3}
+  - word: enfuie
+    clip: {fileID: 8300000, guid: 37bf12a6ed8db8546bac457a4c4bed1b, type: 3}
+  - word: autre
+    clip: {fileID: 8300000, guid: 857d29051272839438cbaf0ad4431f08, type: 3}
+  - word: grincements
+    clip: {fileID: 8300000, guid: dd7694d104267804e85e0158130dfd51, type: 3}
+  - word: express
+    clip: {fileID: 8300000, guid: 3f1d4482f3c2cc045808f2c29383b760, type: 3}
+  - word: "arr\xEAts"
+    clip: {fileID: 8300000, guid: 5b3133ec6ae7ee74e8ca38f4e9784e14, type: 3}
+  - word: "s\u2019emplissent"
+    clip: {fileID: 8300000, guid: d71f525c0ae70f341a043f5e36dc5e49, type: 3}
+  - word: noms
+    clip: {fileID: 8300000, guid: e9b9be2d6d41a57479f4cb86a248a9dd, type: 3}
+  - word: stations
+    clip: {fileID: 8300000, guid: 3348a710541a91e41a6dfd4fb096cf88, type: 3}
+  - word: plaine
+    clip: {fileID: 8300000, guid: bc55b31ecf6151845b045a5f29304489, type: 3}
+  - word: "s\u2019ouvraient"
+    clip: {fileID: 8300000, guid: 8e64d994e51017c4fb0f7114710f4b36, type: 3}
+  - word: tels
+    clip: {fileID: 8300000, guid: ab476ef3b330a7c4fb73cd0e4df75bd4, type: 3}
+  - word: clairs
+    clip: {fileID: 8300000, guid: 8a8917546104921448e4d250083f0cc0, type: 3}
+  - word: "laiss\xE9s"
+    clip: {fileID: 8300000, guid: 3d9607b408d6fc349904f7fa135da46c, type: 3}
+  - word: marge
+    clip: {fileID: 8300000, guid: aa62b86418afeb74da519ac477ba5309, type: 3}
+  - word: vie
+    clip: {fileID: 8300000, guid: 4d429d079bc647c45946c438efd907eb, type: 3}
+  - word: auditeurs
+    clip: {fileID: 8300000, guid: 3d37453643a77864684779ee78516c95, type: 3}
+  - word: inscrit
+    clip: {fileID: 8300000, guid: 975775ced591c1349ba9e79b748d3f18, type: 3}
+  - word: "conf\xE9rence"
+    clip: {fileID: 8300000, guid: f288a50baca8caa468b39bfacca6cd52, type: 3}
+  - word: confuses
+    clip: {fileID: 8300000, guid: 91bc8043005946a4fa8e09026ed33288, type: 3}
+  - word: annotations
+    clip: {fileID: 8300000, guid: c4ebed04a51ffe144a5ead07fdf1856f, type: 3}
+  - word: prises
+    clip: {fileID: 8300000, guid: ee2c49a1460bd7f45b9037707b5b317c, type: 3}
+  - word: "d\xE9rob\xE9e"
+    clip: {fileID: 8300000, guid: d003913063936d34d851306bc8441c64, type: 3}
+  - word: devant
+    clip: {fileID: 8300000, guid: 37940d34e2dfab9448b0b3e22021285a, type: 3}
+  - word: ceux
+    clip: {fileID: 8300000, guid: 15a6158e9af380046aa26f4b5dee045c, type: 3}
+  - word: "d\xE9visagent"
+    clip: {fileID: 8300000, guid: 0854b31d7dfe2b64fabb28295d40c4e8, type: 3}
+  - word: vouent
+    clip: {fileID: 8300000, guid: f9ac7bc6e48f2bc40837620aa839550c, type: 3}
+  - word: raison
+    clip: {fileID: 8300000, guid: b5d3fe6a55604eb4bba4789411067517, type: 3}
+  - word: "devin\xE9e"
+    clip: {fileID: 8300000, guid: cfa8a4a03704f65448da8175f32601e5, type: 3}
+  - word: "m\u2019accablent"
+    clip: {fileID: 8300000, guid: 28011f48e1219894faeae4ec2ded20fc, type: 3}
+  - word: savais
+    clip: {fileID: 8300000, guid: 4c2cc50570eab2242abc05900a0c4d98, type: 3}
+  - word: plus
+    clip: {fileID: 8300000, guid: 2d1726547531a3f4696e694ea5a2e801, type: 3}
+  - word: pays
+    clip: {fileID: 8300000, guid: 72fe1a7f5db9a3d4c814944936c8d4bd, type: 3}
+  - word: "m\xE9riter"
+    clip: {fileID: 8300000, guid: 01b6fd34f01ab4544a67696be1dda1b4, type: 3}
+  - word: paix
+    clip: {fileID: 8300000, guid: e3fd9b99c6a39cd4ea357cf0d111990c, type: 3}
+  - word: "\xE9chue"
+    clip: {fileID: 8300000, guid: e78dba4f750830a4092768c16bc3abef, type: 3}
+  - word: simples
+    clip: {fileID: 8300000, guid: 26596f385342e2b46a6ba919eec7b732, type: 3}
+  - word: bien
+    clip: {fileID: 8300000, guid: 7560e922ebd84c342bd60b7175cb7dae, type: 3}
+  - word: sues
+    clip: {fileID: 8300000, guid: e1cb6a968751e4d48865524ab3e65ada, type: 3}
+  - word: "fum\xE9es"
+    clip: {fileID: 8300000, guid: aef4dbfd476efc240be4077cc5d8ebbe, type: 3}
+  - word: "enseign\xE9"
+    clip: {fileID: 8300000, guid: 31ca22a001af0c14682d8c3b58df55cd, type: 3}
+  - word: port
+    clip: {fileID: 8300000, guid: 472f0ffc7a585874c968ebe5d6d548e7, type: 3}
+  - word: chemin
+    clip: {fileID: 8300000, guid: 9cdeba8b8fe3b4d4185d54b3ad4842e4, type: 3}
+  - word: "l\u2019eau"
+    clip: {fileID: 8300000, guid: a5abafd5199e28c4399f85f15aa9824d, type: 3}
+  - word: "tr\xE9pignait"
+    clip: {fileID: 8300000, guid: 31113d73ef00e6d45b3933b781b8aad2, type: 3}
+  - word: "d\u2019impatience"
+    clip: {fileID: 8300000, guid: 6fd3320a15891e64c987aa4e252029e5, type: 3}
+  - word: contre
+    clip: {fileID: 8300000, guid: bb6fced7bad1cea428ba6772077c7061, type: 3}
+  - word: "\xE9cluses"
+    clip: {fileID: 8300000, guid: 54937930b8d7b69428093d4421a00921, type: 3}
+  - word: vis
+    clip: {fileID: 8300000, guid: ab995508ecc3850489f8739b461cb770, type: 3}
+  - word: futur
+    clip: {fileID: 8300000, guid: e5cdd5c7403df2245bfd3635098eeb78, type: 3}
+  - word: "cr\xEApe"
+    clip: {fileID: 8300000, guid: 4095aea3e9644964cb4439fa3549e505, type: 3}
+  - word: fait
+    clip: {fileID: 8300000, guid: 1c2c05e5bc4f90b4ca48473754b59685, type: 3}
+  - word: "pr\xE9sent"
+    clip: {fileID: 8300000, guid: 83b85b804c5dffe4998e03e19487f10c, type: 3}
+  - word: absolu
+    clip: {fileID: 8300000, guid: e48220463b2519a42b26d2788e205a29, type: 3}
+  - word: abandon
+    clip: {fileID: 8300000, guid: df169c27feeed744893d08c0b795fad7, type: 3}
+  - word: total
+    clip: {fileID: 8300000, guid: b9b6179c2a036314eb696de7aaf74770, type: 3}
+  - word: sensible
+    clip: {fileID: 8300000, guid: 47b02a84bbabe474b803d8019146238c, type: 3}
+  - word: rapprochement
+    clip: {fileID: 8300000, guid: c9d000abafd31384fb823a125166aed9, type: 3}
+  - word: donc
+    clip: {fileID: 8300000, guid: 5cd79b939cdd97a4eae75024f5485a61, type: 3}
+  - word: possible
+    clip: {fileID: 8300000, guid: bb6e13a9ff601fc419b171dbf4bc067f, type: 3}
+  - word: "po\xE9sie"
+    clip: {fileID: 8300000, guid: bf4872b2d6233cf4e96763ef7563f2bb, type: 3}
+  - word: "cr\xEApe-po\xE9sie"
+    clip: {fileID: 8300000, guid: 4c1742986f05aaa489a46c36b0f513f2, type: 3}
+  - word: question
+    clip: {fileID: 8300000, guid: c0213538d753acd438016ae758a2d79f, type: 3}
+  - word: fourrage
+    clip: {fileID: 8300000, guid: 6ce0ecee0820cf9489345332774e06b1, type: 3}
+  - word: importe
+    clip: {fileID: 8300000, guid: c48ed0f30d698c04ca54639d799decf8, type: 3}
+  - word: peu
+    clip: {fileID: 8300000, guid: 75d83201e6fe68d42a0c733054d64e07, type: 3}
+  - word: "l\u2019odorat"
+    clip: {fileID: 8300000, guid: d7a09d39454967a449578d4880b5c92f, type: 3}
+  - word: vue
+    clip: {fileID: 8300000, guid: 5551ed315c305d5449365af5a1e5dc9f, type: 3}
+  - word: courage
+    clip: {fileID: 8300000, guid: 5ad2885215b8ca2478012eae3f86bf11, type: 3}
+  - word: peut
+    clip: {fileID: 8300000, guid: cc793abf89af9274e8ccf9e726a9d2e4, type: 3}
+  - word: "br\xFBler"
+    clip: {fileID: 8300000, guid: 97718b59ce2c2a840b33c14e6f74601d, type: 3}
+  - word: "l\u2019ext\xE9rieur"
+    clip: {fileID: 8300000, guid: a203ec937a57e074aafdb572d17f90c0, type: 3}
+  - word: "s\u2019emplir"
+    clip: {fileID: 8300000, guid: 4925aa6fb11b6d94f89b387288e61962, type: 3}
+  - word: crier
+    clip: {fileID: 8300000, guid: a3ee70b6a526a564092d39484788dd13, type: 3}
+  - word: sera
+    clip: {fileID: 8300000, guid: 13251a5a7be69c340b6b2546f09602d6, type: 3}
+  - word: "dor\xE9e"
+    clip: {fileID: 8300000, guid: 2a81896605d2ee140ac9ed2dec4727c9, type: 3}
+  - word: faire
+    clip: {fileID: 8300000, guid: 2bd3732276e7c144c9ddf08967855282, type: 3}
+  - word: "po\xE8mes"
+    clip: {fileID: 8300000, guid: 0b9763ce66b8e6f4c94640e92b34af76, type: 3}
+  - word: "m\xEAme"
+    clip: {fileID: 8300000, guid: ddb4da4ac156c4442b048d958c003f8c, type: 3}
+  - word: concentration
+    clip: {fileID: 8300000, guid: 0cc10277fec242c439e5fba6376e5777, type: 3}
+  - word: "cr\xEApes"
+    clip: {fileID: 8300000, guid: 90cadf7ebd53bf343a4fd57373d645e5, type: 3}
+  - word: aime
+    clip: {fileID: 8300000, guid: 3e5c748a9adf15d4bb186c01d591c001, type: 3}
+  - word: devient
+    clip: {fileID: 8300000, guid: 560e8fe350ac65040999f2d41ad81379, type: 3}
+  - word: fine
+    clip: {fileID: 8300000, guid: a95e34f2a33375947a05ae5dc1de41d3, type: 3}
+  - word: pellicule
+    clip: {fileID: 8300000, guid: fd2c153fbe46e464cb9b0a6447fc5832, type: 3}
+  - word: "\xE7a"
+    clip: {fileID: 8300000, guid: b706ee4159e8fee48ae4585623f42d1a, type: 3}
+  - word: "d\xE9tend"
+    clip: {fileID: 8300000, guid: b8f3982e6bdaf9749b48895de81dcfd2, type: 3}
+  - word: serait
+    clip: {fileID: 8300000, guid: 59e873b547d43b448a24c3e9d317551c, type: 3}
+  - word: tentant
+    clip: {fileID: 8300000, guid: 693f3fc6551c5994db919ea28e2b18ca, type: 3}
+  - word: ensuite
+    clip: {fileID: 8300000, guid: bcea8eb9318799941af88c9e439515be, type: 3}
+  - word: rendre
+    clip: {fileID: 8300000, guid: 045f6506f413dc341bd40a2e9832fa18, type: 3}
+  - word: politique
+    clip: {fileID: 8300000, guid: 5e04f8022c7f41247bb74422a4c837b9, type: 3}
+  - word: elle
+    clip: {fileID: 8300000, guid: 46197e6556b69c44a8abf8aa859639ad, type: 3}
+  - word: "l\u2019est"
+    clip: {fileID: 8300000, guid: 3f6937d24c13a2c4ea0e2fb8968e5eed, type: 3}
+  - word: "d\xE9j\xE0"
+    clip: {fileID: 8300000, guid: 3d44a1119bc14ba45a8377bfab90d7a5, type: 3}
+  - word: moment
+    clip: {fileID: 8300000, guid: bcbe835f30d8d23429159ae7c44afc66, type: 3}
+  - word: "\xE9t\xE9"
+    clip: {fileID: 8300000, guid: ecbf8466c43d6a2469993b8a859bb57f, type: 3}
+  - word: "vers\xE9e"
+    clip: {fileID: 8300000, guid: d4c47ffca02cc7941acf7b62ed306dab, type: 3}
+  - word: "po\xEAle"
+    clip: {fileID: 8300000, guid: c20d11c2e98b2b541a1b38a33b1bac95, type: 3}
+  - word: "l\u2019a"
+    clip: {fileID: 8300000, guid: 5c5fdb7c03609624393ce8ebc622be42, type: 3}
+  - word: "empil\xE9e"
+    clip: {fileID: 8300000, guid: 51cd72dc039ab6643b581925815d391f, type: 3}
+  - word: conserve
+    clip: {fileID: 8300000, guid: fda620b94e5c12c4480cd411ca22dd95, type: 3}
+  - word: froid
+    clip: {fileID: 8300000, guid: f09fed96c987e1b48a3a7a6909d94b9e, type: 3}
+  - word: tard
+    clip: {fileID: 8300000, guid: fed7e9e2b63b5ad44bf336320482390f, type: 3}
+  - word: fourre
+    clip: {fileID: 8300000, guid: 2aec81b66187c6a4d90b5ed271675499, type: 3}
+  - word: passe
+    clip: {fileID: 8300000, guid: 8c1e5643b021e484bb386c8edd9ca971, type: 3}
+  - word: "po\xE9tique"
+    clip: {fileID: 8300000, guid: c918f669f47ba9d40ab500b2bb6dd040, type: 3}
+  - word: "lorsqu\u2019elle"
+    clip: {fileID: 8300000, guid: abb25d4cc8aac004b80cbcc8f2eb1f23, type: 3}
+  - word: "fourr\xE9e"
+    clip: {fileID: 8300000, guid: 255080a2bbfcb164a923e587da6e8935, type: 3}
+  - word: "qu\u2019elle"
+    clip: {fileID: 8300000, guid: ab567cced0a24e44ca8b4a7fbb523544, type: 3}
+  - word: soit
+    clip: {fileID: 8300000, guid: e72ee1b4beea55045aec80fbfc1e9cdf, type: 3}
+  - word: non
+    clip: {fileID: 8300000, guid: 3f51fada008575348b59b4fcdae61bed, type: 3}
+  - word: "j\u2019y"
+    clip: {fileID: 8300000, guid: cc45a9253631c00468eea02409b6205d, type: 3}
+  - word: arrive
+    clip: {fileID: 8300000, guid: 76fdf546864bf494ea708caf9e9ef998, type: 3}
+  - word: alors
+    clip: {fileID: 8300000, guid: 467fccda742ca464f92a80e381f3c93b, type: 3}
+  - word: quoi
+    clip: {fileID: 8300000, guid: 9d6d049973fca1a48a18b2c95b79627e, type: 3}
+  - word: philippe
+    clip: {fileID: 8300000, guid: 791b3f54eeaddd342acf5f7b0b60a74c, type: 3}
+  - word: "j\u2019en"
+    clip: {fileID: 8300000, guid: 7a3da774eafbd524c824a491a4851dbb, type: 3}
+  - word: mange
+    clip: {fileID: 8300000, guid: 4e4901a7b9359284cb6719c4a50b959d, type: 3}
+  - word: "j\u2019appuie"
+    clip: {fileID: 8300000, guid: 3aab2247bff6123469131e754026501b, type: 3}
   poems:
   - {fileID: 11400000, guid: c1f18d92d116cf343b4396aac63a1708, type: 2}
   - {fileID: 11400000, guid: bdd01b04c4f582d48973623a843341df, type: 2}
   - {fileID: 11400000, guid: 22c6bdecde15b4049b2d9191392a9695, type: 2}
   - {fileID: 11400000, guid: f5592d74b86865249ab22b8bfb3d944e, type: 2}
+  - {fileID: 11400000, guid: 439eb710aa1e5ff4a95a7860d27a95cd, type: 2}
+  - {fileID: 11400000, guid: 2e38e459d0409c64d9052fdafa0140ad, type: 2}
+  - {fileID: 11400000, guid: 275e93215432ee6418dae4a58e9a82e8, type: 2}
+  - {fileID: 11400000, guid: a0d550a0445a54447b6409a5a1d16912, type: 2}
+  - {fileID: 11400000, guid: 3e9b8fc6f40443d4cb84820acbf785e5, type: 2}

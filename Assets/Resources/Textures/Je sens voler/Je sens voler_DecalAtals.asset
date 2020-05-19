@@ -1,0 +1,254 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 225627996, guid: ffea41b2ef7376143bee608c897e587a, type: 3}
+  m_Name: Je sens voler_DecalAtals
+  m_EditorClassIdentifier: 
+  material: {fileID: 2100000, guid: 2d9cde943678e4149ad63370ad375e05, type: 2}
+  regions:
+  - name: agonie
+    region:
+      serializedVersion: 2
+      x: 0.41796875
+      y: 0
+      width: 0.1796875
+      height: 0.1328125
+  - name: blancs
+    region:
+      serializedVersion: 2
+      x: 0.5996094
+      y: 0
+      width: 0.17578125
+      height: 0.1328125
+  - name: "bris\xE9"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.41015625
+      width: 0.13671875
+      height: 0.1328125
+  - name: bruns
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.13671875
+      width: 0.1640625
+      height: 0.1328125
+  - name: "c\xE9r\xE9bral"
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0.21289062
+      height: 0.1328125
+  - name: "c\u0153ur"
+    region:
+      serializedVersion: 2
+      x: 0.48046875
+      y: 0.13671875
+      width: 0.15039062
+      height: 0.1328125
+  - name: dans
+    region:
+      serializedVersion: 2
+      x: 0.13476562
+      y: 0.8203125
+      width: 0.1328125
+      height: 0.1328125
+  - name: du
+    region:
+      serializedVersion: 2
+      x: 0.37109375
+      y: 0.41015625
+      width: 0.0859375
+      height: 0.1328125
+  - name: en
+    region:
+      serializedVersion: 2
+      x: 0.45703125
+      y: 0.2734375
+      width: 0.078125
+      height: 0.1328125
+  - name: et
+    region:
+      serializedVersion: 2
+      x: 0.9316406
+      y: 0.13671875
+      width: 0.064453125
+      height: 0.1328125
+  - name: gris
+    region:
+      serializedVersion: 2
+      x: 0.3671875
+      y: 0.68359375
+      width: 0.10546875
+      height: 0.1328125
+  - name: "g\xE9nie"
+    region:
+      serializedVersion: 2
+      x: 0.6328125
+      y: 0.13671875
+      width: 0.1484375
+      height: 0.1328125
+  - name: je
+    region:
+      serializedVersion: 2
+      x: 0.45898438
+      y: 0.41015625
+      width: 0.05859375
+      height: 0.1328125
+  - name: "j\u2019ai"
+    region:
+      serializedVersion: 2
+      x: 0.36914062
+      y: 0.546875
+      width: 0.091796875
+      height: 0.1328125
+  - name: les
+    region:
+      serializedVersion: 2
+      x: 0.37304688
+      y: 0.2734375
+      width: 0.08203125
+      height: 0.1328125
+  - name: leurs
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.68359375
+      width: 0.13671875
+      height: 0.1328125
+  - name: "l\u2019azur"
+    region:
+      serializedVersion: 2
+      x: 0.16601562
+      y: 0.13671875
+      width: 0.15625
+      height: 0.1328125
+  - name: mais
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.8203125
+      width: 0.1328125
+      height: 0.1328125
+  - name: mal
+    region:
+      serializedVersion: 2
+      x: 0.25390625
+      y: 0.68359375
+      width: 0.111328125
+      height: 0.1328125
+  - name: moi
+    region:
+      serializedVersion: 2
+      x: 0.14453125
+      y: 0.2734375
+      width: 0.1171875
+      height: 0.1328125
+  - name: mon
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.546875
+      width: 0.13671875
+      height: 0.1328125
+  - name: oiseaux
+    region:
+      serializedVersion: 2
+      x: 0.21484375
+      y: 0
+      width: 0.20117188
+      height: 0.1328125
+  - name: ont
+    region:
+      serializedVersion: 2
+      x: 0.26953125
+      y: 0.8203125
+      width: 0.10546875
+      height: 0.1328125
+  - name: "pi\xE8ge"
+    region:
+      serializedVersion: 2
+      x: 0.7832031
+      y: 0.13671875
+      width: 0.14648438
+      height: 0.1328125
+  - name: pris
+    region:
+      serializedVersion: 2
+      x: 0.25585938
+      y: 0.546875
+      width: 0.111328125
+      height: 0.1328125
+  - name: que
+    region:
+      serializedVersion: 2
+      x: 0.13867188
+      y: 0.68359375
+      width: 0.11328125
+      height: 0.1328125
+  - name: "qu\u2019ils"
+    region:
+      serializedVersion: 2
+      x: 0.32421875
+      y: 0.13671875
+      width: 0.15429688
+      height: 0.1328125
+  - name: "r\xE2le"
+    region:
+      serializedVersion: 2
+      x: 0.26367188
+      y: 0.2734375
+      width: 0.107421875
+      height: 0.1328125
+  - name: sens
+    region:
+      serializedVersion: 2
+      x: 0.13867188
+      y: 0.41015625
+      width: 0.12109375
+      height: 0.1328125
+  - name: si
+    region:
+      serializedVersion: 2
+      x: 0.46289062
+      y: 0.546875
+      width: 0.056640625
+      height: 0.1328125
+  - name: son
+    region:
+      serializedVersion: 2
+      x: 0.26171875
+      y: 0.41015625
+      width: 0.107421875
+      height: 0.1328125
+  - name: tendu
+    region:
+      serializedVersion: 2
+      x: 0.77734375
+      y: 0
+      width: 0.16601562
+      height: 0.1328125
+  - name: voler
+    region:
+      serializedVersion: 2
+      x: 0
+      y: 0.2734375
+      width: 0.14257812
+      height: 0.1328125
+  - name: vols
+    region:
+      serializedVersion: 2
+      x: 0.13867188
+      y: 0.546875
+      width: 0.115234375
+      height: 0.1328125

@@ -19,7 +19,7 @@ ScriptedImporter:
     preset: " <sbspreset pkgurl=\"pkg://Painted_Gypsum\" label=\"\" >\n  <presetinput
       identifier=\"$outputsize\" uid=\"3793323156\" type=\"8\" value=\"9,9\" />\n 
       <presetinput identifier=\"Paint_Color\" uid=\"2444330705\" type=\"3\" value=\"0.105882,0.0291919,0.0291919,1\"
-      />\n  <presetinput identifier=\"Gloss\" uid=\"2444330636\" type=\"0\" value=\"0.629\"
+      />\n  <presetinput identifier=\"Gloss\" uid=\"2444330636\" type=\"0\" value=\"0.702\"
       />\n </sbspreset>\n"
     shaderName: Standard
     materialProperties:

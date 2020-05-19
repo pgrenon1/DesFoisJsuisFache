@@ -32,6 +32,12 @@ TextureImporter:
   - first:
       213: 7477076998433454394
     second: Keyboard_White_A
+  - first:
+      213: -3455062608588089153
+    second: Keyboard_White_P
+  - first:
+      213: -5508555063140141424
+    second: Keyboard_White_Q
   externalObjects: {}
   serializedVersion: 11
   mipmaps:
@@ -105,7 +111,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Keyboard_White_W
+      name: Keyboard_White_A
       rect:
         serializedVersion: 2
         x: 0
@@ -119,155 +125,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: aad267b9fd7267ef0800000000000000
-      internalID: -110857299484594774
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_Space
-      rect:
-        serializedVersion: 2
-        x: 0
-        y: 101
-        width: 100
-        height: 100
-      alignment: 9
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 0db91f895495a2950800000000000000
-      internalID: 6425045973851020240
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_S
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8aaee7a6b5476e0b0800000000000000
-      internalID: -5699740342413235544
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_Mouse_Right
-      rect:
-        serializedVersion: 2
-        x: 101
-        y: 101
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: fac27e717f7a5d670800000000000000
-      internalID: 8562934946214653103
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_Mouse_Middle
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 8941f94f0581d0a40800000000000000
-      internalID: 5335947869484422296
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_Mouse_Left
-      rect:
-        serializedVersion: 2
-        x: 202
-        y: 101
-        width: 100
-        height: 100
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 53475eafbc9a47130800000000000000
-      internalID: 3563659898709701685
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_F
-      rect:
-        serializedVersion: 2
-        x: 303
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 41d7287ca9ded1160800000000000000
-      internalID: 6998010645031582996
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Keyboard_White_E
-      rect:
-        serializedVersion: 2
-        x: 404
-        y: 0
-        width: 100
-        height: 100
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: -1
-      bones: []
-      spriteID: 2d4ea7bb6cec402e0800000000000000
-      internalID: -2160374568286755630
+      spriteID: a39bed13ae9e3c760800000000000000
+      internalID: 7477076998433454394
       vertices: []
       indices: 
       edges: []
@@ -276,7 +135,7 @@ TextureImporter:
       name: Keyboard_White_D
       rect:
         serializedVersion: 2
-        x: 303
+        x: 0
         y: 101
         width: 100
         height: 100
@@ -294,11 +153,11 @@ TextureImporter:
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Keyboard_White_A
+      name: Keyboard_White_E
       rect:
         serializedVersion: 2
-        x: 404
-        y: 101
+        x: 0
+        y: 202
         width: 100
         height: 100
       alignment: 0
@@ -308,8 +167,197 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: a39bed13ae9e3c760800000000000000
-      internalID: 7477076998433454394
+      spriteID: 2d4ea7bb6cec402e0800000000000000
+      internalID: -2160374568286755630
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_F
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 303
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 41d7287ca9ded1160800000000000000
+      internalID: 6998010645031582996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_Mouse_Left
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 100
+        height: 100
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 53475eafbc9a47130800000000000000
+      internalID: 3563659898709701685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_Mouse_Middle
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8941f94f0581d0a40800000000000000
+      internalID: 5335947869484422296
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_Mouse_Right
+      rect:
+        serializedVersion: 2
+        x: 202
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fac27e717f7a5d670800000000000000
+      internalID: 8562934946214653103
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_Q
+      rect:
+        serializedVersion: 2
+        x: 303
+        y: 0
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0963adb0b5ead83b0800000000000000
+      internalID: -5508555063140141424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_S
+      rect:
+        serializedVersion: 2
+        x: 404
+        y: 0
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8aaee7a6b5476e0b0800000000000000
+      internalID: -5699740342413235544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_Space
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 101
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0db91f895495a2950800000000000000
+      internalID: 6425045973851020240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_W
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 202
+        width: 100
+        height: 100
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aad267b9fd7267ef0800000000000000
+      internalID: -110857299484594774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Keyboard_White_P
+      rect:
+        serializedVersion: 2
+        x: 101
+        y: 303
+        width: 100
+        height: 100
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fb85f5afcd62d00d0800000000000000
+      internalID: -3455062608588089153
       vertices: []
       indices: 
       edges: []

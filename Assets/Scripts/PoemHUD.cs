@@ -8,6 +8,9 @@ using UnityEngine;
 public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
 {
     public TextMeshProUGUI poemText;
+    public TextMeshProUGUI headerText;
+    public GameObject controls;
+    public TextMeshProUGUI screenShotText;
     public float scrollSpeed = 1f;
     public float fadeSpeed = 1f;
 
@@ -23,7 +26,10 @@ public class PoemHUD : SingletonMonoBehaviour<PoemHUD>
             _poem = value;
             
             if (_poem != null)
+            {
                 poemText.SetText(_poem.poem);
+                headerText.SetText(string.Format("<i>{0}</i> - {1}", _poem.title, _poem.author));
+            }
         }
     }
 

@@ -13,12 +13,15 @@ public class Bullet : BaseBehaviour
     public PersistentDecal decalPrefab;
     public LayerMask layerMask;
     public float maxDelay;
+    public MeshRenderer meshRenderer;
 
     public Word Word { get; set; }
     public bool HasAudioDelay { get; set; }
 
     private bool _isMoving;
     private Vector3 _lastPosition;
+    private float _speed;
+    private Vector3 _direction;
 
     private void Start()
     {
@@ -27,29 +30,24 @@ public class Bullet : BaseBehaviour
 
     private void Update()
     {
-        var direction = transform.position - _lastPosition;
-
-        if (Physics.Raycast(_lastPosition, direction, direction.magnitude, layerMask))
+        if (Physics.Linecast(_lastPosition, transform.position, layerMask))
         {
-            SpawnDecal(_lastPosition, direction);
+            SpawnDecal(_lastPosition, _direction);
         }
 
         _lastPosition = transform.position;
     }
 
-    //private void OnTriggerEnter(Collider other)
-    //{
-    //    if (!_isMoving)
-    //        return;
-
-    //    var direction = Rigidbody.velocity.normalized;
-    //    var contactPoint = Collider.ClosestPointOnBounds(other.transform.position);
-
-    //    SpawnDecal(contactPoint, direction);
-    //}
+    private void LateUpdate()
+    {
+        if (_isMoving)
+            transform.position = transform.position + _direction.normalized * _speed * Time.deltaTime;  
+    }
 
     private void SpawnDecal(Vector3 point, Vector3 direction)
     {
+        _isMoving = false;
+
         var rotation = Quaternion.LookRotation(direction);
         var decalPosition = point - direction * decalDistance;
 
@@ -66,7 +64,7 @@ public class Bullet : BaseBehaviour
 
         persistentDecal.Decal.LateBake();
 
-        _isMoving = false;
+        meshRenderer.enabled = false;
     }
 
     private void Despawn()
@@ -81,9 +79,13 @@ public class Bullet : BaseBehaviour
         else
             AudioSource.Play();
 
+        _lastPosition = transform.position;
+
         transform.rotation.SetLookRotation(direction);
 
-        Rigidbody.AddForce(direction * speed);
+        _direction = direction;
+        _speed = speed;
+        //Rigidbody.AddForce(direction * speed);
 
         _isMoving = true;
     }

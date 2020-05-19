@@ -157,7 +157,7 @@ MonoBehaviour:
   spreadFactor: 0.06
   recoilPerShot: 1
   recoilReturnRate: 2
-  bulletSpeed: 3000
+  bulletSpeed: 100
   recoilCurve:
     serializedVersion: 2
     m_Curve:

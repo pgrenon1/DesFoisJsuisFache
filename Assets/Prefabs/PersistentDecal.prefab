@@ -314,7 +314,7 @@ Transform:
   m_GameObject: {fileID: 6089321427666554794}
   m_LocalRotation: {x: -0.7071068, y: 0, z: 0, w: 0.7071068}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 10, z: 1}
+  m_LocalScale: {x: 2.8529413, y: 5, z: 1}
   m_Children:
   - {fileID: 8452547225464782176}
   - {fileID: 1981450814054996749}
@@ -344,9 +344,9 @@ MonoBehaviour:
   inclusion: 0
   transformObserver:
     lastPosition: {x: 0, y: 0, z: 0}
-    lastScale: {x: 1, y: 1, z: 1}
-    lastRotation: {x: 0, y: 0, z: 0, w: 1}
-    transform: {fileID: 151907609688329736}
+    lastScale: {x: 2.8529413, y: 5, z: 1}
+    lastRotation: {x: -0.7071068, y: -0, z: 0, w: 0.7071068}
+    transform: {fileID: 219475446636552825}
   needsDynamicGeometry: 1
   Mask:
     serializedVersion: 2
@@ -439,4 +439,4 @@ MonoBehaviour:
   surfaceRotation: 0
   quality: 0
   sharedMesh: {fileID: 0}
-  instanceID: 90620
+  instanceID: 288424

@@ -877,8 +877,8 @@ MonoBehaviour:
       Entry: 1
       Data: Aux
     - Name: clip
-      Entry: 6
-      Data: 
+      Entry: 10
+      Data: 28
     - Name: 
       Entry: 8
       Data: 
@@ -1649,7 +1649,7 @@ MonoBehaviour:
   - word: "car\xE8ne"
     clip: {fileID: 8300000, guid: 8da90cf9f42f4f14a914e737c3fa074c, type: 3}
   - word: Aux
-    clip: {fileID: 0}
+    clip: {fileID: 8300000, guid: ecbcd713ed40619438d1a55df765765d, type: 3}
   - word: profondeurs
     clip: {fileID: 8300000, guid: 1325986e2c3393e4ea4474b161066622, type: 3}
   - word: du

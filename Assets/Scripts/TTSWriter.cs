@@ -63,39 +63,7 @@ public class TTSWriter : OdinSerializedBaseBehaviour
 
             foreach (var word in words)
             {
-                var lowerWord = word.ToLower();
-
-                // if not in collection, request clip and add it to the global collection AND the poem asset
-                var wordInCollection = clipCollection.allWords.Find(x => x.word == lowerWord);
-                if (wordInCollection == null)
-                {
-                    Debug.Log(word + " was not found in the collection, trying to process it.");
-
-                    yield return StartCoroutine(RequestAndAddClip(lowerWord));
-                }
-
-                AudioClip clip = null;
-                foreach (var wordData in clipCollection.allWords)
-                {
-                    if (wordData != null && wordData.word != null)
-                    {
-                        if (wordData.word == lowerWord)
-                        {
-                            clip = wordData.clip;
-                            break;
-                        }
-                    }
-                }
-
-                if (clip != null)
-                {
-                    poemAsset.words.Add(new Word(word, clip));
-                }
-                else
-                {
-                    Debug.Log("Did not manage to get requested clip for word : " + word);
-                    poemAsset.words.Add(new Word(word, null));
-                }
+                yield return StartCoroutine(ProcessWord(word, poemAsset));
             }
 
             Debug.Log("Finished processing : " + poemAsset.title);
@@ -109,6 +77,43 @@ public class TTSWriter : OdinSerializedBaseBehaviour
             AssetDatabase.SaveAssets();
             EditorUtility.FocusProjectWindow();
             Selection.activeObject = poemAsset;
+        }
+    }
+
+    private IEnumerator ProcessWord(string word, Poem poemAsset)
+    {
+        var lowerWord = word.ToLower();
+
+        // if not in collection, request clip and add it to the global collection AND the poem asset
+        var wordInCollection = clipCollection.allWords.Find(x => x.word == lowerWord);
+        if (wordInCollection == null)
+        {
+            Debug.Log(word + " was not found in the collection, trying to process it.");
+
+            yield return StartCoroutine(RequestAndAddClip(lowerWord));
+        }
+
+        AudioClip clip = null;
+        foreach (var wordData in clipCollection.allWords)
+        {
+            if (wordData != null && wordData.word != null)
+            {
+                if (wordData.word == lowerWord)
+                {
+                    clip = wordData.clip;
+                    break;
+                }
+            }
+        }
+
+        if (clip != null)
+        {
+            poemAsset.words.Add(new Word(word, clip));
+        }
+        else
+        {
+            Debug.Log("Did not manage to get requested clip for word : " + word);
+            poemAsset.words.Add(new Word(word, null));
         }
     }
 

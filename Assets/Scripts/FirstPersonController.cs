@@ -55,6 +55,7 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
     private int _previousWordIndex;
     private int _wordIndex;
     private int _poemIndex;
+
     public Poem ActivePoem
     {
         get
@@ -151,6 +152,22 @@ public class FirstPersonController : SingletonMonoBehaviour<FirstPersonControlle
         UpdateClick();
 
         UpdateScroll();
+
+        UpdateSensitivitySetting();
+    }
+
+    private void UpdateSensitivitySetting()
+    {
+        if (Input.GetKeyDown(KeyCode.F1))
+        {
+            m_MouseLook.XSensitivity -= 0.25f;
+            m_MouseLook.YSensitivity -= 0.25f;
+        }
+        else if (Input.GetKeyDown(KeyCode.F2))
+        {
+            m_MouseLook.XSensitivity += 0.25f;
+            m_MouseLook.YSensitivity += 0.25f;
+        }
     }
 
     private void UpdateScroll()
